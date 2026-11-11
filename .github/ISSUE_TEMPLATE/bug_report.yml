@@ -1,0 +1,61 @@
+name: Report a problem / 报告问题
+description: Something is not working as expected / 功能无法正常使用
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        English or Chinese is welcome. This report is public. Do not post passwords, cookies, purchase receipts, private media or private URLs. Screenshots are optional; remove personal information first.
+        支持中文或英文。反馈内容公开可见，请勿提交密码、Cookie、购买凭据、私人媒体或私人网址。截图为可选项，请先遮盖个人信息。
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform / 使用平台
+      options:
+        - Android · Google Play
+        - Android · Direct APK / 官网直装
+        - iPhone · App Store
+        - iPhone · TestFlight
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version / 应用版本
+      placeholder: "Example / 例如：1.6.50"
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and OS version / 设备与系统版本
+      placeholder: "Example / 例如：Pixel 8, Android 15"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / 复现步骤
+      description: Describe what you tapped and in which order / 说明依次进行了哪些操作
+      placeholder: "1. Open… / 打开……"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result / 预期结果
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result / 实际结果
+      description: Include the error message, if any / 如有错误提示，请一并说明
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Extra details or screenshots / 补充信息或截图
+      description: Optional. Share a public test URL only if you are authorized to share it. / 可选；仅在有权公开时提供测试网址。

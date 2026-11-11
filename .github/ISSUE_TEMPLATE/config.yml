@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: FAQ / 常见问题
+    url: https://github.com/fcjnotbad-source/videoload-app/blob/main/docs/faq.md
+    about: Check downloads, Pro, supported formats and privacy / 先查看下载、Pro、格式和隐私说明
+  - name: Private contact / 非公开联系
+    url: https://vdb.aivest.art/apps/jiange-kuaixia#contact
+    about: Use the developer contact page for matters that cannot be shared publicly / 不便公开的事项请通过开发者联系页联系

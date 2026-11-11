@@ -1,0 +1,35 @@
+name: Suggest a feature / 功能建议
+description: Tell us what would make VideoLoad more useful / 分享你的使用需求
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: "English or Chinese is welcome. All feedback is public; do not share private information. / 支持中文或英文；反馈公开可见，请勿填写隐私信息。"
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform / 平台
+      options:
+        - Android
+        - iPhone
+        - Both / 两个平台
+    validations:
+      required: true
+  - type: textarea
+    id: need
+    attributes:
+      label: What are you trying to do? / 你想解决什么问题？
+      description: Describe a real situation where this would help / 描述一个具体使用场景
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Your suggestion / 你的建议
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Current workaround or examples / 目前的替代方法或参考
