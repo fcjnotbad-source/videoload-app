@@ -9,6 +9,7 @@
 <p align="center">应用内无广告 · 无需注册账号 · 视频在本机处理</p>
 
 <p align="center">
+  <a href="https://app.pdos.work/zh/">产品官网</a> ·
   <a href="https://play.google.com/store/apps/details?id=com.fcj.videoload">Google Play</a> ·
   <a href="docs/downloads.md#简体中文">下载入口</a> ·
   <a href="https://github.com/fcjnotbad-source/videoload-app/issues/new/choose">反馈建议</a> ·
@@ -87,4 +88,4 @@ VideoLoad 将网页浏览、本地视频整理和片段工具放在一起，支�
 
 ---
 
-这是官方产品展示与反馈仓库，包含产品介绍和图片，不包含应用源码。VideoLoad 品牌及产品素材的权利归各自所有者所有，详见[素材说明](assets/README.md)。
+这是官方产品展示与反馈仓库，包含产品介绍、图片与[静态官网](website/README.md)，不包含应用源码。VideoLoad 品牌及产品素材的权利归各自所有者所有，详见[素材说明](assets/README.md)。

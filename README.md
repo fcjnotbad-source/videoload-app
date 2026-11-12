@@ -9,6 +9,7 @@
 <p align="center">No in-app ads · No app account · On-device video processing</p>
 
 <p align="center">
+  <a href="https://app.pdos.work/">Official website</a> ·
   <a href="https://play.google.com/store/apps/details?id=com.fcj.videoload">Google Play</a> ·
   <a href="docs/downloads.md">All downloads</a> ·
   <a href="https://github.com/fcjnotbad-source/videoload-app/issues/new/choose">Feedback</a> ·
@@ -87,4 +88,4 @@ If VideoLoad helps you, share this page with someone who could use it, leave an 
 
 ---
 
-This is the official product showcase and feedback repository. It contains product documentation and images, not the application's source code. VideoLoad branding and included product assets remain the property of their respective owner. See [asset notes](assets/README.md).
+This is the official product showcase and feedback repository. It contains product documentation, images and the static [product website](website/README.md), not the application's source code. VideoLoad branding and included product assets remain the property of their respective owner. See [asset notes](assets/README.md).
