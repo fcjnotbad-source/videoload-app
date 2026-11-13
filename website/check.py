@@ -153,6 +153,9 @@ def check():
     routing = json.loads((OUT / '_routes.json').read_text())
     assert '/.well-known/acme-challenge/*' in routing['exclude']
     assert '__CANONICAL_ORIGIN__' not in (OUT / '_worker.js').read_text()
+    assert '__MEDIA_SIZES__' not in (OUT / '_worker.js').read_text()
+    film_bytes = (OUT / 'assets/promo/videoload-overview-en.mp4').stat().st_size
+    assert f'"/assets/promo/videoload-overview-en.mp4": {film_bytes}' in (OUT / '_worker.js').read_text()
     assert BASE in (OUT / '_worker.js').read_text()
     assert "media-src 'self'" in (OUT / '_headers').read_text()
     promo = OUT / 'assets/promo'

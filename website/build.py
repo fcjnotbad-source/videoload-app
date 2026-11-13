@@ -26,7 +26,9 @@ def build():
             shutil.rmtree(target)
     shutil.copytree(ROOT / 'assets', OUT / 'assets', ignore=shutil.ignore_patterns('*.md'))
     shutil.copyfile(ROOT / 'website/style.css', OUT / 'style.css')
-    write('_worker.js', (ROOT / 'website/redirect_worker.js').read_text().replace('__CANONICAL_ORIGIN__', BASE))
+    media_sizes = {'/' + p.relative_to(OUT).as_posix(): p.stat().st_size for p in (OUT / 'assets').rglob('*.mp4')}
+    worker = (ROOT / 'website/redirect_worker.js').read_text().replace('__CANONICAL_ORIGIN__', BASE).replace('__MEDIA_SIZES__', json.dumps(media_sizes))
+    write('_worker.js', worker)
     write('_routes.json', json.dumps({'version': 1, 'include': ['/*'], 'exclude': ['/.well-known/acme-challenge/*']}) + '\n')
     pages = []
     for lang, c in COPY.items():

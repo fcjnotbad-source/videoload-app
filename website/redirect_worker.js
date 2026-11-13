@@ -1,5 +1,6 @@
 // Preserve legacy product links and support seeking in the public product film.
 const canonicalOrigin = "__CANONICAL_ORIGIN__";
+const mediaSizes = __MEDIA_SIZES__;
 const legacyHosts = new Set(["app.pdos.work", "videoload-app.pages.dev"]);
 
 function sliceStream(body, start, end) {
@@ -26,7 +27,8 @@ function sliceStream(body, start, end) {
 
 async function serveMedia(request, assets, ctx) {
   const response = await assets.fetch(request);
-  const total = Number(response.headers.get("Content-Length"));
+  const total = Number(response.headers.get("Content-Length"))
+    || mediaSizes[new URL(request.url).pathname];
   if (response.status !== 200 || !Number.isSafeInteger(total) || total <= 0) return response;
   const headers = new Headers(response.headers);
   headers.set("Accept-Ranges", "bytes");
