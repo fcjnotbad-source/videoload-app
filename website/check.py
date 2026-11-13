@@ -5,7 +5,7 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 import xml.etree.ElementTree as ET
 
-from content import APK, BASE, CONTACT_EMAIL, COPY, LOCALES, REPO
+from content import APK, BASE, CONTACT_EMAIL, COPY, GOOGLE_SITE_VERIFICATION, LOCALES, REPO
 from promo import METADATA, VIDEO_ID, media_url
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -54,6 +54,9 @@ def check():
             html = resolve(path).read_text(encoding='utf-8')
             doc = Document(html)
             documents[path] = doc
+            verification = [attr.get('content') for tag, attr in doc.tags if tag == 'meta' and attr.get('name') == 'google-site-verification']
+            assert verification == [GOOGLE_SITE_VERIFICATION], path
+            assert f'<meta name="google-site-verification" content="{GOOGLE_SITE_VERIFICATION}">' in html.split('</head>', 1)[0], path
             assert sum(tag == 'h1' for tag, _ in doc.tags) == 1, path
             assert any(tag == 'main' for tag, _ in doc.tags), path
             assert any(tag == 'html' and attr.get('lang') == copy['lang'] for tag, attr in doc.tags), path

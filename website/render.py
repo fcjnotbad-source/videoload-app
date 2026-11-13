@@ -2,7 +2,7 @@
 import json
 from html import escape as e
 
-from content import APK, BASE, CONTACT_EMAIL, COPY, DEMO, FEEDBACK, PLAY, POLICY, REPO, UPDATED
+from content import APK, BASE, CONTACT_EMAIL, COPY, DEMO, FEEDBACK, GOOGLE_SITE_VERIFICATION, PLAY, POLICY, REPO, UPDATED
 from promo import VIDEO_ID, media_url, video_schema
 
 
@@ -65,7 +65,7 @@ def page_html(lang, page, body, title=None, noindex=False):
     alternates = ''.join(f'<link rel="alternate" hreflang="{locale["hreflang"]}" href="{BASE}{locale["prefix"]}{page}">' for locale in COPY.values())
     alternates += f'<link rel="alternate" hreflang="x-default" href="{BASE}/{page}">'
     return f'''<!doctype html>
-<html lang="{c['lang']}" dir="{c['direction']}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="{c['lang']}" dir="{c['direction']}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="google-site-verification" content="{e(GOOGLE_SITE_VERIFICATION)}">
 <title>{e(title)}</title><meta name="description" content="{e(desc)}"><meta name="robots" content="{robots}">
 <link rel="canonical" href="{canonical}">{alternates}
 <meta property="og:type" content="website"><meta property="og:site_name" content="VideoLoad"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{canonical}"><meta property="og:image" content="{BASE}/assets/screenshots/player.png"><meta property="og:image:alt" content="{e(c['alt_player'])}"><meta property="og:locale" content="{c['og_locale']}"><meta name="twitter:card" content="summary_large_image">
