@@ -1,53 +1,53 @@
 {
-  "title": "VideoLoad — Pemutar video tanpa iklan, penanda klip & unduhan",
-  "description": "Simpan video yang didukung dan diizinkan untuk diunduh. Tandai dan ulangi momen, rapikan koleksi, lalu bandingkan atau ekspor klip dengan VideoLoad Pro. Tersedia untuk Android; versi iPhone segera hadir.",
-  "faq_description": "Jawaban tentang VideoLoad: gratis vs Pro, dukungan unduhan, privasi, batas ekspor klip, pemutaran dua video dengan kontrol terpisah, dan ketersediaan di iPhone.",
-  "download_description": "Dapatkan VideoLoad melalui tautan resmi Google Play atau APK Android. Bandingkan edisi, baca panduan instalasi, dan lihat status versi iPhone yang segera hadir.",
+  "title": "VideoLoad — Browser Pengunduh Video untuk Ponsel | Unduh, Tonton & Potong",
+  "description": "Browser pengunduh video untuk ponsel yang bisa dimulai gratis tanpa login aplikasi. Unduh video yang didukung, tonton offline, dan potong klip dengan Pro. Tanpa unggah media ke pengembang; Pro mendukung pemutaran dua video. iPhone segera hadir.",
+  "faq_description": "Jawaban tentang VideoLoad, browser pengunduh video untuk ponsel: fitur gratis, penggunaan tanpa login, privasi di perangkat, unduhan, pemutaran, pemotongan klip dan pemutaran dua video dengan Pro.",
+  "download_description": "Dapatkan VideoLoad, browser pengunduh video untuk ponsel. Mulai gratis tanpa akun aplikasi; unduh dan tonton video, dengan Pro opsional untuk memotong klip dan memutar dua video. iPhone segera hadir.",
   "nav": [
     "Fitur",
     "Tanya jawab",
     "GitHub",
     "Dapatkan aplikasi"
   ],
-  "eyebrow": "LEBIH SEDIKIT MENCARI. LEBIH BANYAK MENONTON ULANG.",
-  "headline": "Simpan momen yang<br>layak <span>ditonton lagi.</span>",
-  "intro": "Video Anda, dengan bagian penting yang mudah dijangkau. Jelajahi web, simpan video yang didukung, tandai momen, lalu kembali kapan pun Anda membutuhkannya.",
+  "eyebrow": "UNDUH VIDEO · TONTON VIDEO · POTONG KLIP",
+  "headline": "Browser pengunduh video<br><span>untuk ponsel.</span>",
+  "intro": "VideoLoad adalah browser pengunduh video untuk ponsel yang memadukan unduhan, pemutaran, dan pemotongan video. Mulai gratis tanpa akun aplikasi. Pemutaran dan pemrosesan dilakukan di ponsel, tanpa mengunggah media ke pengembang. Pro menambahkan ekspor klip yang kompatibel dan pemutaran dua video untuk lebih banyak keseruan.",
   "cta": "Dapatkan VideoLoad",
   "secondary": "Jelajahi aplikasi",
-  "trust": "Tanpa iklan dalam aplikasi. Tanpa akun aplikasi. Pemrosesan di perangkat.",
+  "trust": "Mulai gratis · Tanpa login aplikasi · Tanpa iklan dalam aplikasi · Tanpa unggah media",
   "preview": "Tampilan iPhone asli · iOS segera hadir · media demo buatan sendiri",
   "caption": "Pilih momennya. Pertahankan video aslinya.",
   "caption_detail": "Tandai beberapa klip dan putar ulang hanya bagian yang penting.",
   "platform": "Android tersedia melalui APK resmi · Ketersediaan Google Play bervariasi · iPhone segera hadir",
-  "section_label": "SESUAI CARA ANDA MENONTON",
-  "section_title": "Tak perlu lama mencari.<br>Nikmati lebih banyak momen penting.",
+  "section_label": "SATU BROWSER. TIGA KEGUNAAN UTAMA.",
+  "section_title": "Unduh. Tonton.<br>Potong klip yang Anda inginkan.",
   "features": [
     [
       "01",
-      "Simpan untuk nanti",
-      "Browser bawaan dan pusat unduhan memudahkan Anda menyimpan video yang didukung, milik Anda sendiri atau yang boleh Anda simpan."
+      "Unduh video",
+      "Jelajahi web dan simpan video yang didukung, milik Anda sendiri atau yang boleh Anda unduh. Mulai gratis dan kelola unduhan di satu tempat."
     ],
     [
       "02",
-      "Langsung ke momen pilihan",
-      "Tandai titik awal dan akhir, pilih beberapa momen, lalu putar ulang bagian yang ditandai tanpa mengubah video asli."
+      "Tonton video",
+      "Putar video yang sudah disimpan di ponsel, atur kecepatan, tandai momen, dan ulangi bagian pilihan. Koleksi Anda selalu mudah dijangkau."
     ],
     [
       "03",
-      "Bandingkan dua tampilan · Pro",
-      "Bandingkan dua video pada satu layar dengan kontrol terpisah. Impor video Anda sendiri dan ekspor bagian yang ditandai dari sumber yang kompatibel ke MP4 atau GIF."
+      "Potong klip · Pro",
+      "Tandai titik awal dan akhir, lalu gunakan Pro untuk mengekspor klip yang kompatibel ke MP4 atau GIF. Video diproses di perangkat, tanpa mengunggah media."
     ]
   ],
-  "gallery_title": "Koleksi Anda. Sudut pandang Anda.",
+  "gallery_title": "Dua video. Lebih banyak keseruan.",
   "library": "Satukan video asli, sorotan, dan GIF dalam satu koleksi.",
-  "compare": "Dua video, masing-masing dengan kontrol terpisah. Fitur Pro.",
+  "compare": "Putar dua video bersamaan dengan kontrol terpisah. Lebih banyak cara untuk menonton dan membandingkan. Fitur Pro.",
   "gallery_note": "Tangkapan layar menampilkan aplikasi iPhone dengan konten buatan pengembang. Tampilan Android dan beberapa batas format berbeda.",
   "facts_label": "SEKILAS TENTANG VIDEOLOAD",
   "facts_title": "Peralatan video yang praktis.",
   "facts": [
     [
       "Tentang aplikasi",
-      "Browser video, koleksi lokal, dan pemutar dengan penanda klip serta pemutaran berulang."
+      "Browser pengunduh video untuk ponsel: unduh dan tonton video, lalu potong klip yang kompatibel dengan Pro."
     ],
     [
       "Fitur gratis versi toko",
@@ -59,7 +59,7 @@
     ],
     [
       "Privasi",
-      "Tanpa akun aplikasi atau SDK iklan. Pemrosesan video dilakukan di perangkat Anda."
+      "Tanpa akun aplikasi atau SDK iklan. Video diputar dan diproses di ponsel; media tidak perlu diunggah ke pengembang."
     ],
     [
       "Platform",
@@ -70,7 +70,7 @@
       "Informasi produk dan masukan publik tersedia di GitHub. Kode sumber aplikasi tetap privat."
     ]
   ],
-  "download_title": "Mulai dari satu video.<br>Jadikan milik Anda.",
+  "download_title": "Unduh. Tonton.<br>Potong langsung di ponsel.",
   "download_intro": "Gunakan tautan unduhan resmi. Ketersediaan di toko bergantung pada wilayah dan status rilis.",
   "store": [
     [
@@ -104,7 +104,7 @@
   "github_cta": "Jelajahi di GitHub",
   "feedback_note": "Masukan di GitHub bersifat publik. Jangan sertakan kata sandi, bukti pembelian, atau media pribadi.",
   "limits": "Unduh hanya konten milik Anda atau yang boleh Anda simpan. Kompatibilitas bervariasi; aplikasi tidak melewati DRM, pembatasan berbayar, atau kontrol akses. Situs web dapat menampilkan iklannya sendiri. Pemutaran dua video tidak menjamin sinkronisasi per bingkai. Di iOS, paket HLS offline dapat diputar dalam aplikasi tetapi tidak dapat diekspor; menutup paksa aplikasi menghentikan transfer.",
-  "footer": "VideoLoad · Simpan momen yang layak ditonton lagi.",
+  "footer": "VideoLoad · Browser pengunduh video untuk ponsel",
   "updated": "Informasi produk diperbarui pada 13 November 2026.",
   "privacy": "Privasi",
   "downloads": "Unduhan",
@@ -114,7 +114,7 @@
   "faq": [
     [
       "Apa itu VideoLoad?",
-      "VideoLoad memadukan browser web, koleksi video lokal, dan pemutar dengan alat klip. Simpan video yang didukung, milik Anda sendiri atau yang diizinkan untuk diunduh, tandai dan putar ulang momen pilihan, lalu bandingkan video atau ekspor klip yang kompatibel dengan Pro."
+      "VideoLoad adalah browser pengunduh video untuk ponsel dengan tiga kegunaan utama: mengunduh video, menonton video, dan memotong klip. Mulai gratis tanpa akun aplikasi. Unduh hanya materi yang didukung, milik Anda sendiri atau yang boleh Anda simpan. Pemutaran dan pemrosesan dilakukan di ponsel tanpa mengunggah media ke pengembang. Pro membuka ekspor klip MP4/GIF yang kompatibel serta pemutaran dua video dengan kontrol terpisah."
     ],
     [
       "Apakah VideoLoad gratis? Apakah Pro berlangganan?",

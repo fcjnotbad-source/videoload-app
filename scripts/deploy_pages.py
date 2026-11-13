@@ -54,7 +54,8 @@ def multipart(fields, files):
     for name, value in fields.items():
         parts.append(f'--{boundary}\r\nContent-Disposition: form-data; name="{name}"\r\n\r\n{value}\r\n'.encode())
     for name, value in files.items():
-        parts.append(f'--{boundary}\r\nContent-Disposition: form-data; name="{name}"; filename="{name}"\r\nContent-Type: text/plain\r\n\r\n'.encode() + value + b'\r\n')
+        mime = 'application/javascript' if name == '_worker.js' else 'application/json' if name == '_routes.json' else 'text/plain'
+        parts.append(f'--{boundary}\r\nContent-Disposition: form-data; name="{name}"; filename="{name}"\r\nContent-Type: {mime}\r\n\r\n'.encode() + value + b'\r\n')
     parts.append(f'--{boundary}--\r\n'.encode())
     return b''.join(parts), 'multipart/form-data; boundary=' + boundary
 
@@ -104,7 +105,7 @@ def main():
         cf.secrets.append(jwt)
         manifest, assets = {}, {}
         for file in sorted(directory.rglob('*')):
-            if not file.is_file() or file.name in {'_headers', '_redirects'}:
+            if not file.is_file() or file.name in {'_headers', '_redirects', '_worker.js', '_routes.json'}:
                 continue
             relative = file.relative_to(directory).as_posix()
             if file.is_symlink() or any(part.startswith('.') for part in Path(relative).parts):
@@ -126,7 +127,7 @@ def main():
         for start in range(0, len(batch), 10):
             cf.call('/pages/assets/upload', 'POST', batch[start:start+10], token=jwt)
         cf.call('/pages/assets/upsert-hashes', 'POST', {'hashes': list(assets)}, token=jwt)
-        special = {name: (directory / name).read_bytes() for name in ('_headers', '_redirects') if (directory / name).is_file()}
+        special = {name: (directory / name).read_bytes() for name in ('_headers', '_redirects', '_worker.js', '_routes.json') if (directory / name).is_file()}
         fields = {'manifest': json.dumps(manifest), 'branch': 'main', 'commit_hash': commit, 'commit_dirty': 'false', 'commit_message': 'Publish VideoLoad product website'}
         body, mime = multipart(fields, special)
         deployment = cf.call(endpoint + '/deployments', 'POST', body, content_type=mime)

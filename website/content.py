@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 
-BASE = 'https://app.pdos.work'
+BASE = 'https://videoload.pdos.work'
 REPO = 'https://github.com/fcjnotbad-source/videoload-app'
 PLAY = 'https://play.google.com/store/apps/details?id=com.fcj.videoload'
 APK = 'https://vdb.aivest.art/apps/jiange-kuaixia'

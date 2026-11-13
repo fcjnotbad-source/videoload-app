@@ -1,53 +1,53 @@
 {
-  "title": "VideoLoad — Reproductor de video sin anuncios, marcas y descargas",
-  "description": "Guarda videos compatibles que tengas permiso de descargar. Marca y repite momentos, organiza tu biblioteca y compara o exporta clips con VideoLoad Pro. Android; pronto en iPhone.",
-  "faq_description": "Respuestas sobre VideoLoad: funciones gratis y Pro, descargas compatibles, privacidad, límites de exportación, reproducción doble independiente y disponibilidad en iPhone.",
-  "download_description": "Obtén VideoLoad desde Google Play o la página oficial del APK para Android. Compara versiones, consulta cómo instalarlo y conoce el estado de la próxima versión para iPhone.",
+  "title": "VideoLoad — Navegador móvil para descargar videos | Descarga, mira y recorta",
+  "description": "Un navegador móvil para descargar videos: empieza gratis, sin iniciar sesión en la app. Descarga videos compatibles, míralos sin conexión y recorta con Pro. Sin subir contenido al desarrollador; reproducción doble Pro. iPhone próximamente.",
+  "faq_description": "Respuestas sobre VideoLoad, el navegador móvil para descargar videos: funciones gratis, uso sin iniciar sesión, privacidad en el dispositivo, descargas, reproducción, recorte y reproducción doble con Pro.",
+  "download_description": "Obtén VideoLoad, el navegador móvil para descargar videos. Empieza gratis sin una cuenta de la app, descarga y mira videos, con recorte y reproducción doble opcionales mediante Pro. iPhone próximamente.",
   "nav": [
     "Funciones",
     "Preguntas frecuentes",
     "GitHub",
     "Descargar la app"
   ],
-  "eyebrow": "MENOS BUSCAR. MÁS VOLVER A VER.",
-  "headline": "Conserva los momentos<br>que vale la pena <span>volver a ver.</span>",
-  "intro": "Tus videos y sus partes útiles, siempre a mano. Navega, guarda videos compatibles, marca un momento y vuelve a él cuando lo necesites.",
+  "eyebrow": "DESCARGA VIDEOS · MIRA VIDEOS · RECORTA CLIPS",
+  "headline": "Tu navegador móvil<br><span>para descargar videos.</span>",
+  "intro": "VideoLoad es un navegador móvil para descargar, mirar y recortar videos. Empieza gratis sin una cuenta de la app. La reproducción y el procesamiento ocurren en tu teléfono, sin subir contenido al desarrollador. Pro agrega exportación de clips compatibles y reproducción de dos videos.",
   "cta": "Descargar VideoLoad",
   "secondary": "Conocer la app",
-  "trust": "Sin anuncios en la app. Sin cuenta. Procesamiento en tu dispositivo.",
+  "trust": "Empieza gratis · Sin iniciar sesión en la app · Sin anuncios en la app · Sin subir contenido",
   "preview": "Vista real en iPhone · iOS próximamente · material de demostración original",
   "caption": "Elige los momentos. Conserva el original.",
   "caption_detail": "Marca varios clips y vuelve a ver solo lo que importa.",
   "platform": "Android disponible mediante APK oficial · disponibilidad en Google Play variable · iPhone próximamente",
-  "section_label": "PARA TU FORMA DE VER VIDEOS",
-  "section_title": "Menos buscar en la barra.<br>Más disfrutar lo mejor.",
+  "section_label": "UN NAVEGADOR. TRES USOS PRINCIPALES.",
+  "section_title": "Descarga. Mira.<br>Recorta los clips que quieras.",
   "features": [
     [
       "01",
-      "Guárdalo para después",
-      "El navegador integrado y el centro de descargas mantienen a mano los videos compatibles que te pertenecen o que tienes permiso de guardar."
+      "Descarga videos",
+      "Navega y guarda videos compatibles que te pertenezcan o que tengas permiso de descargar. Empieza gratis y administra las descargas en un solo lugar."
     ],
     [
       "02",
-      "Ve directo al momento",
-      "Marca el inicio y el final de varios momentos, y reproduce o repite las partes marcadas sin modificar tu video original."
+      "Mira videos",
+      "Reproduce los videos guardados en tu teléfono, ajusta la velocidad, marca momentos y repite las partes que quieras. Tu biblioteca siempre está a mano."
     ],
     [
       "03",
-      "Dos puntos de vista · Pro",
-      "Compara dos videos en una pantalla con controles independientes. Importa tus videos y exporta los clips marcados compatibles como MP4 o GIF."
+      "Recorta clips · Pro",
+      "Marca el inicio y el final, y usa Pro para exportar los clips compatibles como MP4 o GIF. El procesamiento de video ocurre en el dispositivo, sin subir contenido."
     ]
   ],
-  "gallery_title": "Tu biblioteca. Tu punto de vista.",
+  "gallery_title": "Dos videos. El doble de diversión.",
   "library": "Originales, momentos destacados y GIF, juntos.",
-  "compare": "Dos videos con controles independientes. Función Pro.",
+  "compare": "Reproduce dos videos juntos con controles independientes. Más formas de mirar y comparar. Función Pro.",
   "gallery_note": "Las capturas muestran la app para iPhone con contenido creado por el desarrollador. La apariencia en Android y algunos límites de formato son distintos.",
   "facts_label": "VIDEOLOAD DE UN VISTAZO",
   "facts_title": "Herramientas de video simples y prácticas.",
   "facts": [
     [
       "Qué es",
-      "Un navegador de video, una biblioteca local y un reproductor con marcas de clips y repetición."
+      "Un navegador móvil para descargar videos: descarga videos, míralos y recorta clips compatibles con Pro."
     ],
     [
       "Funciones gratis en tiendas",
@@ -59,7 +59,7 @@
     ],
     [
       "Privacidad",
-      "Sin cuenta de la app ni SDK de publicidad. El procesamiento de video ocurre en tu dispositivo."
+      "Sin cuenta de la app ni SDK de publicidad. Los videos se reproducen y procesan en tu teléfono; no es necesario subir contenido al desarrollador."
     ],
     [
       "Plataformas",
@@ -70,7 +70,7 @@
       "Información del producto y comentarios públicos en GitHub. El código fuente de la app sigue siendo privado."
     ]
   ],
-  "download_title": "Empieza con un video.<br>Hazlo tuyo.",
+  "download_title": "Descarga. Mira.<br>Recorta en tu teléfono.",
   "download_intro": "Usa un enlace de descarga oficial. La disponibilidad en tiendas depende de la región y del estado de publicación.",
   "store": [
     [
@@ -104,7 +104,7 @@
   "github_cta": "Ver en GitHub",
   "feedback_note": "Los comentarios en GitHub son públicos. No incluyas contraseñas, recibos ni contenido privado.",
   "limits": "Descarga solo contenido que te pertenezca o que tengas permiso de guardar. La compatibilidad varía; no se eluden DRM, barreras de pago ni controles de acceso. Los sitios web pueden mostrar sus propios anuncios. La reproducción doble no se sincroniza cuadro por cuadro. En iOS, los paquetes HLS sin conexión se reproducen en la app, pero no se exportan; forzar el cierre detiene las transferencias.",
-  "footer": "VideoLoad · Conserva los momentos que vale la pena volver a ver.",
+  "footer": "VideoLoad · Navegador móvil para descargar videos",
   "updated": "Información del producto actualizada el 13 de noviembre de 2026.",
   "privacy": "Privacidad",
   "downloads": "Descargas",
@@ -114,7 +114,7 @@
   "faq": [
     [
       "¿Qué es VideoLoad?",
-      "VideoLoad combina un navegador web, una biblioteca local de videos y un reproductor con herramientas para clips. Guarda videos compatibles que te pertenezcan o que tengas permiso de descargar, marca y repite momentos seleccionados, y compara videos o exporta clips compatibles con Pro."
+      "VideoLoad es un navegador móvil centrado en descargar videos, mirar videos y recortar clips. Empieza gratis sin una cuenta de la app. Descarga solo material compatible que te pertenezca o que tengas permiso de guardar. La reproducción y el procesamiento ocurren en tu teléfono sin subir contenido al desarrollador. Pro desbloquea exportación de clips MP4/GIF compatibles y reproducción de dos videos con controles independientes."
     ],
     [
       "¿VideoLoad es gratis? ¿Pro es una suscripción?",

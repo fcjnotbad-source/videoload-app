@@ -1,53 +1,53 @@
 {
-  "title": "VideoLoad — Ad-free video player, clip marks & downloads",
-  "description": "Save supported, authorized videos. Mark and loop moments, organize your library, and compare or export clips with VideoLoad Pro. Android; iPhone coming soon.",
-  "faq_description": "VideoLoad questions answered: free vs Pro, supported downloads, privacy, clip export limits, independent dual playback and iPhone availability.",
-  "download_description": "Get VideoLoad from the official Google Play or Android APK entry. Compare editions, read installation steps and check the coming-soon iPhone version.",
+  "title": "VideoLoad — Mobile Video Download Browser | Download, Watch & Trim",
+  "description": "A mobile video download browser, free to start with no app login. Download supported videos, watch offline and trim clips with Pro. No developer media upload; Pro dual playback. iPhone coming soon.",
+  "faq_description": "Answers about VideoLoad, the mobile video download browser: free features, no-login use, on-device privacy, video downloads, playback, Pro trimming and dual playback.",
+  "download_description": "Get VideoLoad, a mobile video download browser. Start free without an app account; download and watch videos, with optional Pro trimming and dual playback. iPhone coming soon.",
   "nav": [
     "Features",
     "FAQ",
     "GitHub",
     "Get the app"
   ],
-  "eyebrow": "LESS SEARCHING. MORE REPLAYING.",
-  "headline": "Keep the moments<br>worth <span>replaying.</span>",
-  "intro": "Your videos, with the useful parts close at hand. Browse, save supported videos, mark a moment and come back to it whenever you need.",
+  "eyebrow": "DOWNLOAD VIDEOS · WATCH VIDEOS · TRIM CLIPS",
+  "headline": "Mobile video<br><span>download browser.</span>",
+  "intro": "VideoLoad is a mobile video download browser for downloading, watching and trimming videos. Start free without an app account. Playback and processing happen on your phone, without uploading media to the developer. Pro adds compatible clip export and two-video playback.",
   "cta": "Get VideoLoad",
   "secondary": "Explore the app",
-  "trust": "No in-app ads. No app account. On-device processing.",
+  "trust": "Free to start · No app login · No in-app ads · No media upload",
   "preview": "Real iPhone preview · iOS coming soon · original demo media",
   "caption": "Pick the moments. Keep the original.",
   "caption_detail": "Mark more than one clip and replay just what matters.",
   "platform": "Android available via official APK · Google Play rollout varies · iPhone coming soon",
-  "section_label": "MADE FOR THE WAY YOU WATCH",
-  "section_title": "Less scrubbing.<br>More of the good parts.",
+  "section_label": "ONE BROWSER. THREE CORE USES.",
+  "section_title": "Download. Watch.<br>Trim the clips you want.",
   "features": [
     [
       "01",
-      "Save it for later",
-      "A built-in browser and download center keep supported videos you own or are allowed to save within reach."
+      "Download videos",
+      "Browse and save supported videos you own or are allowed to download. Start free and manage downloads in one place."
     ],
     [
       "02",
-      "Go straight to the moment",
-      "Mark start and end points, select multiple moments, and replay or loop the marked parts without changing your original video."
+      "Watch videos",
+      "Play saved videos on your phone, adjust speed, mark moments and loop the parts you want. Your library stays close at hand."
     ],
     [
       "03",
-      "See both sides · Pro",
-      "Compare two videos on one screen with independent controls. Import your own videos and export compatible marked clips as MP4 or GIF."
+      "Trim clips · Pro",
+      "Mark the start and end points, then use Pro to export compatible clips as MP4 or GIF. Video processing happens on-device, without a media upload."
     ]
   ],
-  "gallery_title": "Your library. Your point of view.",
+  "gallery_title": "Two videos. Twice the fun.",
   "library": "Keep originals, highlights and GIFs together.",
-  "compare": "Two videos, independently controlled. Pro feature.",
+  "compare": "Play two videos together with independent controls. More ways to watch and compare. Pro feature.",
   "gallery_note": "Screenshots show the iPhone app with developer-created content. Android appearance and some format limits differ.",
   "facts_label": "VIDEOLOAD, AT A GLANCE",
   "facts_title": "A straightforward video toolkit.",
   "facts": [
     [
       "What it is",
-      "A video browser, local library and player with clip marking and looping."
+      "A mobile video download browser: download videos, watch videos and trim compatible clips with Pro."
     ],
     [
       "Free store features",
@@ -59,7 +59,7 @@
     ],
     [
       "Privacy",
-      "No app account or advertising SDK. Video processing happens on your device."
+      "No app account or advertising SDK. Videos play and process on your phone; no media upload to the developer is required."
     ],
     [
       "Platforms",
@@ -70,7 +70,7 @@
       "Product information and public feedback on GitHub. App source remains private."
     ]
   ],
-  "download_title": "Start with a video.<br>Make it your own.",
+  "download_title": "Download. Watch.<br>Trim on your phone.",
   "download_intro": "Use an official download entry. Store availability depends on region and release status.",
   "store": [
     [
@@ -104,7 +104,7 @@
   "github_cta": "Explore on GitHub",
   "feedback_note": "GitHub feedback is public. Keep passwords, receipts and private media out of reports.",
   "limits": "Download only content you own or may save. Compatibility varies; no DRM, paywall or access-control bypass. Websites may display their own ads. Dual playback is not frame-synchronized. On iOS, HLS offline packages play in-app but do not export; force-quitting stops transfers.",
-  "footer": "VideoLoad · Keep the moments worth replaying.",
+  "footer": "VideoLoad · Mobile video download browser",
   "updated": "Product information updated November 13, 2026.",
   "privacy": "Privacy",
   "downloads": "Downloads",
@@ -114,7 +114,7 @@
   "faq": [
     [
       "What is VideoLoad?",
-      "VideoLoad combines a web browser, a local video library and a player with clip tools. Save supported videos you own or are authorized to download, mark and loop selected moments, and compare videos or export compatible clips with Pro."
+      "VideoLoad is a mobile video download browser built around downloading videos, watching videos and trimming clips. Start free without an app account. Download only supported material you own or may save. Playback and processing happen on your phone without uploading media to the developer. Pro unlocks compatible MP4/GIF clip export and independently controlled two-video playback."
     ],
     [
       "Is VideoLoad free? Is Pro a subscription?",

@@ -26,6 +26,8 @@ def build():
             shutil.rmtree(target)
     shutil.copytree(ROOT / 'assets', OUT / 'assets', ignore=shutil.ignore_patterns('*.md'))
     shutil.copyfile(ROOT / 'website/style.css', OUT / 'style.css')
+    write('_worker.js', (ROOT / 'website/redirect_worker.js').read_text().replace('__CANONICAL_ORIGIN__', BASE))
+    write('_routes.json', json.dumps({'version': 1, 'include': ['/*'], 'exclude': ['/.well-known/acme-challenge/*']}) + '\n')
     pages = []
     for lang, c in COPY.items():
         for route, render in [('', home), ('faq/', faq), ('download/', downloads)]:
@@ -42,6 +44,7 @@ def build():
     facts = {
         'name': 'VideoLoad', 'officialWebsite': BASE + '/', 'updated': UPDATED,
         'description': {c['lang']: c['description'] for c in COPY.values()},
+        'positioning': {c['lang']: {'category': c['headline'].replace('<br>', ' ').replace('<span>', '').replace('</span>', ''), 'coreUses': [row[1] for row in c['features']], 'highlights': c['trust']} for c in COPY.values()},
         'languages': [{'language': c['lang'], 'name': c['native_name'], 'url': BASE + c['prefix']} for c in COPY.values()],
         'localizedFacts': {c['lang']: dict(c['facts']) for c in COPY.values()},
         'platforms': {
@@ -56,7 +59,7 @@ def build():
     write('product.json', json.dumps(facts, ensure_ascii=False, indent=2) + '\n')
     summary = f'''# VideoLoad
 
-> Official product information for VideoLoad: a video browser, local library and player with clip marking and looping. / VideoLoad 官方产品资料：网页浏览、本地视频库、片段标注与循环播放器。
+> VideoLoad is a mobile video download browser: download videos, watch videos and trim clips. Free to start, no app login or in-app ads; video processing happens on-device without uploading media to the developer. Pro adds compatible clip export and independently controlled two-video playback. / VideoLoad 手机视频下载浏览器：下载视频、观看视频、视频截取。免费开始、无需登录、应用内无广告；视频在本机处理，无需上传给开发者，保护隐私。Pro 还有视频截取、双屏播放等乐趣。
 
 Product information updated {UPDATED}. This is a product website, not the application's source repository.
 

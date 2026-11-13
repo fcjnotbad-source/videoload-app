@@ -111,6 +111,8 @@ def check():
     assert 'Allow: /' in robots and 'Disallow: /' not in robots and BASE + '/sitemap.xml' in robots
     facts = json.loads((OUT / 'product.json').read_text())
     assert facts['platforms']['ios']['appStoreURL'] is None
+    assert facts['officialWebsite'] == BASE + '/'
+    assert set(facts['positioning']) == {c['lang'] for c in COPY.values()}
     assert facts['community'] == REPO
     assert facts['contactEmail'] == CONTACT_EMAIL
     assert len(facts['languages']) == len(LOCALES)
@@ -119,9 +121,13 @@ def check():
     for path, route_doc in documents.items():
         assert BASE + path in (OUT / 'llms.txt').read_text(), path
     assert 'noindex' in (OUT / '404.html').read_text()
+    routing = json.loads((OUT / '_routes.json').read_text())
+    assert '/.well-known/acme-challenge/*' in routing['exclude']
+    assert '__CANONICAL_ORIGIN__' not in (OUT / '_worker.js').read_text()
+    assert BASE in (OUT / '_worker.js').read_text()
     for p in OUT.rglob('*'):
         if p.is_file():
-            assert p.suffix in {'.html', '.css', '.json', '.xml', '.txt', '.png', ''}, p
+            assert p.suffix in {'.html', '.css', '.json', '.xml', '.txt', '.png', ''} or p.name == '_worker.js', p
             if p.suffix != '.png':
                 text = p.read_text()
                 assert 'cfat_' not in text and 'PRIVATE KEY' not in text and '/Users/' not in text, p

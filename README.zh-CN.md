@@ -4,29 +4,31 @@
 
 <h1 align="center">VideoLoad</h1>
 
-<p align="center"><strong>把值得回看的片刻，留在手边。</strong></p>
-<p align="center">保存受支持的视频，标记精彩片段，随时播放、循环与双屏对照。</p>
-<p align="center">应用内无广告 · 无需注册账号 · 视频在本机处理</p>
+<p align="center"><strong>功能强大的手机视频下载浏览器</strong></p>
+<p align="center">下载视频 · 观看视频 · 视频截取</p>
+<p align="center">免费开始 · 无需登录 · 应用内无广告 · 视频无需上传给开发者 · 本机处理，保护隐私</p>
 
 <p align="center">
-  <a href="https://app.pdos.work/zh/">产品官网</a> ·
+  <a href="https://videoload.pdos.work/zh/">产品官网</a> ·
   <a href="https://play.google.com/store/apps/details?id=com.fcj.videoload">Google Play</a> ·
   <a href="docs/downloads.md#简体中文">下载入口</a> ·
   <a href="https://github.com/fcjnotbad-source/videoload-app/issues/new/choose">反馈建议</a> ·
   <a href="README.md">English</a>
 </p>
 
-[产品官网](https://app.pdos.work/zh/)现已覆盖应用内全部 14 种语言，产品介绍、下载说明和常见问答均已本地化，可通过语言菜单切换。
+[产品官网](https://videoload.pdos.work/zh/)现已覆盖应用内全部 14 种语言，产品介绍、下载说明和常见问答均已本地化，可通过语言菜单切换。
 
-## 从保存到回看，一个应用就够
+## 手机视频下载浏览器：下载视频、观看视频、视频截取
 
-VideoLoad 将网页浏览、本地视频整理和片段工具放在一起，支持 Android 与 iPhone。保存自己拥有或已获授权下载的受支持视频，再把常看的内容整理起来。
+VideoLoad 是一款**功能强大的手机视频下载浏览器**，围绕**下载视频、观看视频、视频截取**三大用途设计。免费开始，无需登录：保存自己拥有或已获授权下载的受支持视频，在手机上直接观看，再通过 Pro 将兼容来源的片段导出为 MP4 或 GIF。
 
-- **按自己的节奏看。** 调整倍速，快速回到需要的片刻。
-- **标注与循环。** 标记多段内容，连续播放或循环回看，保留原视频。
-- **整理视频库。** 搜索、重命名、收藏，让内容更容易找到。
-- **双屏对照 · Pro。** 同屏打开两个视频，独立控制播放。
-- **导入与导出 · Pro。** 导入本地视频，将兼容来源的标注片段导出为 MP4 或 GIF。
+**视频在本机播放和处理，无需上传给开发者，保护隐私。** 浏览网页与下载仍会连接你选择的网站和媒体服务器，相关网站有自己的隐私政策。
+
+- **下载视频。** 通过内置浏览器保存受支持的授权视频，下载任务集中管理。
+- **观看视频。** 直接播放已下载的视频，调整倍速、标注片段、循环回看。
+- **视频截取 · Pro。** 标记起点和终点，将兼容来源的片段导出为 MP4 或 GIF，全程在设备上处理。
+- **双屏播放，多一份乐趣 · Pro。** 两个视频同屏播放，各自独立控制，边看边对照。
+- **更多实用功能。** 搜索、重命名、收藏视频；Pro 还可导入本地视频。
 
 ## 看看实际界面
 
@@ -38,7 +40,7 @@ VideoLoad 将网页浏览、本地视频整理和片段工具放在一起，支�
 <table>
   <tr>
     <th align="center">自己的视频，集中整理</th>
-    <th align="center">两个画面，同屏对照 · Pro</th>
+    <th align="center">双屏播放，多一点乐趣 · Pro</th>
   </tr>
   <tr>
     <td align="center"><img src="assets/screenshots/library.png" width="280" alt="视频库中的原创视频、精选片段和 GIF"></td>

@@ -1,6 +1,6 @@
 # VideoLoad product website
 
-Official canonical domain: **https://app.pdos.work/**. Chinese: **https://app.pdos.work/zh/**.
+Official canonical domain: **https://videoload.pdos.work/**. Chinese: **https://videoload.pdos.work/zh/**.
 
 This is a public marketing website. It contains no VideoLoad application source, backend, signing material or access credentials. It is hosted on the owner's Cloudflare Pages account, not Sites hosting. R2 storage is not required for this static site.
 
@@ -60,7 +60,7 @@ The site serves substantive HTML without JavaScript, uses page-specific canonica
 Set `CLOUDFLARE_ACCOUNT_ID` in the shell, then run:
 
 ```sh
-python3 scripts/deploy_pages.py --project videoload-app --directory dist --domain app.pdos.work
+python3 scripts/deploy_pages.py --project videoload-app --directory dist --domain videoload.pdos.work
 ```
 
 The script reads the API token through a hidden prompt or `CLOUDFLARE_API_TOKEN`. Use a token scoped to the account with Pages Write permission. Do not put tokens in arguments, files, Git, HTML or deployment output. Account and token placeholders are documented in `.env.example`; the scripts do not automatically read `.env` files. The deployment script does not change external DNS and never modifies an existing project's build configuration.
@@ -73,8 +73,12 @@ The Pages custom-domain association must exist before using a CNAME. At the DNS 
 
 | Type | Host/name | Target | TTL |
 | --- | --- | --- | --- |
-| CNAME | `app` | `videoload-app.pages.dev` | Auto or 300 seconds |
+| CNAME | `videoload` | `videoload-app.pages.dev` | Auto or 300 seconds |
 
-Do not include `https://` or a path in the target. Use a DNS record, not URL forwarding. There must not be a conflicting A/AAAA/CNAME record for `app`. Leave the domain's nameservers unchanged. Once DNS propagates, Cloudflare validates the hostname and issues HTTPS. Until then the custom domain is pending, while the `pages.dev` address is usable.
+Do not include `https://` or a path in the target. Use a DNS record, not URL forwarding. There must not be a conflicting A/AAAA/CNAME record for `videoload`. Leave the domain's nameservers unchanged. Once DNS propagates, Cloudflare validates the hostname and issues HTTPS. Until then the custom domain is pending, while the `pages.dev` address is usable.
 
 If certificate issuance reports a CAA error, review existing CAA restrictions before changing them; see [Cloudflare custom domain documentation](https://developers.cloudflare.com/pages/configuration/custom-domains/).
+
+## Canonical domain migration
+
+The canonical host is `videoload.pdos.work`. Keep the old `app.pdos.work` Pages association and DNS record so existing links can permanently redirect. `redirect_worker.js` redirects the two legacy public hosts (`app.pdos.work` and the production `videoload-app.pages.dev` host) to the canonical host, preserving path and query string. It forwards all other requests to Pages static assets; preview deployment hosts keep working. ACME validation paths are excluded from Worker routing to preserve certificate renewal. HTML content remains static and needs no browser JavaScript.

@@ -4,29 +4,31 @@
 
 <h1 align="center">VideoLoad</h1>
 
-<p align="center"><strong>Keep the moments worth replaying.</strong></p>
-<p align="center">Save supported videos. Mark your favorite moments. Watch, loop and compare.</p>
-<p align="center">No in-app ads · No app account · On-device video processing</p>
+<p align="center"><strong>A powerful mobile video download browser.</strong></p>
+<p align="center">Download videos. Watch videos. Trim clips.</p>
+<p align="center">Free to start · No app login · No in-app ads · On-device processing · No media upload to the developer</p>
 
 <p align="center">
-  <a href="https://app.pdos.work/">Official website</a> ·
+  <a href="https://videoload.pdos.work/">Official website</a> ·
   <a href="https://play.google.com/store/apps/details?id=com.fcj.videoload">Google Play</a> ·
   <a href="docs/downloads.md">All downloads</a> ·
   <a href="https://github.com/fcjnotbad-source/videoload-app/issues/new/choose">Feedback</a> ·
   <a href="README.zh-CN.md">简体中文</a>
 </p>
 
-The [official website](https://app.pdos.work/) supports all 14 app languages, with complete product, download and FAQ pages. Use the language menu to switch.
+The [official website](https://videoload.pdos.work/) supports all 14 app languages, with complete product, download and FAQ pages. Use the language menu to switch.
 
-## Your videos, ready to revisit
+## Download videos. Watch videos. Trim clips.
 
-VideoLoad brings a browser, a local video library and clip tools together on Android and iPhone. Save supported videos you own or have permission to download, then keep the useful parts close at hand.
+VideoLoad is a **mobile video download browser** built around three core uses: **downloading videos, watching videos and trimming clips**. Start free without an app account. Download supported videos you own or are allowed to save, play them on your phone, and use Pro to export compatible clips as MP4 or GIF.
 
-- **Watch at your pace.** Adjust playback speed and return to the moments you need.
-- **Mark and loop.** Select multiple moments and replay your marked clips without changing the original file.
-- **Keep things organized.** Search, rename and favorite videos in your library.
-- **Compare with Pro.** Open two videos together with independent playback controls.
-- **Create with Pro.** Import local videos and export marked moments as MP4 or GIF from compatible sources.
+**Your videos stay with you.** Playback and video processing happen on-device, without uploading media to the developer. Browsing and downloads still contact your chosen websites and media hosts, which have their own privacy policies.
+
+- **Download videos.** Save supported, authorized videos from the built-in browser and manage your downloads in one place.
+- **Watch videos.** Play downloaded videos, adjust speed, mark moments and loop the parts you want.
+- **Trim clips · Pro.** Select start and end points and export compatible clips as MP4 or GIF, processed on your device.
+- **Double the fun · Pro.** Play two videos on one screen with independent controls for more ways to watch and compare.
+- **Keep your library organized.** Search, rename and favorite your videos. Pro also adds local video import.
 
 ## A look inside
 
@@ -38,7 +40,7 @@ VideoLoad brings a browser, a local video library and clip tools together on And
 <table>
   <tr>
     <th align="center">A library that stays with you</th>
-    <th align="center">Two perspectives, one screen · Pro</th>
+    <th align="center">Two videos, twice the fun · Pro</th>
   </tr>
   <tr>
     <td align="center"><img src="assets/screenshots/library.png" width="280" alt="VideoLoad iOS library with original video, exported highlights and a GIF"></td>
