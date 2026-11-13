@@ -1,6 +1,6 @@
 {
   "title": "VideoLoad — Browser Pengunduh Video untuk Ponsel | Unduh, Tonton & Potong",
-  "description": "Browser pengunduh video untuk ponsel yang bisa dimulai gratis tanpa login aplikasi. Unduh video yang didukung, tonton offline, dan potong klip dengan Pro. Tanpa unggah media ke pengembang; Pro mendukung pemutaran dua video. iPhone segera hadir.",
+  "description": "Browser pengunduh video di ponsel. Versi situs resmi gratis dengan unduhan, pemutaran, ekspor klip, dan pemutaran dua video. Tanpa akun atau unggahan media ke pengembang.",
   "faq_description": "Jawaban tentang VideoLoad, browser pengunduh video untuk ponsel: fitur gratis, penggunaan tanpa login, privasi di perangkat, unduhan, pemutaran, pemotongan klip dan pemutaran dua video dengan Pro.",
   "download_description": "Dapatkan VideoLoad, browser pengunduh video untuk ponsel. Mulai gratis tanpa akun aplikasi; unduh dan tonton video, dengan Pro opsional untuk memotong klip dan memutar dua video. iPhone segera hadir.",
   "nav": [
@@ -11,10 +11,10 @@
   ],
   "eyebrow": "UNDUH VIDEO · TONTON VIDEO · POTONG KLIP",
   "headline": "Browser pengunduh video<br><span>untuk ponsel.</span>",
-  "intro": "VideoLoad adalah browser pengunduh video untuk ponsel yang memadukan unduhan, pemutaran, dan pemotongan video. Mulai gratis tanpa akun aplikasi. Pemutaran dan pemrosesan dilakukan di ponsel, tanpa mengunggah media ke pengembang. Pro menambahkan ekspor klip yang kompatibel dan pemutaran dua video untuk lebih banyak keseruan.",
+  "intro": "VideoLoad adalah browser pengunduh video di ponsel untuk mengunduh, menonton, dan memotong video. Versi situs resmi gratis, dengan ekspor klip dan pemutaran dua video yang sudah terbuka. Tanpa akun aplikasi, tanpa iklan di aplikasi, dan tanpa mengunggah media ke pengembang: pemutaran serta pemrosesan dilakukan di ponsel Anda.",
   "cta": "Dapatkan VideoLoad",
   "secondary": "Jelajahi aplikasi",
-  "trust": "Mulai gratis · Tanpa login aplikasi · Tanpa iklan dalam aplikasi · Tanpa unggah media",
+  "trust": "Unduhan resmi gratis · Tanpa akun · Tanpa iklan aplikasi · Tanpa unggahan media",
   "preview": "Tampilan iPhone asli · iOS segera hadir · media demo buatan sendiri",
   "caption": "Pilih momennya. Pertahankan video aslinya.",
   "caption_detail": "Tandai beberapa klip dan putar ulang hanya bagian yang penting.",
@@ -34,28 +34,28 @@
     ],
     [
       "03",
-      "Potong klip · Pro",
-      "Tandai titik awal dan akhir, lalu gunakan Pro untuk mengekspor klip yang kompatibel ke MP4 atau GIF. Video diproses di perangkat, tanpa mengunggah media."
+      "Potong klip",
+      "Tandai titik awal dan akhir, lalu ekspor klip yang kompatibel sebagai MP4 atau GIF. Video diproses di perangkat tanpa mengunggah media."
     ]
   ],
   "gallery_title": "Dua video. Lebih banyak keseruan.",
   "library": "Satukan video asli, sorotan, dan GIF dalam satu koleksi.",
-  "compare": "Putar dua video bersamaan dengan kontrol terpisah. Lebih banyak cara untuk menonton dan membandingkan. Fitur Pro.",
+  "compare": "Dua video dalam satu layar, masing-masing dengan kontrol sendiri. Lebih banyak cara untuk menonton dan membandingkan.",
   "gallery_note": "Tangkapan layar menampilkan aplikasi iPhone dengan konten buatan pengembang. Tampilan Android dan beberapa batas format berbeda.",
   "facts_label": "SEKILAS TENTANG VIDEOLOAD",
   "facts_title": "Peralatan video yang praktis.",
   "facts": [
     [
       "Tentang aplikasi",
-      "Browser pengunduh video untuk ponsel: unduh dan tonton video, lalu potong klip yang kompatibel dengan Pro."
+      "VideoLoad adalah browser pengunduh video di ponsel untuk mengunduh, menonton, dan memotong video."
     ],
     [
-      "Fitur gratis versi toko",
-      "Penjelajahan web, hingga 2 unduhan yang belum selesai, pemutaran, penanda klip, dan pemutaran berulang."
+      "Fitur dasar gratis",
+      "Penjelajahan web, unduhan dan pemutaran video, penanda klip, serta pemutaran berulang."
     ],
     [
-      "Pro opsional",
-      "Pembelian sekali: impor lokal, perbandingan dua video, ekspor MP4/GIF yang kompatibel, dan penghapusan batas jumlah tugas."
+      "Alat kreatif sudah terbuka",
+      "Versi situs resmi yang gratis membuka ekspor klip MP4/GIF yang kompatibel, impor video lokal, dan pemutaran dua video dengan kontrol terpisah."
     ],
     [
       "Privasi",
@@ -67,11 +67,11 @@
     ],
     [
       "Komunitas resmi",
-      "Informasi produk dan masukan publik tersedia di GitHub. Kode sumber aplikasi tetap privat."
+      "Informasi produk dan masukan publik tersedia di GitHub."
     ]
   ],
   "download_title": "Unduh. Tonton.<br>Potong langsung di ponsel.",
-  "download_intro": "Gunakan tautan unduhan resmi. Ketersediaan di toko bergantung pada wilayah dan status rilis.",
+  "download_intro": "Versi situs resmi gratis, dengan pemotongan klip dan pemutaran dua video yang sudah terbuka. Fitur versi toko dapat berbeda.",
   "store": [
     [
       "Android",
@@ -159,7 +159,7 @@
   "language_label": "Bahasa",
   "alt_player": "Pemutar VideoLoad di iPhone menampilkan dua klip yang ditandai; iOS segera hadir",
   "alt_library": "Koleksi video VideoLoad di iPhone dengan video asli, sorotan, dan GIF",
-  "alt_compare": "VideoLoad Pro membandingkan dua video dengan kontrol terpisah",
+  "alt_compare": "VideoLoad — Dua video dalam satu layar, masing-masing dengan kontrol sendiri. Lebih banyak cara untuk menonton dan membandingkan.",
   "machine_summary_label": "Ringkasan produk dalam teks biasa",
   "product_facts_label": "Fakta produk",
   "demo_link": "Buka halaman media demo buatan sendiri",
@@ -198,5 +198,8 @@
         "Di browser aplikasi, buka halaman media demo buatan kami lalu unduh MP4 menggunakan tombol unduh mengambang. Buka video yang sudah selesai diunduh, tandai detik 1–3 dan 9–11, lalu coba pemutaran bagian yang ditandai saja. Kontrol pengulangan berbeda di tiap platform. Pro menambahkan ekspor yang kompatibel dan perbandingan dua video."
       ]
     }
-  ]
+  ],
+  "promo_title": "Lihat VideoLoad beraksi.",
+  "promo_note": "Narasi dan subtitle bahasa Inggris. Unduh, tonton, dan potong video; versi situs resmi yang gratis juga menyediakan pemutaran dua video.",
+  "promo_transcript_label": "Baca naskah narasi bahasa Inggris"
 }

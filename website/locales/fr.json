@@ -1,6 +1,6 @@
 {
   "title": "VideoLoad — Navigateur mobile de téléchargement vidéo | Télécharger, regarder et découper",
-  "description": "Un navigateur mobile pour télécharger des vidéos. Commencez gratuitement, sans connexion à un compte d’app. Téléchargez des vidéos compatibles, regardez-les hors ligne et découpez avec Pro. Aucun envoi au développeur ; double lecture Pro. iPhone bientôt disponible.",
+  "description": "Un navigateur mobile de téléchargement vidéo. La version gratuite du site officiel permet de télécharger, regarder, découper et lire deux vidéos. Sans compte ni envoi de médias au développeur.",
   "faq_description": "Les réponses sur VideoLoad, le navigateur mobile de téléchargement vidéo : fonctions gratuites, utilisation sans connexion, confidentialité sur l’appareil, téléchargements, lecture, découpe et double lecture avec Pro.",
   "download_description": "Téléchargez VideoLoad, le navigateur mobile de téléchargement vidéo. Commencez gratuitement sans compte d’app, téléchargez et regardez des vidéos. Découpe et double lecture en option avec Pro. iPhone bientôt disponible.",
   "nav": [
@@ -11,10 +11,10 @@
   ],
   "eyebrow": "TÉLÉCHARGER DES VIDÉOS · REGARDER · DÉCOUPER",
   "headline": "Votre navigateur mobile<br><span>pour télécharger des vidéos.</span>",
-  "intro": "VideoLoad est un navigateur mobile pour télécharger, regarder et découper des vidéos. Commencez gratuitement sans compte d’app. La lecture et le traitement se font sur votre téléphone, sans envoyer de médias au développeur. Pro ajoute l’export d’extraits compatibles et la lecture de deux vidéos.",
+  "intro": "VideoLoad est un navigateur mobile pour télécharger, regarder et découper des vidéos. La version du site officiel est gratuite, avec export de clips et lecture de deux vidéos débloqués. Aucun compte, aucune publicité dans l’app et aucun envoi de médias au développeur : lecture et traitement se font sur votre téléphone.",
   "cta": "Télécharger VideoLoad",
   "secondary": "Découvrir l’app",
-  "trust": "Démarrage gratuit · Sans connexion à un compte d’app · Sans publicité dans l’app · Sans envoi de médias",
+  "trust": "Téléchargement officiel gratuit · Sans compte · Sans publicité dans l’app · Aucun envoi de médias",
   "preview": "Véritable aperçu sur iPhone · iOS bientôt disponible · démo originale",
   "caption": "Choisissez les moments. Gardez l’original.",
   "caption_detail": "Marquez plusieurs extraits pour revoir uniquement ce qui compte.",
@@ -34,28 +34,28 @@
     ],
     [
       "03",
-      "Découper des extraits · Pro",
-      "Marquez le début et la fin, puis utilisez Pro pour exporter des extraits compatibles en MP4 ou GIF. Le traitement vidéo se fait sur l’appareil, sans envoi de médias."
+      "Découper des clips",
+      "Marquez le début et la fin, puis exportez les clips compatibles en MP4 ou GIF. Le traitement se fait sur votre appareil, sans envoyer vos médias."
     ]
   ],
   "gallery_title": "Deux vidéos. Deux fois plus de plaisir.",
   "library": "Originaux, meilleurs passages et GIF réunis.",
-  "compare": "Lisez deux vidéos ensemble avec des commandes indépendantes. Plus de façons de regarder et de comparer. Fonction Pro.",
+  "compare": "Deux vidéos sur un seul écran, chacune avec ses propres commandes. De nouvelles façons de regarder et de comparer.",
   "gallery_note": "Les captures montrent l’app iPhone avec du contenu créé par le développeur. L’interface Android et certaines limites de formats diffèrent.",
   "facts_label": "VIDEOLOAD EN BREF",
   "facts_title": "Des outils vidéo simples et pratiques.",
   "facts": [
     [
       "Le principe",
-      "Un navigateur mobile de téléchargement vidéo : télécharger et regarder des vidéos, puis découper des extraits compatibles avec Pro."
+      "VideoLoad est un navigateur mobile pour télécharger, regarder et découper des vidéos."
     ],
     [
-      "Fonctions gratuites en boutique",
-      "Navigation, jusqu’à 2 téléchargements inachevés, lecture, repères et boucles."
+      "Fonctions essentielles gratuites",
+      "Navigation, téléchargement et lecture de vidéos, repères de clips et boucles."
     ],
     [
-      "Pro en option",
-      "Achat unique : import local, comparaison de deux vidéos, export MP4/GIF compatible et suppression de la limite de tâches."
+      "Outils créatifs débloqués",
+      "La version gratuite du site officiel débloque l’export de clips compatibles en MP4/GIF, l’import local et la lecture indépendante de deux vidéos."
     ],
     [
       "Confidentialité",
@@ -67,11 +67,11 @@
     ],
     [
       "Communauté officielle",
-      "Informations produit et retours publics sur GitHub. Le code source de l’app reste privé."
+      "Informations produit et retours publics sur GitHub."
     ]
   ],
   "download_title": "Télécharger. Regarder.<br>Découper sur votre téléphone.",
-  "download_intro": "Utilisez un lien de téléchargement officiel. La disponibilité en boutique dépend de la région et de l’état de publication.",
+  "download_intro": "La version du site officiel est gratuite, avec découpage et double lecture débloqués. Les fonctions des versions en boutique peuvent différer.",
   "store": [
     [
       "Android",
@@ -159,7 +159,7 @@
   "language_label": "Langue",
   "alt_player": "Lecteur VideoLoad sur iPhone avec deux extraits marqués ; iOS bientôt disponible",
   "alt_library": "Vidéothèque VideoLoad sur iPhone avec originaux, meilleurs passages et un GIF",
-  "alt_compare": "VideoLoad Pro comparant deux vidéos avec des commandes indépendantes",
+  "alt_compare": "VideoLoad — Deux vidéos sur un seul écran, chacune avec ses propres commandes. De nouvelles façons de regarder et de comparer.",
   "machine_summary_label": "Résumé produit en texte brut",
   "product_facts_label": "Informations produit",
   "demo_link": "Ouvrir la page de démo originale",
@@ -198,5 +198,8 @@
         "Dans le navigateur de l’app, ouvrez notre page de démo originale et téléchargez le MP4 avec le bouton flottant. Ouvrez la vidéo terminée, marquez les passages de 1 à 3 secondes et de 9 à 11 secondes, puis essayez la lecture des seuls passages marqués. Les commandes de boucle varient selon la plateforme. Pro ajoute l’export compatible et la comparaison de deux vidéos."
       ]
     }
-  ]
+  ],
+  "promo_title": "Découvrez VideoLoad en action.",
+  "promo_note": "Narration et sous-titres en anglais. Téléchargez, regardez et découpez des vidéos ; la version gratuite du site officiel offre aussi la double lecture.",
+  "promo_transcript_label": "Lire le texte de la narration en anglais"
 }

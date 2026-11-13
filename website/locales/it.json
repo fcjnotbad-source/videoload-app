@@ -1,6 +1,6 @@
 {
   "title": "VideoLoad — Browser mobile per scaricare video | Scarica, guarda e ritaglia",
-  "description": "Un browser mobile per scaricare video: inizia gratis senza accedere a un account dell’app. Scarica video compatibili, guardali offline e ritaglia con Pro. Nessun invio allo sviluppatore; doppia riproduzione Pro. iPhone in arrivo.",
+  "description": "Un browser mobile per scaricare video. La versione gratuita del sito ufficiale offre download, riproduzione, esportazione dei segmenti e due video insieme. Senza account o invio di contenuti allo sviluppatore.",
   "faq_description": "Le risposte su VideoLoad, il browser mobile per scaricare video: funzioni gratuite, uso senza accesso, privacy sul dispositivo, download, riproduzione, ritaglio e doppia riproduzione con Pro.",
   "download_description": "Scarica VideoLoad, il browser mobile per scaricare video. Inizia gratis senza un account dell’app: scarica e guarda video, con ritaglio e doppia riproduzione facoltativi tramite Pro. iPhone in arrivo.",
   "nav": [
@@ -11,10 +11,10 @@
   ],
   "eyebrow": "SCARICA VIDEO · GUARDA VIDEO · RITAGLIA CLIP",
   "headline": "Il tuo browser mobile<br><span>per scaricare video.</span>",
-  "intro": "VideoLoad è un browser mobile per scaricare, guardare e ritagliare video. Inizia gratis senza un account dell’app. La riproduzione e l’elaborazione avvengono sul telefono, senza inviare contenuti allo sviluppatore. Pro aggiunge l’esportazione di clip compatibili e la riproduzione di due video.",
+  "intro": "VideoLoad è un browser mobile per scaricare, guardare e ritagliare video. La versione del sito ufficiale è gratuita, con esportazione dei segmenti e riproduzione di due video sbloccate. Senza account né pubblicità nell’app e senza inviare contenuti allo sviluppatore: riproduzione ed elaborazione avvengono sul telefono.",
   "cta": "Scarica VideoLoad",
   "secondary": "Scopri l’app",
-  "trust": "Inizia gratis · Nessun login nell’app · Nessuna pubblicità nell’app · Nessun invio di contenuti",
+  "trust": "Download ufficiale gratuito · Senza account · Senza pubblicità nell’app · Nessun invio di contenuti",
   "preview": "Vera anteprima iPhone · iOS in arrivo · contenuti demo originali",
   "caption": "Scegli i momenti. Conserva l’originale.",
   "caption_detail": "Segna più segmenti e rivedi solo ciò che conta.",
@@ -34,28 +34,28 @@
     ],
     [
       "03",
-      "Ritaglia clip · Pro",
-      "Segna i punti di inizio e fine, poi usa Pro per esportare le clip compatibili in MP4 o GIF. I video vengono elaborati sul dispositivo, senza inviare contenuti online."
+      "Ritaglia segmenti",
+      "Segna inizio e fine ed esporta i segmenti compatibili in MP4 o GIF. Il video viene elaborato sul dispositivo, senza inviare contenuti."
     ]
   ],
   "gallery_title": "Due video. Il doppio del divertimento.",
   "library": "Originali, momenti salienti e GIF, tutti insieme.",
-  "compare": "Riproduci due video insieme con controlli indipendenti. Più modi per guardare e confrontare. Funzione Pro.",
+  "compare": "Due video su un solo schermo, ciascuno con i propri comandi. Più modi per guardare e confrontare.",
   "gallery_note": "Le schermate mostrano l’app iPhone con contenuti creati dallo sviluppatore. L’aspetto su Android e alcuni limiti dei formati sono diversi.",
   "facts_label": "VIDEOLOAD IN BREVE",
   "facts_title": "Strumenti video semplici e pratici.",
   "facts": [
     [
       "Cos’è",
-      "Un browser mobile per scaricare video: scarica e guarda video, poi ritaglia clip compatibili con Pro."
+      "VideoLoad è un browser mobile per scaricare, guardare e ritagliare video."
     ],
     [
-      "Funzioni gratuite sugli store",
-      "Navigazione, fino a 2 download incompleti, riproduzione, marcatura e ripetizione dei segmenti."
+      "Funzioni di base gratuite",
+      "Navigazione, download e riproduzione di video, marcatura e ripetizione dei segmenti."
     ],
     [
-      "Pro facoltativo",
-      "Acquisto unico: importazione locale, confronto di due video, esportazione MP4/GIF compatibile e rimozione del limite di attività."
+      "Strumenti creativi sbloccati",
+      "La versione gratuita del sito ufficiale sblocca l’esportazione di segmenti compatibili in MP4/GIF, l’importazione locale e due video con comandi indipendenti."
     ],
     [
       "Privacy",
@@ -67,11 +67,11 @@
     ],
     [
       "Community ufficiale",
-      "Informazioni sul prodotto e feedback pubblici su GitHub. Il codice sorgente dell’app rimane privato."
+      "Informazioni sul prodotto e feedback pubblici su GitHub."
     ]
   ],
   "download_title": "Scarica. Guarda.<br>Ritaglia sul tuo telefono.",
-  "download_intro": "Usa un link di download ufficiale. La disponibilità sugli store dipende dalla regione e dallo stato di pubblicazione.",
+  "download_intro": "La versione del sito ufficiale è gratuita, con ritaglio e doppia riproduzione sbloccati. Le funzioni delle versioni degli store possono variare.",
   "store": [
     [
       "Android",
@@ -159,7 +159,7 @@
   "language_label": "Lingua",
   "alt_player": "Lettore VideoLoad su iPhone con due segmenti segnati; iOS in arrivo",
   "alt_library": "Libreria VideoLoad su iPhone con originali, momenti salienti e una GIF",
-  "alt_compare": "VideoLoad Pro confronta due video con controlli indipendenti",
+  "alt_compare": "VideoLoad — Due video su un solo schermo, ciascuno con i propri comandi. Più modi per guardare e confrontare.",
   "machine_summary_label": "Riepilogo del prodotto in testo semplice",
   "product_facts_label": "Informazioni sul prodotto",
   "demo_link": "Apri la pagina dei contenuti demo originali",
@@ -198,5 +198,8 @@
         "Nel browser dell’app, apri la nostra pagina di contenuti demo originali e scarica l’MP4 tramite il pulsante di download in sovrimpressione. Apri il video completato, segna gli intervalli da 1 a 3 e da 9 a 11 secondi, poi prova la riproduzione dei soli segmenti segnati. I controlli di ripetizione variano in base alla piattaforma. Pro aggiunge l’esportazione compatibile e il confronto di due video."
       ]
     }
-  ]
+  ],
+  "promo_title": "Guarda VideoLoad in azione.",
+  "promo_note": "Voce narrante e sottotitoli in inglese. Scarica, guarda e ritaglia video; la versione gratuita del sito ufficiale offre anche la doppia riproduzione.",
+  "promo_transcript_label": "Leggi il testo della narrazione in inglese"
 }

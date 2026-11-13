@@ -41,6 +41,14 @@ Each page includes reciprocal hreflang links to all other versions. Latin Americ
 
 The public contact email, `fcjnotbad@gmail.com`, appears as a mailto link in every page footer, in the home-page feedback section and in the machine-readable product facts. External store, demo and privacy-policy pages keep their own available languages; the app screenshots remain real English-language iPhone previews, labeled in the selected website language.
 
+## Product film
+
+The home page in every language has a native 16:9 HTML video player at `#film`. The film uses English narration and burned-in English subtitles; an optional English WebVTT caption track and a plain-text transcript support accessibility. The player uses controls, `playsinline` and `preload="metadata"`, with no autoplay or third-party embed. Its title and explanatory note are localized in all fourteen languages.
+
+Only final public deliverables belong in `assets/promo/`: `videoload-overview-en.mp4`, `videoload-overview-en.vtt`, `videoload-overview-en.srt`, `videoload-overview-poster.jpg`, `transcript.en.txt`, and optional `metadata.json`. Keep voice references, model files and render intermediates out of this directory and out of Git. The MP4 must stay within the Cloudflare Pages 25 MiB per-asset limit. The Pages headers allow same-origin media playback and set explicit video/caption MIME types.
+
+The promotional copy describes the free official website edition, where clip export, local import and dual playback are unlocked. Detailed store-edition FAQ and download rules remain separate; do not imply that store purchases or access rules match the official direct download.
+
 ## Maintain
 
 - `content.py` registers the same fourteen languages as the Android/iOS app settings.

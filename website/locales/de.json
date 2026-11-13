@@ -1,6 +1,6 @@
 {
   "title": "VideoLoad — Mobiler Browser für Video-Downloads | Laden, ansehen und schneiden",
-  "description": "Ein mobiler Browser für Video-Downloads: kostenlos starten, ohne App-Anmeldung. Unterstützte Videos laden, offline ansehen und Clips mit Pro schneiden. Kein Medienupload zum Entwickler; Doppelwiedergabe mit Pro. iPhone folgt bald.",
+  "description": "Ein mobiler Video-Download-Browser. Die kostenlose Website-Version bietet Downloads, Wiedergabe, Clip-Export und Zwei-Video-Wiedergabe. Ohne App-Login oder Medien-Upload an den Entwickler.",
   "faq_description": "Antworten zu VideoLoad, dem mobilen Browser für Video-Downloads: kostenlose Funktionen, Nutzung ohne Anmeldung, Datenschutz auf dem Gerät, Downloads, Wiedergabe sowie Clipschnitt und Doppelwiedergabe mit Pro.",
   "download_description": "Hole dir VideoLoad, den mobilen Browser für Video-Downloads. Starte kostenlos ohne App-Konto, lade Videos herunter und sieh sie an. Pro ergänzt Clipschnitt und Doppelwiedergabe. iPhone folgt bald.",
   "nav": [
@@ -11,10 +11,10 @@
   ],
   "eyebrow": "VIDEOS LADEN · VIDEOS ANSEHEN · CLIPS SCHNEIDEN",
   "headline": "Dein mobiler Browser<br><span>für Video-Downloads.</span>",
-  "intro": "VideoLoad ist ein mobiler Browser zum Herunterladen, Ansehen und Schneiden von Videos. Starte kostenlos und ohne App-Konto. Wiedergabe und Verarbeitung erfolgen auf deinem Smartphone, ohne Medien zum Entwickler hochzuladen. Pro ergänzt kompatiblen Clip-Export und die Wiedergabe zweier Videos.",
+  "intro": "VideoLoad ist ein mobiler Video-Download-Browser zum Herunterladen, Ansehen und Zuschneiden von Videos. Die offizielle Website-Version ist kostenlos; Clip-Export und Zwei-Video-Wiedergabe sind freigeschaltet. Kein App-Login, keine App-Werbung und kein Medien-Upload an den Entwickler: Wiedergabe und Verarbeitung erfolgen auf deinem Handy.",
   "cta": "VideoLoad herunterladen",
   "secondary": "App entdecken",
-  "trust": "Kostenlos starten · Ohne App-Anmeldung · Keine Werbung in der App · Kein Medienupload",
+  "trust": "Offiziell kostenlos herunterladen · Kein App-Login · Keine App-Werbung · Kein Medien-Upload",
   "preview": "Echte iPhone-Ansicht · iOS folgt bald · eigenes Demomaterial",
   "caption": "Momente auswählen. Original behalten.",
   "caption_detail": "Markiere mehrere Clips und spiele nur das ab, worauf es ankommt.",
@@ -34,28 +34,28 @@
     ],
     [
       "03",
-      "Clips schneiden · Pro",
-      "Markiere Anfang und Ende und exportiere kompatible Clips mit Pro als MP4 oder GIF. Die Videoverarbeitung erfolgt auf deinem Gerät, ohne Medien hochzuladen."
+      "Clips zuschneiden",
+      "Markiere Anfang und Ende und exportiere kompatible Clips als MP4 oder GIF. Die Verarbeitung erfolgt auf deinem Gerät, ohne Medien hochzuladen."
     ]
   ],
   "gallery_title": "Zwei Videos. Doppelter Spaß.",
   "library": "Originale, Highlights und GIFs an einem Ort.",
-  "compare": "Spiele zwei Videos gleichzeitig mit unabhängiger Steuerung ab. Mehr Möglichkeiten zum Ansehen und Vergleichen. Pro-Funktion.",
+  "compare": "Zwei Videos auf einem Bildschirm, jeweils unabhängig steuerbar. Mehr Möglichkeiten zum Anschauen und Vergleichen.",
   "gallery_note": "Die Screenshots zeigen die iPhone-App mit vom Entwickler erstellten Inhalten. Die Android-Oberfläche und einige Formatgrenzen unterscheiden sich.",
   "facts_label": "VIDEOLOAD AUF EINEN BLICK",
   "facts_title": "Ein praktischer Werkzeugkasten für Videos.",
   "facts": [
     [
       "Was es ist",
-      "Ein mobiler Browser für Video-Downloads: Videos herunterladen, ansehen und kompatible Clips mit Pro schneiden."
+      "VideoLoad ist ein mobiler Video-Download-Browser zum Herunterladen, Ansehen und Zuschneiden von Videos."
     ],
     [
-      "Kostenlose Store-Funktionen",
-      "Surfen, bis zu 2 noch nicht abgeschlossene Downloads, Wiedergabe, Clip-Markierungen und Schleifen."
+      "Kostenlose Grundlagen",
+      "Surfen, Videos herunterladen und abspielen, Clip-Markierungen und Schleifen."
     ],
     [
-      "Optionales Pro",
-      "Einmalkauf: lokaler Import, Vergleich zweier Videos, kompatibler MP4-/GIF-Export und Aufhebung des Aufgabenlimits."
+      "Kreativwerkzeuge freigeschaltet",
+      "Die kostenlose offizielle Website-Version bietet kompatiblen MP4/GIF-Clip-Export, lokalen Videoimport und zwei unabhängig steuerbare Videos."
     ],
     [
       "Datenschutz",
@@ -67,11 +67,11 @@
     ],
     [
       "Offizielle Community",
-      "Produktinformationen und öffentliches Feedback auf GitHub. Der App-Quellcode bleibt privat."
+      "Produktinformationen und öffentliches Feedback auf GitHub."
     ]
   ],
   "download_title": "Herunterladen. Ansehen.<br>Auf dem Smartphone schneiden.",
-  "download_intro": "Nutze einen offiziellen Download. Die Store-Verfügbarkeit hängt von Region und Veröffentlichungsstatus ab.",
+  "download_intro": "Die offizielle Website-Version ist kostenlos, einschließlich Clip-Export und Zwei-Video-Wiedergabe. Die Funktionen der Store-Versionen können abweichen.",
   "store": [
     [
       "Android",
@@ -159,7 +159,7 @@
   "language_label": "Sprache",
   "alt_player": "VideoLoad-iPhone-Player mit zwei markierten Clips; iOS folgt bald",
   "alt_library": "VideoLoad-iPhone-Mediathek mit Originalen, Highlights und einem GIF",
-  "alt_compare": "VideoLoad Pro vergleicht zwei Videos mit unabhängiger Steuerung",
+  "alt_compare": "VideoLoad — Zwei Videos auf einem Bildschirm, jeweils unabhängig steuerbar. Mehr Möglichkeiten zum Anschauen und Vergleichen.",
   "machine_summary_label": "Produktübersicht als Klartext",
   "product_facts_label": "Produktdaten",
   "demo_link": "Seite mit eigenem Demomaterial öffnen",
@@ -198,5 +198,8 @@
         "Öffne im App-Browser unsere Seite mit eigenem Demomaterial und lade die MP4 über die schwebende Downloadschaltfläche herunter. Öffne das fertige Video, markiere die Bereiche 1–3 und 9–11 Sekunden und probiere die Wiedergabe nur der markierten Stellen aus. Die Schleifensteuerung unterscheidet sich je nach Plattform. Pro ergänzt kompatiblen Export und den Vergleich zweier Videos."
       ]
     }
-  ]
+  ],
+  "promo_title": "VideoLoad in Aktion erleben.",
+  "promo_note": "Englischer Kommentar mit englischen Untertiteln. Videos herunterladen, ansehen und zuschneiden; die kostenlose Website-Version bietet auch zwei Videos auf einem Bildschirm.",
+  "promo_transcript_label": "Englischen Sprechertext lesen"
 }

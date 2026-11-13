@@ -51,19 +51,23 @@ def build():
             'android': {'minimumOS': '8.0', 'googlePlay': PLAY, 'availability': 'Google Play availability depends on review, rollout and region', 'directEdition': {'downloadPage': APK, 'note': 'Separate Chinese-branded edition with its own updates and currently unlocked features'}},
             'ios': {'availability': 'Coming soon; App Store submission in progress', 'appStoreURL': None},
         },
+        'officialWebsiteEdition': {'downloadPage': APK, 'price': 'Free', 'unlockedFeatures': ['Compatible MP4/GIF clip export', 'Local video import', 'Independently controlled dual-video playback'], 'note': 'The official website direct edition has these features unlocked for free; store editions may differ'},
         'storeEdition': {'free': ['Browser', 'Up to two unfinished download tasks, including paused and failed tasks', 'Video playback', 'Clip marking and looping'], 'pro': {'purchaseType': 'One-time in-app purchase; no subscription', 'price': 'See the localized store price', 'features': ['Remove unfinished-task limit', 'Local video import', 'Independent two-video comparison', 'Compatible MP4/GIF clip export'], 'crossPlatformPurchase': False}},
         'privacy': {'appAccountRequired': False, 'inAppAdvertising': False, 'mediaProcessing': 'On device; developer media upload not required', 'websiteRequests': 'Browsing and downloads contact the chosen websites and media hosts; their privacy policies apply'},
         'limitations': [COPY['en']['limits'], 'iOS GIF selections total at most 30 seconds', 'The Google Play edition does not support YouTube downloads'],
-        'community': REPO, 'feedback': FEEDBACK, 'contactEmail': CONTACT_EMAIL, 'applicationSourceAvailable': False,
+        'community': REPO, 'feedback': FEEDBACK, 'contactEmail': CONTACT_EMAIL,
+        'promotionalVideo': {'contentUrl': BASE + '/assets/promo/videoload-overview-en.mp4', 'thumbnailUrl': BASE + '/assets/promo/videoload-overview-poster.jpg', 'transcriptUrl': BASE + '/assets/promo/transcript.en.txt', 'inLanguage': 'en', 'captionLanguage': 'en'},
     }
     write('product.json', json.dumps(facts, ensure_ascii=False, indent=2) + '\n')
     summary = f'''# VideoLoad
 
-> VideoLoad is a mobile video download browser: download videos, watch videos and trim clips. Free to start, no app login or in-app ads; video processing happens on-device without uploading media to the developer. Pro adds compatible clip export and independently controlled two-video playback. / VideoLoad 手机视频下载浏览器：下载视频、观看视频、视频截取。免费开始、无需登录、应用内无广告；视频在本机处理，无需上传给开发者，保护隐私。Pro 还有视频截取、双屏播放等乐趣。
+> VideoLoad is a mobile video download browser: download videos, watch videos and trim clips. The official website edition is free, with compatible clip export and independently controlled dual-video playback unlocked. No app login or in-app ads; video processing happens on-device without uploading media to the developer. Store editions may differ. / VideoLoad 手机视频下载浏览器：下载视频、观看视频、视频截取。官网直装版免费，片段导出与双屏播放已解锁；无需登录、应用内无广告，视频在本机处理，无需上传给开发者，保护隐私。商店版的功能开放方式可能不同。
 
-Product information updated {UPDATED}. This is a product website, not the application's source repository.
+Product information updated {UPDATED}.
 
 ## Official pages
+- [Product film]({BASE}/#film): English narration and subtitles, with download, playback, clipping and dual-video features.
+- [Film transcript]({BASE}/assets/promo/transcript.en.txt): The complete English narration in plain text.
 - [English product overview]({BASE}/): Features, free and Pro tiers, privacy and platform status.
 - [中文产品介绍]({BASE}/zh/): 功能、免费与 Pro、隐私与平台状态。
 - [Downloads]({BASE}/download/): Official Android entries, edition differences and iPhone status.
@@ -72,7 +76,7 @@ Product information updated {UPDATED}. This is a product website, not the applic
 - [常见问题]({BASE}/zh/faq/): 来源兼容、导出限制、购买与隐私。
 - [Product facts JSON]({BASE}/product.json): Structured facts maintained with the visible pages.
 - [Full product text]({BASE}/llms-full.txt): Product facts and complete FAQ in all {len(COPY)} website languages in plain text.
-- [GitHub product showcase and feedback]({REPO}): Public documentation and support, not application source code.
+- [GitHub product showcase and feedback]({REPO}): Official product information and support.
 
 ## Contact
 Email: {CONTACT_EMAIL}
@@ -96,7 +100,7 @@ On iOS, HLS offline packages play in-app but do not export, and force-quitting s
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
-  Content-Security-Policy: default-src 'none'; img-src 'self'; style-src 'self'; script-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'
+  Content-Security-Policy: default-src 'none'; img-src 'self'; media-src 'self'; style-src 'self'; script-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'
   Cache-Control: public, max-age=300
 /assets/*
   Cache-Control: public, max-age=86400
@@ -108,6 +112,14 @@ On iOS, HLS offline packages play in-app but do not export, and force-quitting s
   Content-Type: text/plain; charset=utf-8
 /product.json
   Content-Type: application/json; charset=utf-8
+/assets/promo/*.mp4
+  Content-Type: video/mp4
+/assets/promo/*.vtt
+  Content-Type: text/vtt; charset=utf-8
+/assets/promo/*.srt
+  Content-Type: application/x-subrip; charset=utf-8
+/assets/promo/*.jpg
+  Content-Type: image/jpeg
 ''')
     print(f'Built {len(pages)} public pages in {len(COPY)} languages, crawl files and product assets in {OUT}')
 

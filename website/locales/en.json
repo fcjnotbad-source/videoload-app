@@ -1,6 +1,6 @@
 {
   "title": "VideoLoad — Mobile Video Download Browser | Download, Watch & Trim",
-  "description": "A mobile video download browser, free to start with no app login. Download supported videos, watch offline and trim clips with Pro. No developer media upload; Pro dual playback. iPhone coming soon.",
+  "description": "A mobile video download browser. The official website edition is free, with video downloads, playback, clip export and dual playback unlocked. No app login or media upload to the developer.",
   "faq_description": "Answers about VideoLoad, the mobile video download browser: free features, no-login use, on-device privacy, video downloads, playback, Pro trimming and dual playback.",
   "download_description": "Get VideoLoad, a mobile video download browser. Start free without an app account; download and watch videos, with optional Pro trimming and dual playback. iPhone coming soon.",
   "nav": [
@@ -11,10 +11,10 @@
   ],
   "eyebrow": "DOWNLOAD VIDEOS · WATCH VIDEOS · TRIM CLIPS",
   "headline": "Mobile video<br><span>download browser.</span>",
-  "intro": "VideoLoad is a mobile video download browser for downloading, watching and trimming videos. Start free without an app account. Playback and processing happen on your phone, without uploading media to the developer. Pro adds compatible clip export and two-video playback.",
+  "intro": "VideoLoad is a mobile video download browser for downloading, watching and trimming videos. The official website edition is free, with clip export and two-video playback unlocked. No app account, no in-app ads, and no media upload to the developer: playback and processing happen on your phone.",
   "cta": "Get VideoLoad",
   "secondary": "Explore the app",
-  "trust": "Free to start · No app login · No in-app ads · No media upload",
+  "trust": "Free official download · No app login · No in-app ads · No media upload",
   "preview": "Real iPhone preview · iOS coming soon · original demo media",
   "caption": "Pick the moments. Keep the original.",
   "caption_detail": "Mark more than one clip and replay just what matters.",
@@ -34,28 +34,28 @@
     ],
     [
       "03",
-      "Trim clips · Pro",
-      "Mark the start and end points, then use Pro to export compatible clips as MP4 or GIF. Video processing happens on-device, without a media upload."
+      "Trim clips",
+      "Mark the start and end points and export compatible clips as MP4 or GIF. Video processing happens on your device, without a media upload."
     ]
   ],
   "gallery_title": "Two videos. Twice the fun.",
   "library": "Keep originals, highlights and GIFs together.",
-  "compare": "Play two videos together with independent controls. More ways to watch and compare. Pro feature.",
+  "compare": "Two videos on one screen, each with its own controls. More ways to watch and compare.",
   "gallery_note": "Screenshots show the iPhone app with developer-created content. Android appearance and some format limits differ.",
   "facts_label": "VIDEOLOAD, AT A GLANCE",
   "facts_title": "A straightforward video toolkit.",
   "facts": [
     [
       "What it is",
-      "A mobile video download browser: download videos, watch videos and trim compatible clips with Pro."
+      "VideoLoad is a mobile video download browser for downloading, watching and trimming videos."
     ],
     [
-      "Free store features",
-      "Browsing, up to 2 unfinished downloads, playback, clip marks and looping."
+      "Free essentials",
+      "Browsing, video downloads, playback, clip marks and looping."
     ],
     [
-      "Optional Pro",
-      "One-time purchase: local import, dual-video comparison, compatible MP4/GIF export and removal of the task limit."
+      "Creative tools, unlocked",
+      "Compatible MP4/GIF clip export, local video import and independent two-video playback are unlocked in the free official website edition."
     ],
     [
       "Privacy",
@@ -67,11 +67,11 @@
     ],
     [
       "Official community",
-      "Product information and public feedback on GitHub. App source remains private."
+      "Product information and public feedback on GitHub."
     ]
   ],
   "download_title": "Download. Watch.<br>Trim on your phone.",
-  "download_intro": "Use an official download entry. Store availability depends on region and release status.",
+  "download_intro": "The official website edition is free, with clipping and dual playback unlocked. Feature access in store editions may differ.",
   "store": [
     [
       "Android",
@@ -159,7 +159,7 @@
   "language_label": "Language",
   "alt_player": "VideoLoad iPhone player showing two marked clips; iOS coming soon",
   "alt_library": "VideoLoad iPhone video library with originals, highlights and a GIF",
-  "alt_compare": "VideoLoad Pro comparing two videos with independent controls",
+  "alt_compare": "VideoLoad — Two videos on one screen, each with its own controls. More ways to watch and compare.",
   "machine_summary_label": "Plain-text product summary",
   "product_facts_label": "Product facts",
   "demo_link": "Open the original demo media page",
@@ -198,5 +198,8 @@
         "In the app browser, open our original demo media page and download the MP4 using the floating download button. Open the completed video, mark 1–3 seconds and 9–11 seconds, then try marked-only playback. Loop controls differ between platforms. Pro adds compatible export and two-video comparison."
       ]
     }
-  ]
+  ],
+  "promo_title": "See VideoLoad in action.",
+  "promo_note": "English narration and English subtitles. Download, watch and trim videos. The free official website edition also unlocks two-video playback.",
+  "promo_transcript_label": "Read the English transcript"
 }

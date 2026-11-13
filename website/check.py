@@ -5,7 +5,8 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 import xml.etree.ElementTree as ET
 
-from content import BASE, CONTACT_EMAIL, COPY, LOCALES, REPO
+from content import APK, BASE, CONTACT_EMAIL, COPY, LOCALES, REPO
+from promo import METADATA, VIDEO_ID
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / 'dist'
@@ -72,6 +73,18 @@ def check():
             assert all(not attr.get('src') and attr.get('type') == 'application/ld+json' for tag, attr in doc.tags if tag == 'script'), path
             assert all('alt' in attr and 'width' in attr and 'height' in attr for tag, attr in doc.tags if tag == 'img'), path
             assert len(doc.schemas) == 1, path
+            if page == '':
+                videos = [attr for tag, attr in doc.tags if tag == 'video']
+                assert len(videos) == 1, path
+                video = videos[0]
+                assert 'controls' in video and 'playsinline' in video and 'autoplay' not in video, path
+                assert video.get('preload') == 'metadata', path
+                assert video.get('poster') == '/assets/promo/videoload-overview-poster.jpg', path
+                assert video.get('lang') == 'en', path
+                assert resolve(video['poster']).is_file(), path
+                assert any(tag == 'source' and attr.get('src') == '/assets/promo/videoload-overview-en.mp4' and attr.get('type') == 'video/mp4' for tag, attr in doc.tags), path
+                assert any(tag == 'track' and attr.get('kind') == 'captions' and attr.get('srclang') == 'en' and attr.get('src') == '/assets/promo/videoload-overview-en.vtt' for tag, attr in doc.tags), path
+                assert any(tag == 'section' and attr.get('id') == 'film' for tag, attr in doc.tags), path
             graph = doc.schemas[0]['@graph']
             description = next(attr['content'] for tag, attr in doc.tags if tag == 'meta' and attr.get('name') == 'description')
             assert description not in descriptions, path
@@ -79,8 +92,23 @@ def check():
             web = next(item for item in graph if item['@type'] == 'WebPage')
             assert web['description'] == description
             app = next(item for item in graph if item['@type'] == 'SoftwareApplication')
+            assert app['downloadUrl'] == APK, path
             assert 'offers' not in app and 'aggregateRating' not in app and 'review' not in app
             assert 'coming soon' in app['operatingSystem'] and 'apps.apple.com' not in html
+            film_objects = [item for item in graph if item['@type'] == 'VideoObject']
+            if page == '' and METADATA.is_file():
+                metadata = json.loads(METADATA.read_text())
+                assert len(film_objects) == 1, path
+                film = film_objects[0]
+                assert film['@id'] == VIDEO_ID and web['video'] == {'@id': VIDEO_ID}, path
+                assert film['name'] == copy['promo_title'] and film['description'] == copy['promo_note'], path
+                assert film['duration'] == f'PT{float(metadata["durationSeconds"]):g}S', path
+                assert film['uploadDate'] == metadata['uploadDate'], path
+                assert film['contentUrl'] == BASE + '/assets/promo/videoload-overview-en.mp4', path
+                assert film['thumbnailUrl'] == BASE + '/assets/promo/videoload-overview-poster.jpg', path
+                assert film['inLanguage'] == 'en' and film['caption']['inLanguage'] == 'en', path
+            elif page != '':
+                assert not film_objects and 'video' not in web, path
             if page == 'faq/':
                 faq = next(item for item in graph if item['@type'] == 'FAQPage')
                 visible = ' '.join(doc.text)
@@ -115,6 +143,7 @@ def check():
     assert set(facts['positioning']) == {c['lang'] for c in COPY.values()}
     assert facts['community'] == REPO
     assert facts['contactEmail'] == CONTACT_EMAIL
+    assert facts['officialWebsiteEdition']['price'] == 'Free'
     assert len(facts['languages']) == len(LOCALES)
     assert set(facts['description']) == {c['lang'] for c in COPY.values()}
     assert {x['url'] for x in facts['languages']} == {BASE + c['prefix'] for c in COPY.values()}
@@ -125,10 +154,19 @@ def check():
     assert '/.well-known/acme-challenge/*' in routing['exclude']
     assert '__CANONICAL_ORIGIN__' not in (OUT / '_worker.js').read_text()
     assert BASE in (OUT / '_worker.js').read_text()
+    assert "media-src 'self'" in (OUT / '_headers').read_text()
+    promo = OUT / 'assets/promo'
+    expected_promo = {'videoload-overview-en.mp4', 'videoload-overview-en.vtt', 'videoload-overview-en.srt', 'videoload-overview-poster.jpg', 'transcript.en.txt', 'metadata.json'}
+    assert promo.is_dir(), 'Product film assets are missing'
+    assert {p.name for p in promo.iterdir() if p.is_file()} <= expected_promo, 'Only final public film assets belong in the promotional media folder'
+    assert (promo / 'videoload-overview-en.mp4').stat().st_size <= 25 * 1024 * 1024, 'Film exceeds Pages asset limit'
+    assert (promo / 'videoload-overview-en.vtt').read_text().startswith('WEBVTT')
+    assert ' --> ' in (promo / 'videoload-overview-en.srt').read_text()
+    assert len((promo / 'transcript.en.txt').read_text().strip()) > 40
     for p in OUT.rglob('*'):
         if p.is_file():
-            assert p.suffix in {'.html', '.css', '.json', '.xml', '.txt', '.png', ''} or p.name == '_worker.js', p
-            if p.suffix != '.png':
+            assert p.suffix in {'.html', '.css', '.json', '.xml', '.txt', '.png', '.jpg', '.mp4', '.vtt', '.srt', ''} or p.name == '_worker.js', p
+            if p.suffix not in {'.png', '.jpg', '.mp4'}:
                 text = p.read_text()
                 assert 'cfat_' not in text and 'PRIVATE KEY' not in text and '/Users/' not in text, p
     print(f'PASS: {len(documents)} HTML pages in {len(COPY)} languages; unique titles, headings, canonicals and reciprocal hreflang; {link_count} internal links/assets; visible FAQ/schema agreement; sitemap/robots; product facts; public artifact allowlist.')

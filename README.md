@@ -6,7 +6,7 @@
 
 <p align="center"><strong>A powerful mobile video download browser.</strong></p>
 <p align="center">Download videos. Watch videos. Trim clips.</p>
-<p align="center">Free to start · No app login · No in-app ads · On-device processing · No media upload to the developer</p>
+<p align="center">Free official website download · No app login · No in-app ads · On-device processing · No media upload to the developer</p>
 
 <p align="center">
   <a href="https://videoload.pdos.work/">Official website</a> ·
@@ -18,17 +18,25 @@
 
 The [official website](https://videoload.pdos.work/) supports all 14 app languages, with complete product, download and FAQ pages. Use the language menu to switch.
 
+## Watch the product film
+
+[![VideoLoad product film](assets/promo/videoload-overview-poster.jpg)](https://videoload.pdos.work/#film)
+
+English narration and English subtitles. Download, watch and trim videos, with clip export and dual playback unlocked in the free official website edition.
+
+[▶ Watch the product film](https://videoload.pdos.work/#film) · [Download the MP4](https://videoload.pdos.work/assets/promo/videoload-overview-en.mp4)
+
 ## Download videos. Watch videos. Trim clips.
 
-VideoLoad is a **mobile video download browser** built around three core uses: **downloading videos, watching videos and trimming clips**. Start free without an app account. Download supported videos you own or are allowed to save, play them on your phone, and use Pro to export compatible clips as MP4 or GIF.
+VideoLoad is a **mobile video download browser** built around three core uses: **downloading videos, watching videos and trimming clips**. The official website edition is free, with compatible clip export and dual playback unlocked. Download supported videos you own or are allowed to save, play them on your phone and export clips as MP4 or GIF, without an app account.
 
 **Your videos stay with you.** Playback and video processing happen on-device, without uploading media to the developer. Browsing and downloads still contact your chosen websites and media hosts, which have their own privacy policies.
 
 - **Download videos.** Save supported, authorized videos from the built-in browser and manage your downloads in one place.
 - **Watch videos.** Play downloaded videos, adjust speed, mark moments and loop the parts you want.
-- **Trim clips · Pro.** Select start and end points and export compatible clips as MP4 or GIF, processed on your device.
-- **Double the fun · Pro.** Play two videos on one screen with independent controls for more ways to watch and compare.
-- **Keep your library organized.** Search, rename and favorite your videos. Pro also adds local video import.
+- **Trim clips.** Select start and end points and export compatible clips as MP4 or GIF, processed on your device.
+- **Double the fun.** Play two videos on one screen with independent controls for more ways to watch and compare.
+- **Keep your library organized.** Search, rename and favorite your videos. The free official website edition also includes local video import.
 
 ## A look inside
 
@@ -40,11 +48,11 @@ VideoLoad is a **mobile video download browser** built around three core uses: *
 <table>
   <tr>
     <th align="center">A library that stays with you</th>
-    <th align="center">Two videos, twice the fun · Pro</th>
+    <th align="center">Two videos, twice the fun</th>
   </tr>
   <tr>
     <td align="center"><img src="assets/screenshots/library.png" width="280" alt="VideoLoad iOS library with original video, exported highlights and a GIF"></td>
-    <td align="center"><img src="assets/screenshots/compare.png" width="280" alt="VideoLoad iOS Pro comparing an original video and its highlights in two independently controlled players"></td>
+    <td align="center"><img src="assets/screenshots/compare.png" width="280" alt="VideoLoad comparing an original video and its highlights in two independently controlled players"></td>
   </tr>
 </table>
 
@@ -60,17 +68,17 @@ Screenshots show the iOS app, which is coming soon, using developer-created demo
 
 [Download help and edition differences →](docs/downloads.md)
 
-## Free to start. Optional Pro, purchased once.
+## Free official website edition
 
-The store editions include browsing, up to **two unfinished download tasks**, video playback, clip marking and looping. Paused and failed tasks count toward the limit; completed and cancelled tasks do not.
+The official website edition includes browsing, video downloads, playback, clip marking, looping, compatible MP4/GIF clip export, local import and independently controlled dual playback, all unlocked for free.
 
-**VideoLoad Pro** removes that task limit and unlocks local video import, two-video comparison and compatible MP4/GIF clip export. It is a one-time in-app purchase, not a subscription. Prices are shown by your local store. Purchases are platform-specific; buying on one platform does not unlock the other.
+Store editions may have different feature access and offer an optional one-time **VideoLoad Pro** purchase. Check your store for the applicable features and localized price; store purchases are platform-specific.
 
 ## Try your first marked clip
 
 1. Install the app from an official entry above.
 2. In the app's browser, open the [original demo media page](https://fcjnotbad-source.github.io/videoload-review-media/ios/review.html), then use the download button to save its MP4.
-3. Open the downloaded video, mark a start and an end, then play your marked moments. Try looping them or comparing two videos with Pro.
+3. Open the downloaded video, mark a start and an end, then play your marked moments. Try looping them or comparing two videos in the free official website edition.
 
 [Quick start →](docs/quick-start.md) · [Frequently asked questions →](docs/faq.md)
 
@@ -92,4 +100,4 @@ If VideoLoad helps you, share this page with someone who could use it, leave an 
 
 ---
 
-This is the official product showcase and feedback repository. It contains product documentation, images and the static [product website](website/README.md), not the application's source code. VideoLoad branding and included product assets remain the property of their respective owner. See [asset notes](assets/README.md).
+This is the official product showcase and feedback repository, with product documentation, images, the promotional film and the static [product website](website/README.md). VideoLoad branding and included product assets remain the property of their respective owner. See [asset notes](assets/README.md).

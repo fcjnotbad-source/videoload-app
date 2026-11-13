@@ -1,6 +1,6 @@
 {
   "title": "VideoLoad — Navegador para baixar vídeos no celular | Baixe, assista e recorte",
-  "description": "Um navegador para baixar vídeos no celular, grátis para começar e sem login no app. Baixe vídeos compatíveis, assista offline e recorte com Pro. Sem envio de mídia ao desenvolvedor; reprodução dupla com Pro. iPhone em breve.",
+  "description": "Um navegador móvel para baixar vídeos. A versão grátis do site oficial permite baixar, assistir, recortar e reproduzir dois vídeos. Sem conta nem envio de mídia ao desenvolvedor.",
   "faq_description": "Respostas sobre o VideoLoad, navegador para baixar vídeos no celular: recursos gratuitos, uso sem login, privacidade no dispositivo, downloads, reprodução, recortes e reprodução dupla com Pro.",
   "download_description": "Baixe o VideoLoad, um navegador para baixar vídeos no celular. Comece grátis, sem conta no app; baixe e assista a vídeos, com recortes e reprodução dupla no Pro opcional. iPhone em breve.",
   "nav": [
@@ -11,10 +11,10 @@
   ],
   "eyebrow": "BAIXE VÍDEOS · ASSISTA A VÍDEOS · RECORTE TRECHOS",
   "headline": "Navegador para baixar<br><span>vídeos no celular.</span>",
-  "intro": "O VideoLoad é um navegador para baixar, assistir e recortar vídeos no celular. Comece grátis, sem conta no app. A reprodução e o processamento acontecem no seu telefone, sem enviar mídia ao desenvolvedor. O Pro acrescenta exportação de trechos compatíveis e reprodução de dois vídeos.",
+  "intro": "VideoLoad é um navegador móvel para baixar, assistir e recortar vídeos. A versão do site oficial é grátis, com exportação de trechos e reprodução de dois vídeos liberadas. Sem conta nem anúncios no app, e sem enviar mídia ao desenvolvedor: a reprodução e o processamento acontecem no celular.",
   "cta": "Baixar o VideoLoad",
   "secondary": "Conheça o app",
-  "trust": "Comece grátis · Sem login no app · Sem anúncios no app · Sem envio de mídia",
+  "trust": "Download oficial grátis · Sem conta · Sem anúncios no app · Sem envio de mídia",
   "preview": "Tela real do iPhone · iOS em breve · conteúdo demonstrativo original",
   "caption": "Escolha os momentos. Preserve o original.",
   "caption_detail": "Marque vários trechos e reveja só o que importa.",
@@ -34,28 +34,28 @@
     ],
     [
       "03",
-      "Recorte trechos · Pro",
-      "Marque o início e o fim e use o Pro para exportar trechos compatíveis como MP4 ou GIF. O processamento acontece no dispositivo, sem enviar mídia."
+      "Recorte trechos",
+      "Marque o início e o fim e exporte trechos compatíveis como MP4 ou GIF. O processamento acontece no seu aparelho, sem envio de mídia."
     ]
   ],
   "gallery_title": "Dois vídeos. Diversão em dobro.",
   "library": "Originais, melhores momentos e GIFs no mesmo lugar.",
-  "compare": "Reproduza dois vídeos juntos, com controles independentes. Mais formas de assistir e comparar. Recurso Pro.",
+  "compare": "Dois vídeos em uma tela, cada um com seus próprios controles. Mais formas de assistir e comparar.",
   "gallery_note": "As capturas mostram o app para iPhone com conteúdo criado pelo desenvolvedor. A aparência no Android e algumas limitações de formato são diferentes.",
   "facts_label": "VIDEOLOAD EM POUCAS PALAVRAS",
   "facts_title": "Ferramentas de vídeo sem complicação.",
   "facts": [
     [
       "O que é",
-      "Um navegador para baixar vídeos no celular: baixe vídeos, assista a vídeos e recorte trechos compatíveis com o Pro."
+      "VideoLoad é um navegador móvel para baixar, assistir e recortar vídeos."
     ],
     [
-      "Recursos gratuitos das lojas",
-      "Navegação, até 2 downloads não concluídos, reprodução, marcação de trechos e repetição."
+      "Recursos básicos grátis",
+      "Navegação, download e reprodução de vídeos, marcação de trechos e repetição."
     ],
     [
-      "Pro opcional",
-      "Compra única: importação local, comparação de dois vídeos, exportação MP4/GIF compatível e remoção do limite de tarefas."
+      "Ferramentas criativas liberadas",
+      "A versão grátis do site oficial libera a exportação de trechos compatíveis em MP4/GIF, a importação local e a reprodução independente de dois vídeos."
     ],
     [
       "Privacidade",
@@ -67,11 +67,11 @@
     ],
     [
       "Comunidade oficial",
-      "Informações sobre o produto e comentários públicos no GitHub. O código-fonte do app permanece privado."
+      "Informações sobre o produto e comentários públicos no GitHub."
     ]
   ],
   "download_title": "Baixe. Assista.<br>Recorte no celular.",
-  "download_intro": "Use um dos links oficiais para baixar. A disponibilidade na loja depende da região e do estágio de lançamento.",
+  "download_intro": "A versão do site oficial é grátis, com recorte e reprodução de dois vídeos liberados. Os recursos das versões das lojas podem variar.",
   "store": [
     [
       "Android",
@@ -159,7 +159,7 @@
   "language_label": "Idioma",
   "alt_player": "Player do VideoLoad no iPhone com dois trechos marcados; iOS em breve",
   "alt_library": "Biblioteca do VideoLoad no iPhone com originais, melhores momentos e um GIF",
-  "alt_compare": "VideoLoad Pro comparando dois vídeos com controles independentes",
+  "alt_compare": "VideoLoad — Dois vídeos em uma tela, cada um com seus próprios controles. Mais formas de assistir e comparar.",
   "machine_summary_label": "Resumo do produto em texto simples",
   "product_facts_label": "Informações do produto",
   "demo_link": "Abrir a página de conteúdo demonstrativo original",
@@ -198,5 +198,8 @@
         "No navegador do app, abra nossa página de conteúdo demonstrativo original e baixe o MP4 pelo botão flutuante de download. Abra o vídeo concluído, marque os intervalos de 1–3 segundos e de 9–11 segundos e experimente reproduzir apenas os trechos marcados. Os controles de repetição variam entre as plataformas. O Pro acrescenta exportação compatível e comparação de dois vídeos."
       ]
     }
-  ]
+  ],
+  "promo_title": "Veja o VideoLoad em ação.",
+  "promo_note": "Narração e legendas em inglês. Baixe, assista e recorte vídeos; a versão grátis do site oficial também oferece reprodução de dois vídeos.",
+  "promo_transcript_label": "Ler o roteiro em inglês"
 }

@@ -110,15 +110,15 @@ def main():
             relative = file.relative_to(directory).as_posix()
             if file.is_symlink() or any(part.startswith('.') for part in Path(relative).parts):
                 raise RuntimeError('Hidden files and symlinks are not deployable')
-            if file.suffix not in {'.html', '.css', '.json', '.xml', '.txt', '.png'}:
+            if file.suffix not in {'.html', '.css', '.json', '.xml', '.txt', '.png', '.jpg', '.mp4', '.vtt', '.srt'}:
                 raise RuntimeError('Unexpected deployment asset type: ' + relative)
             raw = file.read_bytes()
             if len(raw) > 25 * 1024 * 1024:
                 raise RuntimeError('Asset exceeds Pages upload limit')
             key = hashlib.sha256(raw + file.suffix.encode()).hexdigest()[:32]
             manifest['/' + relative] = key
-            mime = mimetypes.guess_type(file.name)[0] or 'application/octet-stream'
-            if file.suffix in {'.html', '.css', '.txt', '.xml'}:
+            mime = {'.mp4': 'video/mp4', '.vtt': 'text/vtt', '.srt': 'application/x-subrip', '.jpg': 'image/jpeg'}.get(file.suffix) or mimetypes.guess_type(file.name)[0] or 'application/octet-stream'
+            if file.suffix in {'.html', '.css', '.txt', '.xml', '.vtt', '.srt'}:
                 mime += '; charset=utf-8'
             assets[key] = {'key': key, 'value': base64.b64encode(raw).decode(), 'base64': True, 'metadata': {'contentType': mime}}
         missing = cf.call('/pages/assets/check-missing', 'POST', {'hashes': list(assets)}, token=jwt)

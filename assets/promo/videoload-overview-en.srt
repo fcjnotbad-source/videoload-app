@@ -1,0 +1,87 @@
+1
+00:00:00,600 --> 00:00:03,080
+Too many steps just to save a
+
+2
+00:00:03,100 --> 00:00:03,560
+video.
+
+3
+00:00:04,220 --> 00:00:07,700
+Meet VideoLoad, your mobile video download browser.
+
+4
+00:00:08,570 --> 00:00:10,790
+Download videos you are allowed to save.
+
+5
+00:00:11,150 --> 00:00:12,530
+Watch them right on your phone.
+
+6
+00:00:13,300 --> 00:00:16,360
+Mark the moments you want, then trim
+
+7
+00:00:16,380 --> 00:00:20,000
+compatible clips into MP4s or GIFs.
+
+8
+00:00:20,325 --> 00:00:23,085
+Get the free edition from our website.
+
+9
+00:00:23,585 --> 00:00:27,725
+It already covers everyday browsing, downloading, watching and more.
+
+10
+00:00:28,715 --> 00:00:30,155
+No app login.
+
+11
+00:00:30,735 --> 00:00:31,855
+No in -app ads.
+
+12
+00:00:32,845 --> 00:00:35,085
+Your videos don't need to be uploaded
+
+13
+00:00:35,105 --> 00:00:35,685
+to us.
+
+14
+00:00:36,105 --> 00:00:38,385
+Playback and processing happen on your device,
+
+15
+00:00:38,625 --> 00:00:40,045
+helping protect your privacy.
+
+16
+00:00:40,955 --> 00:00:42,655
+Want a little more fun?
+
+17
+00:00:43,095 --> 00:00:45,295
+Play two videos on one screen, each
+
+18
+00:00:45,315 --> 00:00:46,415
+with its own controls.
+
+19
+00:00:47,225 --> 00:00:48,225
+Download.
+
+20
+00:00:48,745 --> 00:00:49,205
+Watch.
+
+21
+00:00:49,525 --> 00:00:49,925
+Trim.
+
+22
+00:00:50,505 --> 00:00:51,965
+Try VideoLoad today.
