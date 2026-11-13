@@ -5,7 +5,7 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 import xml.etree.ElementTree as ET
 
-from content import BASE, COPY, REPO
+from content import BASE, CONTACT_EMAIL, COPY, LOCALES, REPO
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / 'dist'
@@ -59,9 +59,16 @@ def check():
             canonicals = [attr['href'] for tag, attr in doc.tags if tag == 'link' and attr.get('rel') == 'canonical']
             assert canonicals == [BASE + path], (path, canonicals)
             alternates = {attr.get('hreflang'): attr.get('href') for tag, attr in doc.tags if tag == 'link' and attr.get('hreflang')}
-            assert alternates == {'en': BASE + '/' + page, 'zh-CN': BASE + '/zh/' + page, 'x-default': BASE + '/' + page}, path
+            expected_alternates = {c['hreflang']: BASE + c['prefix'] + page for c in COPY.values()}
+            expected_alternates['x-default'] = BASE + '/' + page
+            assert alternates == expected_alternates, path
             assert any(tag == 'meta' and attr.get('name') == 'robots' and attr.get('content', '').startswith('index,') for tag, attr in doc.tags), path
             assert REPO in html and 'issues/new/choose' in html, path
+            assert f'mailto:{CONTACT_EMAIL}' in html, path
+            assert any(tag == 'html' and attr.get('dir') == copy['direction'] for tag, attr in doc.tags), path
+            language_links = [attr for tag, attr in doc.tags if tag == 'a' and attr.get('hreflang')]
+            assert {a['href'] for a in language_links} == {c['prefix'] + page for c in COPY.values()}, path
+            assert sum(a.get('aria-current') == 'page' for a in language_links) == 1, path
             assert all(not attr.get('src') and attr.get('type') == 'application/ld+json' for tag, attr in doc.tags if tag == 'script'), path
             assert all('alt' in attr and 'width' in attr and 'height' in attr for tag, attr in doc.tags if tag == 'img'), path
             assert len(doc.schemas) == 1, path
@@ -81,8 +88,8 @@ def check():
                     assert item['name'] in visible and item['acceptedAnswer']['text'] in visible, (path, item['name'])
                 assert len(faq['mainEntity']) == len(copy['faq'])
             title = html.split('<title>', 1)[1].split('</title>', 1)[0]
-            assert title not in titles, title
-            titles.add(title)
+            assert (lang, title) not in titles, title
+            titles.add((lang, title))
     link_count = 0
     for route, doc in documents.items():
         for tag, attr in doc.tags:
@@ -105,6 +112,12 @@ def check():
     facts = json.loads((OUT / 'product.json').read_text())
     assert facts['platforms']['ios']['appStoreURL'] is None
     assert facts['community'] == REPO
+    assert facts['contactEmail'] == CONTACT_EMAIL
+    assert len(facts['languages']) == len(LOCALES)
+    assert set(facts['description']) == {c['lang'] for c in COPY.values()}
+    assert {x['url'] for x in facts['languages']} == {BASE + c['prefix'] for c in COPY.values()}
+    for path, route_doc in documents.items():
+        assert BASE + path in (OUT / 'llms.txt').read_text(), path
     assert 'noindex' in (OUT / '404.html').read_text()
     for p in OUT.rglob('*'):
         if p.is_file():
@@ -112,7 +125,7 @@ def check():
             if p.suffix != '.png':
                 text = p.read_text()
                 assert 'cfat_' not in text and 'PRIVATE KEY' not in text and '/Users/' not in text, p
-    print(f'PASS: six HTML pages; unique titles, headings, canonicals and reciprocal hreflang; {link_count} internal links/assets; visible FAQ/schema agreement; sitemap/robots; product facts; public artifact allowlist.')
+    print(f'PASS: {len(documents)} HTML pages in {len(COPY)} languages; unique titles, headings, canonicals and reciprocal hreflang; {link_count} internal links/assets; visible FAQ/schema agreement; sitemap/robots; product facts; public artifact allowlist.')
 
 
 if __name__ == '__main__':

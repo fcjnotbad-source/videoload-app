@@ -1,0 +1,202 @@
+{
+  "title": "VideoLoad — Lecteur vidéo sans publicité, repères et téléchargements",
+  "description": "Enregistrez les vidéos compatibles que vous avez le droit de télécharger. Marquez et répétez des passages, organisez votre vidéothèque, comparez ou exportez avec VideoLoad Pro. Android ; bientôt sur iPhone.",
+  "faq_description": "Les réponses sur VideoLoad : version gratuite et Pro, téléchargements compatibles, confidentialité, limites d’export, double lecture indépendante et disponibilité sur iPhone.",
+  "download_description": "Téléchargez VideoLoad depuis Google Play ou la page APK Android officielle. Comparez les versions, consultez les étapes d’installation et découvrez la future version iPhone.",
+  "nav": [
+    "Fonctionnalités",
+    "Questions fréquentes",
+    "GitHub",
+    "Télécharger l’app"
+  ],
+  "eyebrow": "MOINS CHERCHER. PLUS REVOIR.",
+  "headline": "Gardez les moments<br>qui méritent <span>d’être revus.</span>",
+  "intro": "Vos vidéos et leurs passages utiles, à portée de main. Naviguez, enregistrez des vidéos compatibles, marquez un moment et retrouvez-le quand vous le souhaitez.",
+  "cta": "Télécharger VideoLoad",
+  "secondary": "Découvrir l’app",
+  "trust": "Aucune publicité dans l’app. Aucun compte requis. Traitement sur votre appareil.",
+  "preview": "Véritable aperçu sur iPhone · iOS bientôt disponible · démo originale",
+  "caption": "Choisissez les moments. Gardez l’original.",
+  "caption_detail": "Marquez plusieurs extraits pour revoir uniquement ce qui compte.",
+  "platform": "Android disponible via l’APK officielle · disponibilité Google Play variable · iPhone bientôt disponible",
+  "section_label": "POUR VOTRE FAÇON DE REGARDER",
+  "section_title": "Moins chercher dans la vidéo.<br>Plus profiter des bons passages.",
+  "features": [
+    [
+      "01",
+      "Garder pour plus tard",
+      "Le navigateur intégré et le centre de téléchargement vous permettent de garder à portée de main les vidéos compatibles qui vous appartiennent ou que vous êtes autorisé à enregistrer."
+    ],
+    [
+      "02",
+      "Retrouver directement le bon moment",
+      "Marquez le début et la fin de plusieurs passages, puis relisez les parties sélectionnées, une fois ou en boucle, sans modifier la vidéo d’origine."
+    ],
+    [
+      "03",
+      "Deux points de vue · Pro",
+      "Comparez deux vidéos sur un écran avec des commandes indépendantes. Importez vos vidéos et exportez les extraits marqués compatibles en MP4 ou GIF."
+    ]
+  ],
+  "gallery_title": "Votre vidéothèque. Votre point de vue.",
+  "library": "Originaux, meilleurs passages et GIF réunis.",
+  "compare": "Deux vidéos, des commandes indépendantes. Fonction Pro.",
+  "gallery_note": "Les captures montrent l’app iPhone avec du contenu créé par le développeur. L’interface Android et certaines limites de formats diffèrent.",
+  "facts_label": "VIDEOLOAD EN BREF",
+  "facts_title": "Des outils vidéo simples et pratiques.",
+  "facts": [
+    [
+      "Le principe",
+      "Un navigateur vidéo, une vidéothèque locale et un lecteur avec repères d’extraits et lecture en boucle."
+    ],
+    [
+      "Fonctions gratuites en boutique",
+      "Navigation, jusqu’à 2 téléchargements inachevés, lecture, repères et boucles."
+    ],
+    [
+      "Pro en option",
+      "Achat unique : import local, comparaison de deux vidéos, export MP4/GIF compatible et suppression de la limite de tâches."
+    ],
+    [
+      "Confidentialité",
+      "Aucun compte d’app ni SDK publicitaire. Le traitement vidéo se fait sur votre appareil."
+    ],
+    [
+      "Plateformes",
+      "Android 8.0 ou ultérieur. Version iPhone bientôt disponible."
+    ],
+    [
+      "Communauté officielle",
+      "Informations produit et retours publics sur GitHub. Le code source de l’app reste privé."
+    ]
+  ],
+  "download_title": "Commencez par une vidéo.<br>Gardez-en l’essentiel.",
+  "download_intro": "Utilisez un lien de téléchargement officiel. La disponibilité en boutique dépend de la région et de l’état de publication.",
+  "store": [
+    [
+      "Android",
+      "Google Play",
+      "Démarrage gratuit · Pro en achat unique facultatif",
+      "Ouvrir Google Play",
+      "https://play.google.com/store/apps/details?id=com.fcj.videoload"
+    ],
+    [
+      "Android · version directe",
+      "APK officielle",
+      "Version distincte sous un nom chinois · fonctionnalités déverrouillées",
+      "Télécharger l’APK",
+      "https://vdb.aivest.art/apps/jiange-kuaixia"
+    ],
+    [
+      "iPhone",
+      "App Store",
+      "Bientôt disponible · soumission en cours",
+      "Pas encore disponible",
+      null
+    ]
+  ],
+  "download_help": "Différences entre versions et aide à l’installation",
+  "faq_title": "Quelques réponses à vos questions.",
+  "faq_more": "Toutes les questions et réponses",
+  "feedback_title": "Utile au quotidien. Encore mieux avec vos retours.",
+  "feedback_text": "Un problème ou une idée ? Expliquez-nous ce que vous vouliez faire. Les messages en anglais et en chinois sont les bienvenus.",
+  "feedback_cta": "Envoyer un retour",
+  "github_cta": "Voir sur GitHub",
+  "feedback_note": "Les retours GitHub sont publics. Ne joignez ni mots de passe, ni reçus, ni contenus privés.",
+  "limits": "Téléchargez uniquement du contenu qui vous appartient ou que vous êtes autorisé à enregistrer. La compatibilité varie ; aucun contournement de DRM, de paywall ou de contrôle d’accès. Les sites peuvent afficher leurs propres publicités. La double lecture n’est pas synchronisée à l’image près. Sur iOS, les paquets HLS hors ligne sont lisibles dans l’app mais non exportables ; forcer la fermeture arrête les transferts.",
+  "footer": "VideoLoad · Gardez les moments qui méritent d’être revus.",
+  "updated": "Informations produit mises à jour le 13 novembre 2026.",
+  "privacy": "Confidentialité",
+  "downloads": "Téléchargements",
+  "home": "Accueil",
+  "faq_heading": "Des réponses claires, sans deviner.",
+  "faq_intro": "Ce que fait VideoLoad, ce qu’ajoute Pro et les limites à connaître.",
+  "faq": [
+    [
+      "Qu’est-ce que VideoLoad ?",
+      "VideoLoad réunit un navigateur web, une vidéothèque locale et un lecteur avec des outils d’extraits. Enregistrez les vidéos compatibles qui vous appartiennent ou que vous êtes autorisé à télécharger, marquez et répétez des passages, puis comparez des vidéos ou exportez des extraits compatibles avec Pro."
+    ],
+    [
+      "VideoLoad est-il gratuit ? Pro est-il un abonnement ?",
+      "Les versions en boutique permettent de commencer gratuitement. Pro est un achat intégré unique et facultatif, sans abonnement. Il ajoute l’import de vidéos locales, la comparaison de deux vidéos, l’export d’extraits MP4/GIF compatibles et supprime la limite de deux téléchargements inachevés. Le prix est indiqué dans votre boutique locale. La version Android directe suit ses propres règles de fonctionnalités."
+    ],
+    [
+      "Qu’est-ce qui compte dans la limite de deux téléchargements ?",
+      "Les tâches inachevées comptent, y compris celles en pause ou en échec. Les tâches terminées ou annulées ne comptent pas. Le nombre de tâches ne garantit ni le nombre de connexions simultanées ni la vitesse de téléchargement."
+    ],
+    [
+      "VideoLoad affiche-t-il des publicités ou envoie-t-il mes vidéos ?",
+      "VideoLoad n’affiche aucune publicité dans sa propre interface et ne demande aucun compte d’app. Le traitement des médias et les repères d’extraits restent sur votre appareil ; aucun envoi de médias au développeur n’est requis. La navigation et les téléchargements contactent néanmoins les sites et serveurs de médias que vous choisissez. Ces sites peuvent afficher des publicités et utiliser des cookies."
+    ],
+    [
+      "Peut-il télécharger depuis tous les sites ?",
+      "Non. La compatibilité varie selon le site, le serveur et le format. Téléchargez uniquement du contenu qui vous appartient ou que vous êtes autorisé à enregistrer. L’app ne contourne ni DRM, ni paywalls, ni contrôles d’accès. La version Google Play ne prend pas en charge les téléchargements YouTube."
+    ],
+    [
+      "Toutes les vidéos peuvent-elles être exportées en MP4 ou GIF ?",
+      "Non. L’export nécessite Pro et une source compatible. Sur iOS, les paquets HLS hors ligne locaux se lisent dans l’app, mais ne peuvent être exportés en MP4/GIF, partagés comme fichiers ou enregistrés dans Photos. Les passages sélectionnés pour un GIF sur iOS peuvent totaliser au maximum 30 secondes."
+    ],
+    [
+      "Les deux lecteurs sont-ils synchronisés ?",
+      "Chaque lecteur possède ses propres commandes. La comparaison de deux vidéos ne garantit pas une synchronisation à l’image près."
+    ],
+    [
+      "Puis-je déjà installer VideoLoad sur iPhone ?",
+      "La version iPhone arrive bientôt et sa soumission à l’App Store est en cours. Aucun lien public de téléchargement App Store n’est encore proposé ici. Un lien officiel vérifié sera ajouté après la sortie."
+    ],
+    [
+      "Un achat Pro débloque-t-il Android et iPhone ?",
+      "Non. Les achats sont propres à chaque plateforme et ne sont pas transférables entre Android et iOS. Utilisez le compte de boutique d’origine pour récupérer vos achats ; sur iOS, choisissez « Restaurer les achats » dans l’écran Pro."
+    ],
+    [
+      "Pourquoi un téléchargement iOS peut-il s’arrêter en arrière-plan ?",
+      "iOS gère les transferts en arrière-plan et forcer la fermeture les arrête. Rouvrez l’app pour reprendre une source compatible ; la réutilisation des données déjà téléchargées dépend du serveur source et du format."
+    ]
+  ],
+  "skip": "Aller au contenu",
+  "navigation_label": "Navigation principale",
+  "footer_navigation": "Navigation de pied de page",
+  "language_label": "Langue",
+  "alt_player": "Lecteur VideoLoad sur iPhone avec deux extraits marqués ; iOS bientôt disponible",
+  "alt_library": "Vidéothèque VideoLoad sur iPhone avec originaux, meilleurs passages et un GIF",
+  "alt_compare": "VideoLoad Pro comparant deux vidéos avec des commandes indépendantes",
+  "machine_summary_label": "Résumé produit en texte brut",
+  "product_facts_label": "Informations produit",
+  "demo_link": "Ouvrir la page de démo originale",
+  "not_found_title": "Retrouvons le bon chemin.",
+  "not_found_text": "Cette page est introuvable.",
+  "not_found_cta": "Aller à VideoLoad",
+  "download_sections": [
+    {
+      "title": "Quelle version choisir ?",
+      "paragraphs": [
+        "La version Google Play permet de commencer gratuitement, avec Pro en achat unique facultatif. Sa disponibilité dépend de la validation, du déploiement et de la région. L’APK directe officielle est une app Android distincte, sous un nom chinois, avec ses propres mises à jour et des fonctionnalités actuellement déverrouillées. Ce sont des paquets d’app différents ; les achats en boutique ne se transfèrent pas entre eux."
+      ]
+    },
+    {
+      "title": "Installer sur Android",
+      "paragraphs": [
+        "Android 8.0 ou ultérieur est requis. Utilisez un lien officiel ci-dessus. Pour une APK, Android peut vous demander d’autoriser l’installation depuis votre navigateur ou gestionnaire de fichiers. Activez cette autorisation uniquement pour cette installation, puis désactivez-la. Ne désactivez pas la protection du système."
+      ]
+    },
+    {
+      "title": "Bientôt sur iPhone",
+      "paragraphs": [
+        "La soumission à l’App Store est en cours. Un lien App Store vérifié sera ajouté ici après la sortie. Aucun fichier d’installation iOS n’est distribué sur cette page."
+      ]
+    },
+    {
+      "title": "Gratuit et Pro",
+      "paragraphs": [
+        "Les fonctions gratuites en boutique comprennent la navigation, jusqu’à deux téléchargements inachevés, la lecture, les repères d’extraits et les boucles. Les tâches en pause ou en échec comptent ; celles terminées ou annulées ne comptent pas.",
+        "Pro débloque l’import local, la comparaison indépendante de deux vidéos, l’export MP4/GIF compatible et supprime la limite de tâches. C’est un achat intégré unique, sans abonnement. Votre boutique affiche le prix local. Les achats Android et iOS sont distincts. Pour récupérer un achat, utilisez le compte de boutique d’origine ; sur iOS, choisissez « Restaurer les achats »."
+      ]
+    },
+    {
+      "title": "Essayez une vidéo que vous avez le droit d’enregistrer",
+      "paragraphs": [
+        "Dans le navigateur de l’app, ouvrez notre page de démo originale et téléchargez le MP4 avec le bouton flottant. Ouvrez la vidéo terminée, marquez les passages de 1 à 3 secondes et de 9 à 11 secondes, puis essayez la lecture des seuls passages marqués. Les commandes de boucle varient selon la plateforme. Pro ajoute l’export compatible et la comparaison de deux vidéos."
+      ]
+    }
+  ]
+}

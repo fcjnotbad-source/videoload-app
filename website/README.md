@@ -10,14 +10,42 @@ Python 3 standard library only:
 
 ```sh
 python3 website/build.py
+python3 website/check_locales.py
 python3 website/check.py
 ```
 
 Generated `dist/` and Python caches are ignored. To preview, run `python3 -m http.server 8788 --directory dist`.
 
+## Languages
+
+English remains the default at `/`; the existing Simplified Chinese URL `/zh/` is preserved. Every language has a home, `/faq/` and `/download/` page, totaling 42 indexable pages. The native language picker preserves the current page and works without JavaScript. Arabic and Hebrew use semantic RTL direction and adapted spacing.
+
+| Language | Path |
+| --- | --- |
+| English | `/` |
+| 简体中文 | `/zh/` |
+| 繁體中文 | `/zh-Hant/` |
+| 日本語 | `/ja/` |
+| Deutsch | `/de/` |
+| Français | `/fr/` |
+| 한국어 | `/ko/` |
+| Español (Latinoamérica) | `/es-419/` |
+| Português (Brasil) | `/pt-BR/` |
+| Bahasa Indonesia | `/id/` |
+| العربية | `/ar/` |
+| हिन्दी | `/hi/` |
+| Italiano | `/it/` |
+| עברית | `/he/` |
+
+Each page includes reciprocal hreflang links to all other versions. Latin American Spanish uses HTML `lang="es-419"` but language-only `hreflang="es"`, since Google does not support numeric region 419 in hreflang. See [Google's language-code documentation](https://developers.google.com/search/docs/specialty/international/localized-versions).
+
+The public contact email, `fcjnotbad@gmail.com`, appears as a mailto link in every page footer, in the home-page feedback section and in the machine-readable product facts. External store, demo and privacy-policy pages keep their own available languages; the app screenshots remain real English-language iPhone previews, labeled in the selected website language.
+
 ## Maintain
 
-- `content.py` is the shared source for English and Chinese product claims and FAQ.
+- `content.py` registers the same fourteen languages as the Android/iOS app settings.
+- `locales/*.json` contains complete localized product copy, metadata, accessibility labels, download instructions and FAQ.
+- `check_locales.py` requires complete translations with matching structures and unchanged official download URLs.
 - `render.py` generates static HTML, metadata and matching JSON-LD.
 - `style.css` holds responsive visual styles.
 - `build.py` writes the crawl files and machine-readable product facts from shared content.

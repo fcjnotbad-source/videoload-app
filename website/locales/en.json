@@ -1,0 +1,202 @@
+{
+  "title": "VideoLoad — Ad-free video player, clip marks & downloads",
+  "description": "Save supported, authorized videos. Mark and loop moments, organize your library, and compare or export clips with VideoLoad Pro. Android; iPhone coming soon.",
+  "faq_description": "VideoLoad questions answered: free vs Pro, supported downloads, privacy, clip export limits, independent dual playback and iPhone availability.",
+  "download_description": "Get VideoLoad from the official Google Play or Android APK entry. Compare editions, read installation steps and check the coming-soon iPhone version.",
+  "nav": [
+    "Features",
+    "FAQ",
+    "GitHub",
+    "Get the app"
+  ],
+  "eyebrow": "LESS SEARCHING. MORE REPLAYING.",
+  "headline": "Keep the moments<br>worth <span>replaying.</span>",
+  "intro": "Your videos, with the useful parts close at hand. Browse, save supported videos, mark a moment and come back to it whenever you need.",
+  "cta": "Get VideoLoad",
+  "secondary": "Explore the app",
+  "trust": "No in-app ads. No app account. On-device processing.",
+  "preview": "Real iPhone preview · iOS coming soon · original demo media",
+  "caption": "Pick the moments. Keep the original.",
+  "caption_detail": "Mark more than one clip and replay just what matters.",
+  "platform": "Android available via official APK · Google Play rollout varies · iPhone coming soon",
+  "section_label": "MADE FOR THE WAY YOU WATCH",
+  "section_title": "Less scrubbing.<br>More of the good parts.",
+  "features": [
+    [
+      "01",
+      "Save it for later",
+      "A built-in browser and download center keep supported videos you own or are allowed to save within reach."
+    ],
+    [
+      "02",
+      "Go straight to the moment",
+      "Mark start and end points, select multiple moments, and replay or loop the marked parts without changing your original video."
+    ],
+    [
+      "03",
+      "See both sides · Pro",
+      "Compare two videos on one screen with independent controls. Import your own videos and export compatible marked clips as MP4 or GIF."
+    ]
+  ],
+  "gallery_title": "Your library. Your point of view.",
+  "library": "Keep originals, highlights and GIFs together.",
+  "compare": "Two videos, independently controlled. Pro feature.",
+  "gallery_note": "Screenshots show the iPhone app with developer-created content. Android appearance and some format limits differ.",
+  "facts_label": "VIDEOLOAD, AT A GLANCE",
+  "facts_title": "A straightforward video toolkit.",
+  "facts": [
+    [
+      "What it is",
+      "A video browser, local library and player with clip marking and looping."
+    ],
+    [
+      "Free store features",
+      "Browsing, up to 2 unfinished downloads, playback, clip marks and looping."
+    ],
+    [
+      "Optional Pro",
+      "One-time purchase: local import, dual-video comparison, compatible MP4/GIF export and removal of the task limit."
+    ],
+    [
+      "Privacy",
+      "No app account or advertising SDK. Video processing happens on your device."
+    ],
+    [
+      "Platforms",
+      "Android 8.0+. iPhone version coming soon."
+    ],
+    [
+      "Official community",
+      "Product information and public feedback on GitHub. App source remains private."
+    ]
+  ],
+  "download_title": "Start with a video.<br>Make it your own.",
+  "download_intro": "Use an official download entry. Store availability depends on region and release status.",
+  "store": [
+    [
+      "Android",
+      "Google Play",
+      "Free to start · optional one-time Pro",
+      "Open Google Play",
+      "https://play.google.com/store/apps/details?id=com.fcj.videoload"
+    ],
+    [
+      "Android · direct edition",
+      "Official APK",
+      "Separate Chinese-branded edition · features unlocked",
+      "Download APK",
+      "https://vdb.aivest.art/apps/jiange-kuaixia"
+    ],
+    [
+      "iPhone",
+      "App Store",
+      "Coming soon · submission in progress",
+      "Not yet available",
+      null
+    ]
+  ],
+  "download_help": "Edition differences & installation help",
+  "faq_title": "A few things you might be wondering.",
+  "faq_more": "All questions & answers",
+  "feedback_title": "Built to be useful. Better with your feedback.",
+  "feedback_text": "Found a problem or have an idea? Tell us what you were trying to do. English and Chinese are welcome.",
+  "feedback_cta": "Send feedback",
+  "github_cta": "Explore on GitHub",
+  "feedback_note": "GitHub feedback is public. Keep passwords, receipts and private media out of reports.",
+  "limits": "Download only content you own or may save. Compatibility varies; no DRM, paywall or access-control bypass. Websites may display their own ads. Dual playback is not frame-synchronized. On iOS, HLS offline packages play in-app but do not export; force-quitting stops transfers.",
+  "footer": "VideoLoad · Keep the moments worth replaying.",
+  "updated": "Product information updated November 13, 2026.",
+  "privacy": "Privacy",
+  "downloads": "Downloads",
+  "home": "Home",
+  "faq_heading": "Answers, without the guesswork.",
+  "faq_intro": "What VideoLoad does, what Pro adds, and where the limits are.",
+  "faq": [
+    [
+      "What is VideoLoad?",
+      "VideoLoad combines a web browser, a local video library and a player with clip tools. Save supported videos you own or are authorized to download, mark and loop selected moments, and compare videos or export compatible clips with Pro."
+    ],
+    [
+      "Is VideoLoad free? Is Pro a subscription?",
+      "Store editions are free to start. Pro is an optional one-time in-app purchase, not a subscription. It adds local video import, two-video comparison, compatible MP4/GIF clip export and removal of the two-unfinished-download limit. Your local store shows the price. The direct Android edition has separate feature rules."
+    ],
+    [
+      "What counts toward the two-download limit?",
+      "Unfinished tasks, including paused and failed tasks, count. Completed and cancelled tasks do not. Task count does not guarantee simultaneous connections or download speed."
+    ],
+    [
+      "Does VideoLoad show ads or upload my videos?",
+      "VideoLoad places no ads in its own interface and requires no app account. Media processing and clip marks stay on your device; no media upload to the developer is required. Browsing and downloading still contact the websites and media hosts you choose. Those websites may show ads and use cookies."
+    ],
+    [
+      "Can it download from every website?",
+      "No. Website, server and format compatibility varies. Only download material you own or may save. The app does not bypass DRM, paywalls or access controls. The Google Play edition does not support YouTube downloads."
+    ],
+    [
+      "Can every video be exported to MP4 or GIF?",
+      "No. Export requires Pro and a compatible source. On iOS, local HLS offline packages play in the app but cannot export to MP4/GIF, be shared as files or be saved to Photos. iOS GIF selections can total up to 30 seconds."
+    ],
+    [
+      "Are the two players synchronized?",
+      "Each player has independent controls. Two-video comparison does not guarantee frame-accurate synchronization."
+    ],
+    [
+      "Can I install VideoLoad on iPhone now?",
+      "The iPhone version is coming soon, with App Store submission in progress. There is no public App Store download link here yet. A verified official link will be added after release."
+    ],
+    [
+      "Can one Pro purchase unlock Android and iPhone?",
+      "No. Purchases are platform-specific and do not transfer between Android and iOS. Use the original store account to recover purchases; on iOS, choose Restore Purchases on the Pro screen."
+    ],
+    [
+      "Why might an iOS download stop in the background?",
+      "iOS schedules background transfers and force-quitting stops them. Reopen the app to resume a supported source; reuse of completed data depends on the source server and format."
+    ]
+  ],
+  "skip": "Skip to content",
+  "navigation_label": "Main navigation",
+  "footer_navigation": "Footer navigation",
+  "language_label": "Language",
+  "alt_player": "VideoLoad iPhone player showing two marked clips; iOS coming soon",
+  "alt_library": "VideoLoad iPhone video library with originals, highlights and a GIF",
+  "alt_compare": "VideoLoad Pro comparing two videos with independent controls",
+  "machine_summary_label": "Plain-text product summary",
+  "product_facts_label": "Product facts",
+  "demo_link": "Open the original demo media page",
+  "not_found_title": "Let’s get you back.",
+  "not_found_text": "This page could not be found.",
+  "not_found_cta": "Go to VideoLoad",
+  "download_sections": [
+    {
+      "title": "Which edition should I choose?",
+      "paragraphs": [
+        "The Google Play edition is free to start with optional one-time Pro. Availability depends on store review, rollout and region. The official direct APK is a separate Chinese-branded Android app with its own updates and currently unlocked features. These are different app packages; store purchases do not transfer between them."
+      ]
+    },
+    {
+      "title": "Install on Android",
+      "paragraphs": [
+        "Android 8.0 or later is required. Use an official entry above. For an APK, Android may ask you to allow installation from your browser or file manager. Enable this only when needed for this installation and turn it off afterward. Do not disable system protection."
+      ]
+    },
+    {
+      "title": "iPhone is coming soon",
+      "paragraphs": [
+        "App Store submission is in progress. This page will add a verified App Store link after release. No iOS installation file is distributed here."
+      ]
+    },
+    {
+      "title": "Free and Pro",
+      "paragraphs": [
+        "Free store features include browsing, up to two unfinished downloads, playback, clip marking and looping. Paused or failed tasks count; completed or cancelled tasks do not.",
+        "Pro unlocks local import, independent dual-video comparison, compatible MP4/GIF export and removal of the task limit. It is a one-time in-app purchase, not a subscription. Your store shows the local price. Android and iOS purchases are separate. Use the original store account to recover a purchase; on iOS use Restore Purchases."
+      ]
+    },
+    {
+      "title": "Try a video you are allowed to save",
+      "paragraphs": [
+        "In the app browser, open our original demo media page and download the MP4 using the floating download button. Open the completed video, mark 1–3 seconds and 9–11 seconds, then try marked-only playback. Loop controls differ between platforms. Pro adds compatible export and two-video comparison."
+      ]
+    }
+  ]
+}

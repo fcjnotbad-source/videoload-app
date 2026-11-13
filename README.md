@@ -16,6 +16,8 @@
   <a href="README.zh-CN.md">简体中文</a>
 </p>
 
+The [official website](https://app.pdos.work/) supports all 14 app languages, with complete product, download and FAQ pages. Use the language menu to switch.
+
 ## Your videos, ready to revisit
 
 VideoLoad brings a browser, a local video library and clip tools together on Android and iPhone. Save supported videos you own or have permission to download, then keep the useful parts close at hand.
@@ -82,7 +84,7 @@ Only save content you own or are authorized to download. Website and format supp
 
 [Report a problem, suggest a feature or ask a question](https://github.com/fcjnotbad-source/videoload-app/issues/new/choose). English and Chinese are welcome. Please search [existing feedback](https://github.com/fcjnotbad-source/videoload-app/issues) first.
 
-Include your app version, device and steps so we can understand the issue. Public feedback is visible to everyone; never post passwords, cookies, purchase receipts or private media. For matters that cannot be shared publicly, use the [developer contact page](https://vdb.aivest.art/apps/jiange-kuaixia#contact).
+Include your app version, device and steps so we can understand the issue. Public feedback is visible to everyone; never post passwords, cookies, purchase receipts or private media. For matters that cannot be shared publicly, email [fcjnotbad@gmail.com](mailto:fcjnotbad@gmail.com).
 
 If VideoLoad helps you, share this page with someone who could use it, leave an honest store review, or star this repository to help others discover it.
 

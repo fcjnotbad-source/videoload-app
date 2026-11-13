@@ -1,113 +1,51 @@
-"""Shared public product facts. Never put deployment credentials here."""
+"""Locale registry and validated public translations; no English fallback."""
+import json
+from pathlib import Path
 
-BASE = "https://app.pdos.work"
-REPO = "https://github.com/fcjnotbad-source/videoload-app"
-PLAY = "https://play.google.com/store/apps/details?id=com.fcj.videoload"
-APK = "https://vdb.aivest.art/apps/jiange-kuaixia"
-FEEDBACK = REPO + "/issues/new/choose"
-DEMO = "https://fcjnotbad-source.github.io/videoload-review-media/ios/review.html"
-POLICY = "https://fcjnotbad-source.github.io/videoload-review-media/"
-UPDATED = "2026-11-12"
+BASE = 'https://app.pdos.work'
+REPO = 'https://github.com/fcjnotbad-source/videoload-app'
+PLAY = 'https://play.google.com/store/apps/details?id=com.fcj.videoload'
+APK = 'https://vdb.aivest.art/apps/jiange-kuaixia'
+FEEDBACK = REPO + '/issues/new/choose'
+DEMO = 'https://fcjnotbad-source.github.io/videoload-review-media/ios/review.html'
+POLICY = 'https://fcjnotbad-source.github.io/videoload-review-media/'
+CONTACT_EMAIL = 'fcjnotbad@gmail.com'
+UPDATED = '2026-11-13'
 
-COPY = {
-    "en": {
-        "lang": "en", "prefix": "/", "other": "简体中文", "other_prefix": "/zh/",
-        "title": "VideoLoad — Ad-free video player, clip marks & downloads",
-        "description": "Save supported, authorized videos. Mark and loop moments, organize your library, and compare or export clips with VideoLoad Pro. Android; iPhone coming soon.",
-        "faq_description": "VideoLoad questions answered: free vs Pro, supported downloads, privacy, clip export limits, independent dual playback and iPhone availability.",
-        "download_description": "Get VideoLoad from the official Google Play or Android APK entry. Compare editions, read installation steps and check the coming-soon iPhone version.",
-        "nav": ["Features", "FAQ", "GitHub", "Get the app"],
-        "eyebrow": "LESS SEARCHING. MORE REPLAYING.",
-        "headline": "Keep the moments<br>worth <span>replaying.</span>",
-        "intro": "Your videos, with the useful parts close at hand. Browse, save supported videos, mark a moment and come back to it whenever you need.",
-        "cta": "Get VideoLoad", "secondary": "Explore the app", "trust": "No in-app ads. No app account. On-device processing.",
-        "preview": "Real iPhone preview · iOS coming soon · original demo media",
-        "caption": "Pick the moments. Keep the original.", "caption_detail": "Mark more than one clip and replay just what matters.",
-        "platform": "Android available via official APK · Google Play rollout varies · iPhone coming soon",
-        "section_label": "MADE FOR THE WAY YOU WATCH",
-        "section_title": "Less scrubbing.<br>More of the good parts.",
-        "features": [
-            ("01", "Save it for later", "A built-in browser and download center keep supported videos you own or are allowed to save within reach."),
-            ("02", "Go straight to the moment", "Mark start and end points, select multiple moments, and replay or loop the marked parts without changing your original video."),
-            ("03", "See both sides · Pro", "Compare two videos on one screen with independent controls. Import your own videos and export compatible marked clips as MP4 or GIF."),
-        ],
-        "gallery_title": "Your library. Your point of view.",
-        "library": "Keep originals, highlights and GIFs together.",
-        "compare": "Two videos, independently controlled. Pro feature.",
-        "gallery_note": "Screenshots show the iPhone app with developer-created content. Android appearance and some format limits differ.",
-        "facts_label": "VIDEOLOAD, AT A GLANCE", "facts_title": "A straightforward video toolkit.",
-        "facts": [("What it is", "A video browser, local library and player with clip marking and looping."), ("Free store features", "Browsing, up to 2 unfinished downloads, playback, clip marks and looping."), ("Optional Pro", "One-time purchase: local import, dual-video comparison, compatible MP4/GIF export and removal of the task limit."), ("Privacy", "No app account or advertising SDK. Video processing happens on your device."), ("Platforms", "Android 8.0+. iPhone version coming soon."), ("Official community", "Product information and public feedback on GitHub. App source remains private.")],
-        "download_title": "Start with a video.<br>Make it your own.",
-        "download_intro": "Use an official download entry. Store availability depends on region and release status.",
-        "store": [("Android", "Google Play", "Free to start · optional one-time Pro", "Open Google Play", PLAY), ("Android · direct edition", "Official APK", "Separate Chinese-branded edition · features unlocked", "Download APK", APK), ("iPhone", "App Store", "Coming soon · submission in progress", "Not yet available", None)],
-        "download_help": "Edition differences & installation help", "faq_title": "A few things you might be wondering.",
-        "faq_more": "All questions & answers", "feedback_title": "Built to be useful. Better with your feedback.",
-        "feedback_text": "Found a problem or have an idea? Tell us what you were trying to do. English and Chinese are welcome.",
-        "feedback_cta": "Send feedback", "github_cta": "Explore on GitHub", "feedback_note": "GitHub feedback is public. Keep passwords, receipts and private media out of reports.",
-        "limits": "Download only content you own or may save. Compatibility varies; no DRM, paywall or access-control bypass. Websites may display their own ads. Dual playback is not frame-synchronized. On iOS, HLS offline packages play in-app but do not export; force-quitting stops transfers.",
-        "footer": "VideoLoad · Keep the moments worth replaying.", "updated": "Product information updated November 12, 2026.",
-        "privacy": "Privacy", "downloads": "Downloads", "home": "Home", "faq_heading": "Answers, without the guesswork.",
-        "faq_intro": "What VideoLoad does, what Pro adds, and where the limits are.",
-        "faq": [
-            ("What is VideoLoad?", "VideoLoad combines a web browser, a local video library and a player with clip tools. Save supported videos you own or are authorized to download, mark and loop selected moments, and compare videos or export compatible clips with Pro."),
-            ("Is VideoLoad free? Is Pro a subscription?", "Store editions are free to start. Pro is an optional one-time in-app purchase, not a subscription. It adds local video import, two-video comparison, compatible MP4/GIF clip export and removal of the two-unfinished-download limit. Your local store shows the price. The direct Android edition has separate feature rules."),
-            ("What counts toward the two-download limit?", "Unfinished tasks, including paused and failed tasks, count. Completed and cancelled tasks do not. Task count does not guarantee simultaneous connections or download speed."),
-            ("Does VideoLoad show ads or upload my videos?", "VideoLoad places no ads in its own interface and requires no app account. Media processing and clip marks stay on your device; no media upload to the developer is required. Browsing and downloading still contact the websites and media hosts you choose. Those websites may show ads and use cookies."),
-            ("Can it download from every website?", "No. Website, server and format compatibility varies. Only download material you own or may save. The app does not bypass DRM, paywalls or access controls. The Google Play edition does not support YouTube downloads."),
-            ("Can every video be exported to MP4 or GIF?", "No. Export requires Pro and a compatible source. On iOS, local HLS offline packages play in the app but cannot export to MP4/GIF, be shared as files or be saved to Photos. iOS GIF selections can total up to 30 seconds."),
-            ("Are the two players synchronized?", "Each player has independent controls. Two-video comparison does not guarantee frame-accurate synchronization."),
-            ("Can I install VideoLoad on iPhone now?", "The iPhone version is coming soon, with App Store submission in progress. There is no public App Store download link here yet. A verified official link will be added after release."),
-            ("Can one Pro purchase unlock Android and iPhone?", "No. Purchases are platform-specific and do not transfer between Android and iOS. Use the original store account to recover purchases; on iOS, choose Restore Purchases on the Pro screen."),
-            ("Why might an iOS download stop in the background?", "iOS schedules background transfers and force-quitting stops them. Reopen the app to resume a supported source; reuse of completed data depends on the source server and format."),
-        ],
-    },
-    "zh": {
-        "lang": "zh-CN", "prefix": "/zh/", "other": "English", "other_prefix": "/",
-        "title": "VideoLoad 视频下载与播放器 — 标注、循环、双屏对照",
-        "description": "VideoLoad 将网页浏览、授权视频下载与本地视频整理放在一起，支持片段标注、循环回看，Pro 可双屏对照及导出 MP4/GIF。支持 Android，iPhone 即将上线。",
-        "faq_description": "了解 VideoLoad 免费版与 Pro 区别、下载兼容范围、隐私方式、片段导出限制、双屏控制和 iPhone 上线状态。",
-        "download_description": "通过 Google Play 或官网 APK 入口获取 VideoLoad，查看 Android 版本区别、安装步骤、买断内购说明与 iPhone 即将上线状态。",
-        "nav": ["产品功能", "常见问题", "GitHub", "下载应用"],
-        "eyebrow": "把时间留给值得回看的内容",
-        "headline": "精彩的片刻，<br>值得<span>再看一遍。</span>",
-        "intro": "自己的视频，常看的重点。浏览网页、保存受支持的视频、标记一个片段，下次直接回到想看的地方。",
-        "cta": "下载 VideoLoad", "secondary": "看看实际功能", "trust": "应用内无广告 · 无需注册 · 视频在本机处理",
-        "preview": "真实 iPhone 界面 · iOS 即将上线 · 原创演示素材",
-        "caption": "留下重点，保留原片。", "caption_detail": "标记多个片段，回看时直接看想看的部分。",
-        "platform": "Android 可通过官网 APK 安装 · Google Play 依地区与发布状态开放 · iPhone 即将上线",
-        "section_label": "让回看变得简单", "section_title": "少找一会儿，<br>多看一点重点。",
-        "features": [
-            ("01", "保存，留待下次", "通过内置浏览器与下载中心，保存自己拥有或已获授权下载的受支持视频。"),
-            ("02", "打开，直接看重点", "标记起点与终点，保留多个片段。连续或循环回看标注内容，原视频保持完整。"),
-            ("03", "对照，看出不同 · Pro", "同屏打开两个视频，各自控制播放。导入本地视频，把兼容来源的标注片段导出为 MP4 或 GIF。"),
-        ],
-        "gallery_title": "自己的视频，自己的观看方式。",
-        "library": "原视频、精选片段与 GIF，集中整理。", "compare": "两个画面，独立控制。Pro 功能。",
-        "gallery_note": "截图来自 iPhone 应用，使用开发者原创素材。Android 界面及部分格式限制有所不同。",
-        "facts_label": "关于 VIDEOLOAD", "facts_title": "一个实用的视频工具箱。",
-        "facts": [("产品定位", "集网页浏览、本地视频库、播放、片段标注与循环于一体。"), ("商店免费功能", "网页浏览、最多 2 条未完成下载任务、视频播放、标注与循环。"), ("可选 Pro", "一次买断：本地导入、双屏对照、兼容来源 MP4/GIF 导出，取消任务数量限制。"), ("隐私方式", "无需应用账号，无广告 SDK，视频在设备本机处理。"), ("支持平台", "Android 8.0 及以上；iPhone 版即将上线。"), ("官方社区", "GitHub 公开产品资料与反馈入口，应用源码保持私有。")],
-        "download_title": "从一个视频开始，<br>留下自己的重点。",
-        "download_intro": "通过官方入口安装。商店是否可下载，以所在地区和实际发布状态为准。",
-        "store": [("Android", "Google Play", "免费开始 · 可选一次性 Pro 内购", "前往 Google Play", PLAY), ("Android · 官网直装版", "官方 APK", "独立中文品牌版本 · 当前功能已解锁", "前往官网下载", APK), ("iPhone", "App Store", "即将上线 · 正在提交 App Store", "暂未开放下载", None)],
-        "download_help": "查看版本区别与安装说明", "faq_title": "你可能想知道的几个问题。",
-        "faq_more": "查看全部问答", "feedback_title": "让它更好用，从你的反馈开始。",
-        "feedback_text": "发现问题，或有一个新想法？告诉我们你的使用场景。中文和英文都欢迎。",
-        "feedback_cta": "提交反馈", "github_cta": "前往 GitHub", "feedback_note": "GitHub 反馈公开可见，请勿提交密码、收据或私人视频。",
-        "limits": "请仅下载自己拥有或已获授权保存的内容。网站与格式兼容性有所差异，不绕过 DRM、付费墙或访问限制。第三方网页可能有广告。双屏不保证逐帧同步。iOS 的 HLS 离线包仅支持应用内播放，不支持导出；强制退出会停止传输。",
-        "footer": "VideoLoad · 把值得回看的片刻留在手边。", "updated": "产品资料更新于 2026 年 11 月 12 日。",
-        "privacy": "隐私政策", "downloads": "下载应用", "home": "首页", "faq_heading": "说清功能，也说清边界。",
-        "faq_intro": "VideoLoad 能做什么、Pro 解锁什么，以及你需要了解的使用范围。",
-        "faq": [
-            ("VideoLoad 是什么软件？", "VideoLoad 将网页浏览、本地视频库和片段工具放在一起。保存自己拥有或已获授权下载的受支持视频，标注、循环回看所选片段，也可通过 Pro 双屏对照或导出兼容片段。"),
-            ("免费吗？Pro 是订阅吗？", "商店版可免费开始使用。Pro 为可选一次性内购，无订阅，解锁本地视频导入、双屏对照、兼容来源 MP4/GIF 片段导出，并取消两条未完成任务限制。具体价格以当地商店为准，Android 直装版采用独立功能规则。"),
-            ("两条下载任务如何计算？", "只计算未完成任务，暂停和失败任务也计入；已完成或已取消任务不计入。任务数量不代表保证的连接数量或下载速度。"),
-            ("有广告吗？视频会上传吗？", "应用自身界面不投放广告，无需注册账号。媒体处理与片段标注保留在本机，无需向开发者上传媒体。浏览和下载仍会连接你选择的网站和媒体服务器，第三方网站可能有广告或使用 Cookie。"),
-            ("所有网站的视频都能下载吗？", "不能保证，兼容性取决于网站、来源服务器和格式。请仅下载自己拥有或已获授权保存的内容。应用不会绕过 DRM、付费墙或访问限制，Google Play 版不支持 YouTube 下载。"),
-            ("所有视频都能导出为 MP4 或 GIF 吗？", "不能。导出需要 Pro，并取决于来源兼容性。iOS 本地 HLS 离线包可以在应用内播放，但不能导出 MP4/GIF、分享文件或保存到系统相册；iOS GIF 所选片段总时长最多 30 秒。"),
-            ("双屏是逐帧同步播放吗？", "两个播放器独立控制，不保证逐帧同步。"),
-            ("现在能在 iPhone 上安装吗？", "iPhone 版即将上线，目前正在提交 App Store。本站暂未提供公开 App Store 下载链接，上架后补充核验过的官方入口。"),
-            ("一次购买可以跨 Android 和 iPhone 吗？", "不可以。两个平台的购买权益独立，不跨平台通用。恢复已有购买请使用原商店账号；iOS 可在 Pro 页选择“恢复购买”。"),
-            ("为什么 iOS 后台下载可能停止？", "后台传输由 iOS 调度，强制退出会停止传输。重新打开后可继续受支持来源，能否复用已下载数据取决于来源服务器和格式。"),
-        ],
-    },
+# The Android/iOS app settings both expose these fourteen languages.
+# Keep the existing /zh/ URL; use Google's supported generic 'es' hreflang
+# for the es-419 page because Google does not support numeric region 419.
+LOCALES = {
+    'en': ('en', '/', 'English', 'en', 'en_US'),
+    'zh': ('zh-Hans', '/zh/', '简体中文', 'zh-Hans', 'zh_CN'),
+    'zh-Hant': ('zh-Hant', '/zh-Hant/', '繁體中文', 'zh-Hant', 'zh_TW'),
+    'ja': ('ja', '/ja/', '日本語', 'ja', 'ja_JP'),
+    'de': ('de', '/de/', 'Deutsch', 'de', 'de_DE'),
+    'fr': ('fr', '/fr/', 'Français', 'fr', 'fr_FR'),
+    'ko': ('ko', '/ko/', '한국어', 'ko', 'ko_KR'),
+    'es-419': ('es-419', '/es-419/', 'Español (Latinoamérica)', 'es', 'es_MX'),
+    'pt-BR': ('pt-BR', '/pt-BR/', 'Português (Brasil)', 'pt-BR', 'pt_BR'),
+    'id': ('id', '/id/', 'Bahasa Indonesia', 'id', 'id_ID'),
+    'ar': ('ar', '/ar/', 'العربية', 'ar', 'ar_AR'),
+    'hi': ('hi', '/hi/', 'हिन्दी', 'hi', 'hi_IN'),
+    'it': ('it', '/it/', 'Italiano', 'it', 'it_IT'),
+    'he': ('he', '/he/', 'עברית', 'he', 'he_IL'),
 }
+
+
+def load_copy():
+    directory = Path(__file__).with_name('locales')
+    reference = json.loads((directory / 'en.json').read_text(encoding='utf-8'))
+    result = {}
+    for key, (lang, prefix, native, hreflang, og_locale) in LOCALES.items():
+        copy = json.loads((directory / (key + '.json')).read_text(encoding='utf-8'))
+        if copy.keys() != reference.keys():
+            raise ValueError('Missing or unexpected translation keys: ' + key)
+        copy.update(locale_key=key, lang=lang, prefix=prefix, native_name=native,
+                    hreflang=hreflang, og_locale=og_locale,
+                    direction='rtl' if key in {'ar', 'he'} else 'ltr')
+        result[key] = copy
+    return result
+
+
+COPY = load_copy()

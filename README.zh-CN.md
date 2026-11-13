@@ -16,6 +16,8 @@
   <a href="README.md">English</a>
 </p>
 
+[产品官网](https://app.pdos.work/zh/)现已覆盖应用内全部 14 种语言，产品介绍、下载说明和常见问答均已本地化，可通过语言菜单切换。
+
 ## 从保存到回看，一个应用就够
 
 VideoLoad 将网页浏览、本地视频整理和片段工具放在一起，支持 Android 与 iPhone。保存自己拥有或已获授权下载的受支持视频，再把常看的内容整理起来。
@@ -82,7 +84,7 @@ VideoLoad 将网页浏览、本地视频整理和片段工具放在一起，支�
 
 [报告问题、提出建议或咨询用法](https://github.com/fcjnotbad-source/videoload-app/issues/new/choose)，中文、英文都可以。提交前可先[搜索已有反馈](https://github.com/fcjnotbad-source/videoload-app/issues)。
 
-请附上应用版本、设备型号和操作步骤。公开反馈所有人可见，请勿上传密码、Cookie、购买凭据或私人视频；不便公开的事项可通过[开发者联系页](https://vdb.aivest.art/apps/jiange-kuaixia#contact)联系。
+请附上应用版本、设备型号和操作步骤。公开反馈所有人可见，请勿上传密码、Cookie、购买凭据或私人视频；不便公开的事项可邮件联系 [fcjnotbad@gmail.com](mailto:fcjnotbad@gmail.com)。
 
 如果觉得好用，欢迎分享本页、在商店留下真实评价，或点一个 Star，让更多人发现 VideoLoad。
 

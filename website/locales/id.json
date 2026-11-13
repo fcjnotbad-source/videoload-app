@@ -1,0 +1,202 @@
+{
+  "title": "VideoLoad — Pemutar video tanpa iklan, penanda klip & unduhan",
+  "description": "Simpan video yang didukung dan diizinkan untuk diunduh. Tandai dan ulangi momen, rapikan koleksi, lalu bandingkan atau ekspor klip dengan VideoLoad Pro. Tersedia untuk Android; versi iPhone segera hadir.",
+  "faq_description": "Jawaban tentang VideoLoad: gratis vs Pro, dukungan unduhan, privasi, batas ekspor klip, pemutaran dua video dengan kontrol terpisah, dan ketersediaan di iPhone.",
+  "download_description": "Dapatkan VideoLoad melalui tautan resmi Google Play atau APK Android. Bandingkan edisi, baca panduan instalasi, dan lihat status versi iPhone yang segera hadir.",
+  "nav": [
+    "Fitur",
+    "Tanya jawab",
+    "GitHub",
+    "Dapatkan aplikasi"
+  ],
+  "eyebrow": "LEBIH SEDIKIT MENCARI. LEBIH BANYAK MENONTON ULANG.",
+  "headline": "Simpan momen yang<br>layak <span>ditonton lagi.</span>",
+  "intro": "Video Anda, dengan bagian penting yang mudah dijangkau. Jelajahi web, simpan video yang didukung, tandai momen, lalu kembali kapan pun Anda membutuhkannya.",
+  "cta": "Dapatkan VideoLoad",
+  "secondary": "Jelajahi aplikasi",
+  "trust": "Tanpa iklan dalam aplikasi. Tanpa akun aplikasi. Pemrosesan di perangkat.",
+  "preview": "Tampilan iPhone asli · iOS segera hadir · media demo buatan sendiri",
+  "caption": "Pilih momennya. Pertahankan video aslinya.",
+  "caption_detail": "Tandai beberapa klip dan putar ulang hanya bagian yang penting.",
+  "platform": "Android tersedia melalui APK resmi · Ketersediaan Google Play bervariasi · iPhone segera hadir",
+  "section_label": "SESUAI CARA ANDA MENONTON",
+  "section_title": "Tak perlu lama mencari.<br>Nikmati lebih banyak momen penting.",
+  "features": [
+    [
+      "01",
+      "Simpan untuk nanti",
+      "Browser bawaan dan pusat unduhan memudahkan Anda menyimpan video yang didukung, milik Anda sendiri atau yang boleh Anda simpan."
+    ],
+    [
+      "02",
+      "Langsung ke momen pilihan",
+      "Tandai titik awal dan akhir, pilih beberapa momen, lalu putar ulang bagian yang ditandai tanpa mengubah video asli."
+    ],
+    [
+      "03",
+      "Bandingkan dua tampilan · Pro",
+      "Bandingkan dua video pada satu layar dengan kontrol terpisah. Impor video Anda sendiri dan ekspor bagian yang ditandai dari sumber yang kompatibel ke MP4 atau GIF."
+    ]
+  ],
+  "gallery_title": "Koleksi Anda. Sudut pandang Anda.",
+  "library": "Satukan video asli, sorotan, dan GIF dalam satu koleksi.",
+  "compare": "Dua video, masing-masing dengan kontrol terpisah. Fitur Pro.",
+  "gallery_note": "Tangkapan layar menampilkan aplikasi iPhone dengan konten buatan pengembang. Tampilan Android dan beberapa batas format berbeda.",
+  "facts_label": "SEKILAS TENTANG VIDEOLOAD",
+  "facts_title": "Peralatan video yang praktis.",
+  "facts": [
+    [
+      "Tentang aplikasi",
+      "Browser video, koleksi lokal, dan pemutar dengan penanda klip serta pemutaran berulang."
+    ],
+    [
+      "Fitur gratis versi toko",
+      "Penjelajahan web, hingga 2 unduhan yang belum selesai, pemutaran, penanda klip, dan pemutaran berulang."
+    ],
+    [
+      "Pro opsional",
+      "Pembelian sekali: impor lokal, perbandingan dua video, ekspor MP4/GIF yang kompatibel, dan penghapusan batas jumlah tugas."
+    ],
+    [
+      "Privasi",
+      "Tanpa akun aplikasi atau SDK iklan. Pemrosesan video dilakukan di perangkat Anda."
+    ],
+    [
+      "Platform",
+      "Android 8.0 ke atas. Versi iPhone segera hadir."
+    ],
+    [
+      "Komunitas resmi",
+      "Informasi produk dan masukan publik tersedia di GitHub. Kode sumber aplikasi tetap privat."
+    ]
+  ],
+  "download_title": "Mulai dari satu video.<br>Jadikan milik Anda.",
+  "download_intro": "Gunakan tautan unduhan resmi. Ketersediaan di toko bergantung pada wilayah dan status rilis.",
+  "store": [
+    [
+      "Android",
+      "Google Play",
+      "Mulai gratis · Pro opsional, cukup sekali beli",
+      "Buka Google Play",
+      "https://play.google.com/store/apps/details?id=com.fcj.videoload"
+    ],
+    [
+      "Android · edisi unduh langsung",
+      "APK resmi",
+      "Edisi terpisah dengan merek berbahasa Mandarin · fitur dibuka",
+      "Unduh APK",
+      "https://vdb.aivest.art/apps/jiange-kuaixia"
+    ],
+    [
+      "iPhone",
+      "App Store",
+      "Segera hadir · pengajuan sedang diproses",
+      "Belum tersedia",
+      null
+    ]
+  ],
+  "download_help": "Perbedaan edisi & bantuan instalasi",
+  "faq_title": "Beberapa hal yang mungkin ingin Anda ketahui.",
+  "faq_more": "Semua pertanyaan & jawaban",
+  "feedback_title": "Dibuat agar berguna. Lebih baik dengan masukan Anda.",
+  "feedback_text": "Menemukan masalah atau punya ide? Ceritakan apa yang ingin Anda lakukan. Masukan dalam bahasa Inggris dan Mandarin diterima.",
+  "feedback_cta": "Kirim masukan",
+  "github_cta": "Jelajahi di GitHub",
+  "feedback_note": "Masukan di GitHub bersifat publik. Jangan sertakan kata sandi, bukti pembelian, atau media pribadi.",
+  "limits": "Unduh hanya konten milik Anda atau yang boleh Anda simpan. Kompatibilitas bervariasi; aplikasi tidak melewati DRM, pembatasan berbayar, atau kontrol akses. Situs web dapat menampilkan iklannya sendiri. Pemutaran dua video tidak menjamin sinkronisasi per bingkai. Di iOS, paket HLS offline dapat diputar dalam aplikasi tetapi tidak dapat diekspor; menutup paksa aplikasi menghentikan transfer.",
+  "footer": "VideoLoad · Simpan momen yang layak ditonton lagi.",
+  "updated": "Informasi produk diperbarui pada 13 November 2026.",
+  "privacy": "Privasi",
+  "downloads": "Unduhan",
+  "home": "Beranda",
+  "faq_heading": "Jawaban yang jelas, tanpa menebak-nebak.",
+  "faq_intro": "Apa yang bisa dilakukan VideoLoad, fitur tambahan Pro, dan batas-batas penggunaannya.",
+  "faq": [
+    [
+      "Apa itu VideoLoad?",
+      "VideoLoad memadukan browser web, koleksi video lokal, dan pemutar dengan alat klip. Simpan video yang didukung, milik Anda sendiri atau yang diizinkan untuk diunduh, tandai dan putar ulang momen pilihan, lalu bandingkan video atau ekspor klip yang kompatibel dengan Pro."
+    ],
+    [
+      "Apakah VideoLoad gratis? Apakah Pro berlangganan?",
+      "Versi toko dapat mulai digunakan secara gratis. Pro adalah pembelian dalam aplikasi opsional yang dibayar sekali, bukan langganan. Pro menambahkan impor video lokal, perbandingan dua video, ekspor klip MP4/GIF yang kompatibel, dan penghapusan batas dua unduhan yang belum selesai. Harga ditampilkan di toko wilayah Anda. Edisi unduh langsung Android memiliki aturan fitur tersendiri."
+    ],
+    [
+      "Apa saja yang dihitung dalam batas dua unduhan?",
+      "Tugas yang belum selesai, termasuk yang dijeda dan gagal, ikut dihitung. Tugas yang selesai dan dibatalkan tidak dihitung. Jumlah tugas tidak menjamin jumlah koneksi serentak atau kecepatan unduh."
+    ],
+    [
+      "Apakah VideoLoad menampilkan iklan atau mengunggah video saya?",
+      "VideoLoad tidak menempatkan iklan pada antarmukanya sendiri dan tidak memerlukan akun aplikasi. Pemrosesan media dan penanda klip tetap berada di perangkat Anda; media tidak perlu diunggah ke pengembang. Penjelajahan dan pengunduhan tetap terhubung ke situs web serta server media yang Anda pilih. Situs tersebut dapat menampilkan iklan dan menggunakan cookie."
+    ],
+    [
+      "Apakah aplikasi dapat mengunduh dari semua situs web?",
+      "Tidak. Kompatibilitas bergantung pada situs web, server, dan format. Unduh hanya materi milik Anda atau yang boleh Anda simpan. Aplikasi tidak melewati DRM, pembatasan berbayar, atau kontrol akses. Edisi Google Play tidak mendukung unduhan YouTube."
+    ],
+    [
+      "Apakah semua video dapat diekspor ke MP4 atau GIF?",
+      "Tidak. Ekspor memerlukan Pro dan sumber yang kompatibel. Di iOS, paket HLS offline lokal dapat diputar dalam aplikasi, tetapi tidak dapat diekspor ke MP4/GIF, dibagikan sebagai file, atau disimpan ke Foto. Pilihan bagian untuk GIF di iOS dapat berdurasi total hingga 30 detik."
+    ],
+    [
+      "Apakah kedua pemutar disinkronkan?",
+      "Setiap pemutar memiliki kontrol terpisah. Perbandingan dua video tidak menjamin sinkronisasi yang akurat hingga per bingkai."
+    ],
+    [
+      "Apakah VideoLoad sudah bisa dipasang di iPhone?",
+      "Versi iPhone segera hadir dan pengajuan ke App Store sedang berlangsung. Tautan unduhan publik App Store belum tersedia di sini. Tautan resmi yang sudah diverifikasi akan ditambahkan setelah rilis."
+    ],
+    [
+      "Apakah satu pembelian Pro membuka fitur di Android dan iPhone?",
+      "Tidak. Pembelian berlaku per platform dan tidak dapat dipindahkan antara Android dan iOS. Gunakan akun toko yang digunakan saat membeli untuk memulihkan pembelian; di iOS, pilih “Pulihkan Pembelian” pada layar Pro."
+    ],
+    [
+      "Mengapa unduhan iOS dapat berhenti di latar belakang?",
+      "iOS menjadwalkan transfer latar belakang, dan menutup paksa aplikasi akan menghentikannya. Buka kembali aplikasi untuk melanjutkan dari sumber yang mendukung; penggunaan ulang data yang sudah selesai bergantung pada server sumber dan format."
+    ]
+  ],
+  "skip": "Lewati ke konten",
+  "navigation_label": "Navigasi utama",
+  "footer_navigation": "Navigasi bagian bawah",
+  "language_label": "Bahasa",
+  "alt_player": "Pemutar VideoLoad di iPhone menampilkan dua klip yang ditandai; iOS segera hadir",
+  "alt_library": "Koleksi video VideoLoad di iPhone dengan video asli, sorotan, dan GIF",
+  "alt_compare": "VideoLoad Pro membandingkan dua video dengan kontrol terpisah",
+  "machine_summary_label": "Ringkasan produk dalam teks biasa",
+  "product_facts_label": "Fakta produk",
+  "demo_link": "Buka halaman media demo buatan sendiri",
+  "not_found_title": "Mari kembali ke halaman yang Anda cari.",
+  "not_found_text": "Halaman ini tidak ditemukan.",
+  "not_found_cta": "Buka VideoLoad",
+  "download_sections": [
+    {
+      "title": "Edisi mana yang sebaiknya saya pilih?",
+      "paragraphs": [
+        "Edisi Google Play dapat mulai digunakan secara gratis dengan Pro opsional yang dibayar sekali. Ketersediaannya bergantung pada peninjauan toko, peluncuran, dan wilayah. APK resmi untuk unduh langsung adalah aplikasi Android terpisah dengan merek berbahasa Mandarin, pembaruan tersendiri, dan fitur yang saat ini sudah dibuka. Keduanya merupakan paket aplikasi berbeda; pembelian toko tidak dapat dipindahkan antara keduanya."
+      ]
+    },
+    {
+      "title": "Memasang di Android",
+      "paragraphs": [
+        "Diperlukan Android 8.0 atau yang lebih baru. Gunakan tautan resmi di atas. Untuk APK, Android mungkin meminta izin instalasi dari browser atau pengelola file yang Anda gunakan. Aktifkan hanya jika diperlukan untuk instalasi ini, lalu nonaktifkan setelah selesai. Jangan menonaktifkan perlindungan sistem."
+      ]
+    },
+    {
+      "title": "iPhone segera hadir",
+      "paragraphs": [
+        "Pengajuan ke App Store sedang berlangsung. Tautan resmi App Store yang sudah diverifikasi akan ditambahkan ke halaman ini setelah rilis. Tidak ada file instalasi iOS yang dibagikan di sini."
+      ]
+    },
+    {
+      "title": "Gratis dan Pro",
+      "paragraphs": [
+        "Fitur gratis versi toko mencakup penjelajahan web, hingga dua unduhan yang belum selesai, pemutaran, penanda klip, dan pemutaran berulang. Tugas yang dijeda atau gagal ikut dihitung; tugas yang selesai atau dibatalkan tidak dihitung.",
+        "Pro membuka impor lokal, perbandingan dua video dengan kontrol terpisah, ekspor MP4/GIF yang kompatibel, dan penghapusan batas jumlah tugas. Pro adalah pembelian dalam aplikasi sekali bayar, bukan langganan. Harga setempat ditampilkan oleh toko. Pembelian Android dan iOS terpisah. Gunakan akun toko semula untuk memulihkan pembelian; di iOS gunakan “Pulihkan Pembelian”."
+      ]
+    },
+    {
+      "title": "Coba video yang boleh Anda simpan",
+      "paragraphs": [
+        "Di browser aplikasi, buka halaman media demo buatan kami lalu unduh MP4 menggunakan tombol unduh mengambang. Buka video yang sudah selesai diunduh, tandai detik 1–3 dan 9–11, lalu coba pemutaran bagian yang ditandai saja. Kontrol pengulangan berbeda di tiap platform. Pro menambahkan ekspor yang kompatibel dan perbandingan dua video."
+      ]
+    }
+  ]
+}
