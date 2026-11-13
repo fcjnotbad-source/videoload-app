@@ -6,7 +6,7 @@
 
 <p align="center"><strong>A powerful mobile video download browser.</strong></p>
 <p align="center">Download videos. Watch videos. Trim clips.</p>
-<p align="center">Free official website download · No app login · No in-app ads · On-device processing · No media upload to the developer</p>
+<p align="center">Free official website download · No app login · No in-app ads · Local browsing history · No activity-record collection</p>
 
 <p align="center">
   <a href="https://videoload.pdos.work/">Official website</a> ·
@@ -22,15 +22,15 @@ The [official website](https://videoload.pdos.work/) supports all 14 app languag
 
 [![VideoLoad product film](assets/promo/videoload-overview-poster.jpg)](https://videoload.pdos.work/#film)
 
-English narration and English subtitles. Download, watch and trim videos, with clip export and dual playback unlocked in the free official website edition.
+Download, watch and trim videos, with clip export and dual playback unlocked in the free official website edition.
 
-[▶ Watch the product film](https://videoload.pdos.work/#film) · [Download the MP4](https://videoload.pdos.work/assets/promo/videoload-overview-en.mp4)
+[▶ Watch the product film](https://videoload.pdos.work/#film) · [Download the MP4](https://videoload.pdos.work/assets/promo/videoload-overview-en.mp4?v=privacy-2)
 
 ## Download videos. Watch videos. Trim clips.
 
 VideoLoad is a **mobile video download browser** built around three core uses: **downloading videos, watching videos and trimming clips**. The official website edition is free, with compatible clip export and dual playback unlocked. Download supported videos you own or are allowed to save, play them on your phone and export clips as MP4 or GIF, without an app account.
 
-**Your videos stay with you.** Playback and video processing happen on-device, without uploading media to the developer. Browsing and downloads still contact your chosen websites and media hosts, which have their own privacy policies.
+**Your browsing history and activity records stay on your device.** We do not collect or upload these records to our servers. Browsing and downloads still contact your chosen websites and media hosts, which have their own privacy policies.
 
 - **Download videos.** Save supported, authorized videos from the built-in browser and manage your downloads in one place.
 - **Watch videos.** Play downloaded videos, adjust speed, mark moments and loop the parts you want.
@@ -52,11 +52,11 @@ VideoLoad is a **mobile video download browser** built around three core uses: *
   </tr>
   <tr>
     <td align="center"><img src="assets/screenshots/library.png" width="280" alt="VideoLoad iOS library with original video, exported highlights and a GIF"></td>
-    <td align="center"><img src="assets/screenshots/compare.png" width="280" alt="VideoLoad comparing an original video and its highlights in two independently controlled players"></td>
+    <td align="center"><img src="assets/screenshots/compare-portraits.png" width="280" alt="VideoLoad dual-video preview with two AI-generated demo portraits and independent controls"></td>
   </tr>
 </table>
 
-Screenshots show the iOS app, which is coming soon, using developer-created demo media. Android appearance and some format limits differ. These are app screenshots; the animation inside the player is sample content.
+The player and library screenshots show the iPhone app, which is coming soon. The comparison preview uses AI-generated demo portraits with independently controlled video panes. Android appearance and some format limits differ.
 
 ## Get VideoLoad
 
@@ -84,7 +84,7 @@ Store editions may have different feature access and offer an optional one-time 
 
 ## Privacy and supported content
 
-No app account is required. Video processing and clip marks stay on your device; the app does not require uploading your media to the developer. VideoLoad adds no ads to its own interface. Websites you visit may show ads and use cookies, and browsing or downloading sends requests to those websites.
+No app account is required. Browsing history and activity records stay on your device. We do not collect or upload these records to our servers. These local records include download records, playback progress and clip marks. VideoLoad adds no ads to its own interface. Websites you visit may show ads and use cookies, and browsing or downloading sends requests to those websites.
 
 Only save content you own or are authorized to download. Website and format support varies. The app does not bypass DRM, paywalls or access controls. Two-video comparison uses independent controls and does not promise frame-accurate synchronization. On iOS, local HLS offline packages play in the app but cannot be exported to MP4/GIF, shared as files or saved to Photos. iOS controls background transfers; force-quitting stops them.
 

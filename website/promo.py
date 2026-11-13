@@ -3,11 +3,17 @@ from datetime import datetime
 import json
 import math
 from pathlib import Path
+from urllib.parse import quote
 
 from content import BASE
 
 METADATA = Path(__file__).resolve().parent.parent / 'assets/promo/metadata.json'
 VIDEO_ID = BASE + '/#film-video'
+REVISION = json.loads(METADATA.read_text(encoding='utf-8')).get('revision', '1') if METADATA.is_file() else '1'
+
+
+def media_url(filename):
+    return '/assets/promo/' + filename + '?v=' + quote(str(REVISION), safe='')
 
 
 def video_schema(copy):
@@ -30,7 +36,7 @@ def video_schema(copy):
         '@id': VIDEO_ID,
         'name': copy['promo_title'],
         'description': copy['promo_note'],
-        'contentUrl': BASE + '/assets/promo/videoload-overview-en.mp4',
+        'contentUrl': BASE + media_url('videoload-overview-en.mp4'),
         'thumbnailUrl': BASE + '/assets/promo/videoload-overview-poster.jpg',
         'uploadDate': metadata['uploadDate'],
         'duration': f'PT{seconds:g}S',
@@ -39,7 +45,7 @@ def video_schema(copy):
         'inLanguage': metadata['inLanguage'],
         'caption': {
             '@type': 'MediaObject',
-            'contentUrl': BASE + '/assets/promo/videoload-overview-en.vtt',
+            'contentUrl': BASE + media_url('videoload-overview-en.vtt'),
             'encodingFormat': 'text/vtt',
             'inLanguage': metadata['captionLanguage'],
         },

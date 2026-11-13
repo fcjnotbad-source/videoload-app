@@ -6,6 +6,7 @@ from xml.sax.saxutils import escape
 
 from content import APK, BASE, CONTACT_EMAIL, COPY, FEEDBACK, PLAY, REPO, UPDATED
 from render import downloads, faq, home, page_html
+from promo import media_url
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / 'dist'
@@ -55,21 +56,21 @@ def build():
         },
         'officialWebsiteEdition': {'downloadPage': APK, 'price': 'Free', 'unlockedFeatures': ['Compatible MP4/GIF clip export', 'Local video import', 'Independently controlled dual-video playback'], 'note': 'The official website direct edition has these features unlocked for free; store editions may differ'},
         'storeEdition': {'free': ['Browser', 'Up to two unfinished download tasks, including paused and failed tasks', 'Video playback', 'Clip marking and looping'], 'pro': {'purchaseType': 'One-time in-app purchase; no subscription', 'price': 'See the localized store price', 'features': ['Remove unfinished-task limit', 'Local video import', 'Independent two-video comparison', 'Compatible MP4/GIF clip export'], 'crossPlatformPurchase': False}},
-        'privacy': {'appAccountRequired': False, 'inAppAdvertising': False, 'mediaProcessing': 'On device; developer media upload not required', 'websiteRequests': 'Browsing and downloads contact the chosen websites and media hosts; their privacy policies apply'},
+        'privacy': {'appAccountRequired': False, 'inAppAdvertising': False, 'analyticsSDK': False, 'browsingHistory': 'Stored on your device; not collected by the developer', 'activityRecords': 'Stored locally, including download records, playback progress and clip marks', 'developerHistoryUpload': False, 'developerActivityUpload': False, 'websiteRequests': 'Browsing and downloads contact the chosen websites and media hosts; their privacy policies apply. Developer download, support and update pages may record standard page visits and download counts. System backup or device transfer may copy local app data to your own account or device.'},
         'limitations': [COPY['en']['limits'], 'iOS GIF selections total at most 30 seconds', 'The Google Play edition does not support YouTube downloads'],
         'community': REPO, 'feedback': FEEDBACK, 'contactEmail': CONTACT_EMAIL,
-        'promotionalVideo': {'contentUrl': BASE + '/assets/promo/videoload-overview-en.mp4', 'thumbnailUrl': BASE + '/assets/promo/videoload-overview-poster.jpg', 'transcriptUrl': BASE + '/assets/promo/transcript.en.txt', 'inLanguage': 'en', 'captionLanguage': 'en'},
+        'promotionalVideo': {'contentUrl': BASE + media_url('videoload-overview-en.mp4'), 'thumbnailUrl': BASE + '/assets/promo/videoload-overview-poster.jpg', 'transcriptUrl': BASE + media_url('transcript.en.txt'), 'inLanguage': 'en', 'captionLanguage': 'en'},
     }
     write('product.json', json.dumps(facts, ensure_ascii=False, indent=2) + '\n')
     summary = f'''# VideoLoad
 
-> VideoLoad is a mobile video download browser: download videos, watch videos and trim clips. The official website edition is free, with compatible clip export and independently controlled dual-video playback unlocked. No app login or in-app ads; video processing happens on-device without uploading media to the developer. Store editions may differ. / VideoLoad 手机视频下载浏览器：下载视频、观看视频、视频截取。官网直装版免费，片段导出与双屏播放已解锁；无需登录、应用内无广告，视频在本机处理，无需上传给开发者，保护隐私。商店版的功能开放方式可能不同。
+> VideoLoad is a mobile video download browser: download videos, watch videos and trim clips. The official website edition is free, with compatible clip export and independently controlled dual-video playback unlocked. No app login or in-app ads. Browsing history and activity records stay on your device; we do not collect or upload these records to our servers. Store editions may differ. / VideoLoad 手机视频下载浏览器：下载视频、观看视频、视频截取。官网直装版免费，片段导出与双屏播放已解锁；无需登录、应用内无广告，浏览历史和操作记录保留本地；我们不会收集这些记录，也不会上传到我们的服务器。商店版的功能开放方式可能不同。
 
 Product information updated {UPDATED}.
 
 ## Official pages
 - [Product film]({BASE}/#film): English narration and subtitles, with download, playback, clipping and dual-video features.
-- [Film transcript]({BASE}/assets/promo/transcript.en.txt): The complete English narration in plain text.
+- [Film transcript]({BASE}{media_url('transcript.en.txt')}): The complete English narration in plain text.
 - [English product overview]({BASE}/): Features, free and Pro tiers, privacy and platform status.
 - [中文产品介绍]({BASE}/zh/): 功能、免费与 Pro、隐私与平台状态。
 - [Downloads]({BASE}/download/): Official Android entries, edition differences and iPhone status.
@@ -82,6 +83,9 @@ Product information updated {UPDATED}.
 
 ## Contact
 Email: {CONTACT_EMAIL}
+
+## Local records and network requests
+Browsing history and app activity records, including download records, playback progress and clip marks, are stored on your device. We do not collect or upload these records to our servers, and the app includes no analytics SDK. Browsing and downloads still contact the websites and media hosts you choose. Developer download, support and update pages can receive normal web requests and record standard page/download statistics. System backup or device transfer may copy local app data to your own account or device.
 
 ## Availability and boundaries
 Android: official APK available; Google Play availability depends on rollout and region. iPhone: coming soon; no public App Store link yet.

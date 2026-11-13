@@ -2,7 +2,7 @@
   "durationSeconds": 54,
   "width": 1920,
   "height": 1080,
-  "uploadDate": "2026-11-13T08:45:15Z",
+  "uploadDate": "2026-11-13T09:19:33Z",
   "inLanguage": "en",
   "captionLanguage": "en",
   "captionsBurnedIn": true,
@@ -13,5 +13,7 @@
     "portraitImages": "Two fictional adult women created with built-in AI image generation and labeled as demo imagery",
     "music": "Original synthesized chords, plucks and quiet transition accents",
     "narration": "English AI narration with a grounded male voice, following the requested product-operations production style"
-  }
+  },
+  "revision": "privacy-2",
+  "privacyMessage": "Browsing history and activity records stay on your device and are not collected or uploaded to our servers."
 }

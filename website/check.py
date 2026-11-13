@@ -6,7 +6,7 @@ from urllib.parse import unquote, urlsplit
 import xml.etree.ElementTree as ET
 
 from content import APK, BASE, CONTACT_EMAIL, COPY, LOCALES, REPO
-from promo import METADATA, VIDEO_ID
+from promo import METADATA, VIDEO_ID, media_url
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / 'dist'
@@ -82,9 +82,10 @@ def check():
                 assert video.get('poster') == '/assets/promo/videoload-overview-poster.jpg', path
                 assert video.get('lang') == 'en', path
                 assert resolve(video['poster']).is_file(), path
-                assert any(tag == 'source' and attr.get('src') == '/assets/promo/videoload-overview-en.mp4' and attr.get('type') == 'video/mp4' for tag, attr in doc.tags), path
-                assert any(tag == 'track' and attr.get('kind') == 'captions' and attr.get('srclang') == 'en' and attr.get('src') == '/assets/promo/videoload-overview-en.vtt' for tag, attr in doc.tags), path
+                assert any(tag == 'source' and attr.get('src') == media_url('videoload-overview-en.mp4') and attr.get('type') == 'video/mp4' for tag, attr in doc.tags), path
+                assert any(tag == 'track' and attr.get('kind') == 'captions' and attr.get('srclang') == 'en' and attr.get('src') == media_url('videoload-overview-en.vtt') for tag, attr in doc.tags), path
                 assert any(tag == 'section' and attr.get('id') == 'film' for tag, attr in doc.tags), path
+                assert any(tag == 'img' and attr.get('src') == '/assets/screenshots/compare-portraits.png' for tag, attr in doc.tags), path
             graph = doc.schemas[0]['@graph']
             description = next(attr['content'] for tag, attr in doc.tags if tag == 'meta' and attr.get('name') == 'description')
             assert description not in descriptions, path
@@ -104,7 +105,7 @@ def check():
                 assert film['name'] == copy['promo_title'] and film['description'] == copy['promo_note'], path
                 assert film['duration'] == f'PT{float(metadata["durationSeconds"]):g}S', path
                 assert film['uploadDate'] == metadata['uploadDate'], path
-                assert film['contentUrl'] == BASE + '/assets/promo/videoload-overview-en.mp4', path
+                assert film['contentUrl'] == BASE + media_url('videoload-overview-en.mp4'), path
                 assert film['thumbnailUrl'] == BASE + '/assets/promo/videoload-overview-poster.jpg', path
                 assert film['inLanguage'] == 'en' and film['caption']['inLanguage'] == 'en', path
             elif page != '':

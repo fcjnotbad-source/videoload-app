@@ -16,9 +16,9 @@ Unfinished tasks, including paused and failed tasks. Completed and cancelled tas
 
 VideoLoad places no ads in its own interface. Third-party websites can show their own ads; the app does not promise an ad-free web.
 
-### Are my videos uploaded?
+### Do you collect my browsing history or activity records?
 
-The app does not require uploading media to the developer for playback or clip processing. Media and clip marks are kept locally. Browsing and downloading still contact the websites and media servers you choose. Those sites and the app stores have their own privacy policies. See the [Android](https://fcjnotbad-source.github.io/videoload-review-media/privacy.html) and [iOS](https://fcjnotbad-source.github.io/videoload-review-media/ios/privacy.html) policies.
+Browsing history and activity records stay on your device. We do not collect or upload these records to our servers. Download records, playback progress and clip marks are stored locally. Browsing and downloading still contact the websites and media servers you choose. Those sites and the app stores have their own privacy policies. See the [Android](https://fcjnotbad-source.github.io/videoload-review-media/privacy.html) and [iOS](https://fcjnotbad-source.github.io/videoload-review-media/ios/privacy.html) policies.
 
 ### Can it download every video or website?
 
@@ -62,9 +62,9 @@ This repository publishes product information, images and support forms. The app
 
 应用自身界面不投放广告，第三方网页可能有自己的广告，不承诺网页完全无广告。
 
-### 视频会上传吗？
+### 会收集浏览历史或操作记录吗？
 
-播放、片段处理无需把媒体上传给开发者，媒体与标注保留在本机。浏览和下载仍会连接你选择的网站和媒体服务器，相关网站及应用商店有各自的隐私政策。详见 [Android](https://fcjnotbad-source.github.io/videoload-review-media/privacy.html) 与 [iOS](https://fcjnotbad-source.github.io/videoload-review-media/ios/privacy-zh.html) 隐私政策。
+浏览历史和操作记录保留在你的设备上，我们不会收集这些记录，也不会将它们上传到我们的服务器。下载记录、播放进度和片段标注也保留在本地。浏览和下载仍会连接你选择的网站和媒体服务器，相关网站及应用商店有各自的隐私政策。详见 [Android](https://fcjnotbad-source.github.io/videoload-review-media/privacy.html) 与 [iOS](https://fcjnotbad-source.github.io/videoload-review-media/ios/privacy-zh.html) 隐私政策。
 
 ### 所有网站、视频都能下载吗？
 

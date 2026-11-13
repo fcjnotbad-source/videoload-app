@@ -1,7 +1,7 @@
 {
   "title": "VideoLoad — Browser Pengunduh Video untuk Ponsel | Unduh, Tonton & Potong",
-  "description": "Browser pengunduh video di ponsel. Versi situs resmi gratis dengan unduhan, pemutaran, ekspor klip, dan pemutaran dua video. Tanpa akun atau unggahan media ke pengembang.",
-  "faq_description": "Jawaban tentang VideoLoad, browser pengunduh video untuk ponsel: fitur gratis, penggunaan tanpa login, privasi di perangkat, unduhan, pemutaran, pemotongan klip dan pemutaran dua video dengan Pro.",
+  "description": "Browser pengunduh video di ponsel. Versi situs resmi gratis dengan unduhan, pemutaran, ekspor klip, dan pemutaran dua video. Tanpa akun. Riwayat penjelajahan dan catatan aktivitas tetap berada di perangkat Anda. Kami tidak mengumpulkan atau mengunggah catatan ini ke server kami.",
+  "faq_description": "Jawaban tentang VideoLoad, browser pengunduh video untuk ponsel: fitur gratis, penggunaan tanpa login, riwayat penjelajahan dan aktivitas yang disimpan lokal, unduhan, pemutaran, pemotongan klip dan pemutaran dua video dengan Pro.",
   "download_description": "Dapatkan VideoLoad, browser pengunduh video untuk ponsel. Mulai gratis tanpa akun aplikasi; unduh dan tonton video, dengan Pro opsional untuk memotong klip dan memutar dua video. iPhone segera hadir.",
   "nav": [
     "Fitur",
@@ -11,10 +11,10 @@
   ],
   "eyebrow": "UNDUH VIDEO · TONTON VIDEO · POTONG KLIP",
   "headline": "Browser pengunduh video<br><span>untuk ponsel.</span>",
-  "intro": "VideoLoad adalah browser pengunduh video di ponsel untuk mengunduh, menonton, dan memotong video. Versi situs resmi gratis, dengan ekspor klip dan pemutaran dua video yang sudah terbuka. Tanpa akun aplikasi, tanpa iklan di aplikasi, dan tanpa mengunggah media ke pengembang: pemutaran serta pemrosesan dilakukan di ponsel Anda.",
+  "intro": "VideoLoad adalah browser pengunduh video di ponsel untuk mengunduh, menonton, dan memotong video. Versi situs resmi gratis, dengan ekspor klip dan pemutaran dua video yang sudah terbuka. Tanpa akun atau iklan di aplikasi. Pemutaran dan pemrosesan dilakukan di ponsel Anda. Riwayat penjelajahan dan catatan aktivitas tetap berada di perangkat Anda. Kami tidak mengumpulkan atau mengunggah catatan ini ke server kami.",
   "cta": "Dapatkan VideoLoad",
   "secondary": "Jelajahi aplikasi",
-  "trust": "Unduhan resmi gratis · Tanpa akun · Tanpa iklan aplikasi · Tanpa unggahan media",
+  "trust": "Unduhan resmi gratis · Tanpa akun · Tanpa iklan aplikasi · Riwayat tetap lokal · Aktivitas tidak dikumpulkan",
   "preview": "Tampilan iPhone asli · iOS segera hadir · media demo buatan sendiri",
   "caption": "Pilih momennya. Pertahankan video aslinya.",
   "caption_detail": "Tandai beberapa klip dan putar ulang hanya bagian yang penting.",
@@ -35,13 +35,13 @@
     [
       "03",
       "Potong klip",
-      "Tandai titik awal dan akhir, lalu ekspor klip yang kompatibel sebagai MP4 atau GIF. Video diproses di perangkat tanpa mengunggah media."
+      "Tandai titik awal dan akhir, lalu ekspor klip yang kompatibel sebagai MP4 atau GIF. Video diproses di perangkat."
     ]
   ],
   "gallery_title": "Dua video. Lebih banyak keseruan.",
   "library": "Satukan video asli, sorotan, dan GIF dalam satu koleksi.",
   "compare": "Dua video dalam satu layar, masing-masing dengan kontrol sendiri. Lebih banyak cara untuk menonton dan membandingkan.",
-  "gallery_note": "Tangkapan layar menampilkan aplikasi iPhone dengan konten buatan pengembang. Tampilan Android dan beberapa batas format berbeda.",
+  "gallery_note": "Pratinjau perbandingan menggunakan potret demo yang dibuat dengan AI. Kedua jendela video memiliki kontrol terpisah.",
   "facts_label": "SEKILAS TENTANG VIDEOLOAD",
   "facts_title": "Peralatan video yang praktis.",
   "facts": [
@@ -59,7 +59,7 @@
     ],
     [
       "Privasi",
-      "Tanpa akun aplikasi atau SDK iklan. Video diputar dan diproses di ponsel; media tidak perlu diunggah ke pengembang."
+      "Tanpa akun aplikasi atau SDK iklan. Riwayat penjelajahan dan catatan aktivitas tetap berada di perangkat Anda. Kami tidak mengumpulkan atau mengunggah catatan ini ke server kami."
     ],
     [
       "Platform",
@@ -114,7 +114,7 @@
   "faq": [
     [
       "Apa itu VideoLoad?",
-      "VideoLoad adalah browser pengunduh video untuk ponsel dengan tiga kegunaan utama: mengunduh video, menonton video, dan memotong klip. Mulai gratis tanpa akun aplikasi. Unduh hanya materi yang didukung, milik Anda sendiri atau yang boleh Anda simpan. Pemutaran dan pemrosesan dilakukan di ponsel tanpa mengunggah media ke pengembang. Pro membuka ekspor klip MP4/GIF yang kompatibel serta pemutaran dua video dengan kontrol terpisah."
+      "VideoLoad adalah browser pengunduh video untuk ponsel dengan tiga kegunaan utama: mengunduh video, menonton video, dan memotong klip. Mulai gratis tanpa akun aplikasi. Unduh hanya materi yang didukung, milik Anda sendiri atau yang boleh Anda simpan. Riwayat penjelajahan dan catatan aktivitas tetap berada di perangkat Anda. Kami tidak mengumpulkan atau mengunggah catatan ini ke server kami. Pro membuka ekspor klip MP4/GIF yang kompatibel serta pemutaran dua video dengan kontrol terpisah."
     ],
     [
       "Apakah VideoLoad gratis? Apakah Pro berlangganan?",
@@ -125,8 +125,8 @@
       "Tugas yang belum selesai, termasuk yang dijeda dan gagal, ikut dihitung. Tugas yang selesai dan dibatalkan tidak dihitung. Jumlah tugas tidak menjamin jumlah koneksi serentak atau kecepatan unduh."
     ],
     [
-      "Apakah VideoLoad menampilkan iklan atau mengunggah video saya?",
-      "VideoLoad tidak menempatkan iklan pada antarmukanya sendiri dan tidak memerlukan akun aplikasi. Pemrosesan media dan penanda klip tetap berada di perangkat Anda; media tidak perlu diunggah ke pengembang. Penjelajahan dan pengunduhan tetap terhubung ke situs web serta server media yang Anda pilih. Situs tersebut dapat menampilkan iklan dan menggunakan cookie."
+      "Apakah VideoLoad mengumpulkan riwayat penjelajahan atau catatan aktivitas saya?",
+      "VideoLoad tidak menempatkan iklan pada antarmukanya sendiri dan tidak memerlukan akun aplikasi. Riwayat penjelajahan dan catatan aktivitas tetap berada di perangkat Anda. Kami tidak mengumpulkan atau mengunggah catatan ini ke server kami. Penjelajahan dan pengunduhan tetap terhubung ke situs web serta server media yang Anda pilih. Situs tersebut dapat menampilkan iklan dan menggunakan cookie."
     ],
     [
       "Apakah aplikasi dapat mengunduh dari semua situs web?",
@@ -159,7 +159,7 @@
   "language_label": "Bahasa",
   "alt_player": "Pemutar VideoLoad di iPhone menampilkan dua klip yang ditandai; iOS segera hadir",
   "alt_library": "Koleksi video VideoLoad di iPhone dengan video asli, sorotan, dan GIF",
-  "alt_compare": "VideoLoad — Dua video dalam satu layar, masing-masing dengan kontrol sendiri. Lebih banyak cara untuk menonton dan membandingkan.",
+  "alt_compare": "Pratinjau dua video VideoLoad dengan dua potret demo buatan AI dan kontrol terpisah",
   "machine_summary_label": "Ringkasan produk dalam teks biasa",
   "product_facts_label": "Fakta produk",
   "demo_link": "Buka halaman media demo buatan sendiri",
@@ -200,6 +200,6 @@
     }
   ],
   "promo_title": "Lihat VideoLoad beraksi.",
-  "promo_note": "Narasi dan subtitle bahasa Inggris. Unduh, tonton, dan potong video; versi situs resmi yang gratis juga menyediakan pemutaran dua video.",
-  "promo_transcript_label": "Baca naskah narasi bahasa Inggris"
+  "promo_note": "Unduh, tonton, dan potong video; versi situs resmi yang gratis juga menyediakan pemutaran dua video.",
+  "promo_transcript_label": "Transkrip video"
 }

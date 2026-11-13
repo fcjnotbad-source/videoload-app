@@ -1,7 +1,7 @@
 {
   "title": "VideoLoad — Navigateur mobile de téléchargement vidéo | Télécharger, regarder et découper",
-  "description": "Un navigateur mobile de téléchargement vidéo. La version gratuite du site officiel permet de télécharger, regarder, découper et lire deux vidéos. Sans compte ni envoi de médias au développeur.",
-  "faq_description": "Les réponses sur VideoLoad, le navigateur mobile de téléchargement vidéo : fonctions gratuites, utilisation sans connexion, confidentialité sur l’appareil, téléchargements, lecture, découpe et double lecture avec Pro.",
+  "description": "Un navigateur mobile de téléchargement vidéo. La version gratuite du site officiel permet de télécharger, regarder, découper et lire deux vidéos. Sans compte. L’historique de navigation et les journaux d’activité restent sur votre appareil. Nous ne collectons pas ces données et ne les envoyons pas sur nos serveurs.",
+  "faq_description": "Les réponses sur VideoLoad, le navigateur mobile de téléchargement vidéo : fonctions gratuites, utilisation sans connexion, historique de navigation et activité conservés localement, téléchargements, lecture, découpe et double lecture avec Pro.",
   "download_description": "Téléchargez VideoLoad, le navigateur mobile de téléchargement vidéo. Commencez gratuitement sans compte d’app, téléchargez et regardez des vidéos. Découpe et double lecture en option avec Pro. iPhone bientôt disponible.",
   "nav": [
     "Fonctionnalités",
@@ -11,10 +11,10 @@
   ],
   "eyebrow": "TÉLÉCHARGER DES VIDÉOS · REGARDER · DÉCOUPER",
   "headline": "Votre navigateur mobile<br><span>pour télécharger des vidéos.</span>",
-  "intro": "VideoLoad est un navigateur mobile pour télécharger, regarder et découper des vidéos. La version du site officiel est gratuite, avec export de clips et lecture de deux vidéos débloqués. Aucun compte, aucune publicité dans l’app et aucun envoi de médias au développeur : lecture et traitement se font sur votre téléphone.",
+  "intro": "VideoLoad est un navigateur mobile pour télécharger, regarder et découper des vidéos. La version du site officiel est gratuite, avec export de clips et lecture de deux vidéos débloqués. Aucun compte ni publicité dans l’app. La lecture et le traitement se font sur votre téléphone. L’historique de navigation et les journaux d’activité restent sur votre appareil. Nous ne collectons pas ces données et ne les envoyons pas sur nos serveurs.",
   "cta": "Télécharger VideoLoad",
   "secondary": "Découvrir l’app",
-  "trust": "Téléchargement officiel gratuit · Sans compte · Sans publicité dans l’app · Aucun envoi de médias",
+  "trust": "Téléchargement officiel gratuit · Sans compte · Sans publicité dans l’app · Historique local · Aucune collecte d’activité",
   "preview": "Véritable aperçu sur iPhone · iOS bientôt disponible · démo originale",
   "caption": "Choisissez les moments. Gardez l’original.",
   "caption_detail": "Marquez plusieurs extraits pour revoir uniquement ce qui compte.",
@@ -35,13 +35,13 @@
     [
       "03",
       "Découper des clips",
-      "Marquez le début et la fin, puis exportez les clips compatibles en MP4 ou GIF. Le traitement se fait sur votre appareil, sans envoyer vos médias."
+      "Marquez le début et la fin, puis exportez les clips compatibles en MP4 ou GIF. Le traitement se fait sur votre appareil."
     ]
   ],
   "gallery_title": "Deux vidéos. Deux fois plus de plaisir.",
   "library": "Originaux, meilleurs passages et GIF réunis.",
   "compare": "Deux vidéos sur un seul écran, chacune avec ses propres commandes. De nouvelles façons de regarder et de comparer.",
-  "gallery_note": "Les captures montrent l’app iPhone avec du contenu créé par le développeur. L’interface Android et certaines limites de formats diffèrent.",
+  "gallery_note": "L’aperçu de comparaison utilise des portraits de démonstration générés par IA. Les deux fenêtres vidéo disposent de commandes indépendantes.",
   "facts_label": "VIDEOLOAD EN BREF",
   "facts_title": "Des outils vidéo simples et pratiques.",
   "facts": [
@@ -59,7 +59,7 @@
     ],
     [
       "Confidentialité",
-      "Aucun compte d’app ni SDK publicitaire. La lecture et le traitement vidéo se font sur votre téléphone ; aucun envoi de médias au développeur n’est requis."
+      "Aucun compte d’app ni SDK publicitaire. L’historique de navigation et les journaux d’activité restent sur votre appareil. Nous ne collectons pas ces données et ne les envoyons pas sur nos serveurs."
     ],
     [
       "Plateformes",
@@ -114,7 +114,7 @@
   "faq": [
     [
       "Qu’est-ce que VideoLoad ?",
-      "VideoLoad est un navigateur mobile conçu pour télécharger et regarder des vidéos, puis découper des extraits. Commencez gratuitement sans compte d’app. Téléchargez uniquement des contenus compatibles qui vous appartiennent ou que vous avez le droit d’enregistrer. La lecture et le traitement se font sur votre téléphone sans envoyer de médias au développeur. Pro débloque l’export d’extraits MP4/GIF compatibles et la lecture de deux vidéos avec des commandes indépendantes."
+      "VideoLoad est un navigateur mobile conçu pour télécharger et regarder des vidéos, puis découper des extraits. Commencez gratuitement sans compte d’app. Téléchargez uniquement des contenus compatibles qui vous appartiennent ou que vous avez le droit d’enregistrer. L’historique de navigation et les journaux d’activité restent sur votre appareil. Nous ne collectons pas ces données et ne les envoyons pas sur nos serveurs. Pro débloque l’export d’extraits MP4/GIF compatibles et la lecture de deux vidéos avec des commandes indépendantes."
     ],
     [
       "VideoLoad est-il gratuit ? Pro est-il un abonnement ?",
@@ -125,8 +125,8 @@
       "Les tâches inachevées comptent, y compris celles en pause ou en échec. Les tâches terminées ou annulées ne comptent pas. Le nombre de tâches ne garantit ni le nombre de connexions simultanées ni la vitesse de téléchargement."
     ],
     [
-      "VideoLoad affiche-t-il des publicités ou envoie-t-il mes vidéos ?",
-      "VideoLoad n’affiche aucune publicité dans sa propre interface et ne demande aucun compte d’app. Le traitement des médias et les repères d’extraits restent sur votre appareil ; aucun envoi de médias au développeur n’est requis. La navigation et les téléchargements contactent néanmoins les sites et serveurs de médias que vous choisissez. Ces sites peuvent afficher des publicités et utiliser des cookies."
+      "VideoLoad collecte-t-il mon historique de navigation ou mes journaux d’activité ?",
+      "VideoLoad n’affiche aucune publicité dans sa propre interface et ne demande aucun compte d’app. L’historique de navigation et les journaux d’activité restent sur votre appareil. Nous ne collectons pas ces données et ne les envoyons pas sur nos serveurs. La navigation et les téléchargements contactent néanmoins les sites et serveurs de médias que vous choisissez. Ces sites peuvent afficher des publicités et utiliser des cookies."
     ],
     [
       "Peut-il télécharger depuis tous les sites ?",
@@ -159,7 +159,7 @@
   "language_label": "Langue",
   "alt_player": "Lecteur VideoLoad sur iPhone avec deux extraits marqués ; iOS bientôt disponible",
   "alt_library": "Vidéothèque VideoLoad sur iPhone avec originaux, meilleurs passages et un GIF",
-  "alt_compare": "VideoLoad — Deux vidéos sur un seul écran, chacune avec ses propres commandes. De nouvelles façons de regarder et de comparer.",
+  "alt_compare": "Aperçu double de VideoLoad avec deux portraits de démonstration générés par IA et des commandes indépendantes",
   "machine_summary_label": "Résumé produit en texte brut",
   "product_facts_label": "Informations produit",
   "demo_link": "Ouvrir la page de démo originale",
@@ -200,6 +200,6 @@
     }
   ],
   "promo_title": "Découvrez VideoLoad en action.",
-  "promo_note": "Narration et sous-titres en anglais. Téléchargez, regardez et découpez des vidéos ; la version gratuite du site officiel offre aussi la double lecture.",
-  "promo_transcript_label": "Lire le texte de la narration en anglais"
+  "promo_note": "Téléchargez, regardez et découpez des vidéos ; la version gratuite du site officiel offre aussi la double lecture.",
+  "promo_transcript_label": "Transcription de la vidéo"
 }

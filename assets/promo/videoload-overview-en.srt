@@ -43,20 +43,20 @@ No app login.
 No in -app ads.
 
 12
-00:00:32,845 --> 00:00:35,085
-Your videos don't need to be uploaded
+00:00:32,845 --> 00:00:35,365
+Your browsing history and activity stay on
 
 13
-00:00:35,105 --> 00:00:35,685
-to us.
+00:00:35,385 --> 00:00:35,925
+your device.
 
 14
-00:00:36,105 --> 00:00:38,385
-Playback and processing happen on your device,
+00:00:36,485 --> 00:00:38,465
+We never collect or upload these records
 
 15
-00:00:38,625 --> 00:00:40,045
-helping protect your privacy.
+00:00:38,485 --> 00:00:39,345
+to our servers.
 
 16
 00:00:40,955 --> 00:00:42,655

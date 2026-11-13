@@ -1,7 +1,7 @@
 {
   "title": "VideoLoad — Navegador móvil para descargar videos | Descarga, mira y recorta",
-  "description": "Un navegador móvil de descarga de videos. La edición gratis del sitio oficial permite descargar, mirar, recortar y reproducir dos videos. Sin cuenta ni subir archivos al desarrollador.",
-  "faq_description": "Respuestas sobre VideoLoad, el navegador móvil para descargar videos: funciones gratis, uso sin iniciar sesión, privacidad en el dispositivo, descargas, reproducción, recorte y reproducción doble con Pro.",
+  "description": "Un navegador móvil de descarga de videos. La edición gratis del sitio oficial permite descargar, mirar, recortar y reproducir dos videos. Sin cuenta. El historial de navegación y los registros de actividad se quedan en tu dispositivo. No recopilamos estos registros ni los subimos a nuestros servidores.",
+  "faq_description": "Respuestas sobre VideoLoad, el navegador móvil para descargar videos: funciones gratis, uso sin iniciar sesión, historial de navegación y actividad guardados localmente, descargas, reproducción, recorte y reproducción doble con Pro.",
   "download_description": "Obtén VideoLoad, el navegador móvil para descargar videos. Empieza gratis sin una cuenta de la app, descarga y mira videos, con recorte y reproducción doble opcionales mediante Pro. iPhone próximamente.",
   "nav": [
     "Funciones",
@@ -11,10 +11,10 @@
   ],
   "eyebrow": "DESCARGA VIDEOS · MIRA VIDEOS · RECORTA CLIPS",
   "headline": "Tu navegador móvil<br><span>para descargar videos.</span>",
-  "intro": "VideoLoad es un navegador móvil para descargar, mirar y recortar videos. La edición del sitio oficial es gratis, con exportación de clips y reproducción de dos videos desbloqueadas. Sin cuenta ni anuncios en la app, y sin subir tus archivos al desarrollador: la reproducción y el procesamiento ocurren en tu teléfono.",
+  "intro": "VideoLoad es un navegador móvil para descargar, mirar y recortar videos. La edición del sitio oficial es gratis, con exportación de clips y reproducción de dos videos desbloqueadas. Sin cuenta ni anuncios en la app. La reproducción y el procesamiento ocurren en tu teléfono. El historial de navegación y los registros de actividad se quedan en tu dispositivo. No recopilamos estos registros ni los subimos a nuestros servidores.",
   "cta": "Descargar VideoLoad",
   "secondary": "Conocer la app",
-  "trust": "Descarga oficial gratis · Sin cuenta · Sin anuncios en la app · Sin subir archivos",
+  "trust": "Descarga oficial gratis · Sin cuenta · Sin anuncios en la app · Historial local · Sin recopilar actividad",
   "preview": "Vista real en iPhone · iOS próximamente · material de demostración original",
   "caption": "Elige los momentos. Conserva el original.",
   "caption_detail": "Marca varios clips y vuelve a ver solo lo que importa.",
@@ -35,13 +35,13 @@
     [
       "03",
       "Recorta clips",
-      "Marca el inicio y el final y exporta clips compatibles como MP4 o GIF. El procesamiento ocurre en tu dispositivo, sin subir archivos."
+      "Marca el inicio y el final y exporta clips compatibles como MP4 o GIF. El procesamiento ocurre en tu dispositivo."
     ]
   ],
   "gallery_title": "Dos videos. El doble de diversión.",
   "library": "Originales, momentos destacados y GIF, juntos.",
   "compare": "Dos videos en una pantalla, cada uno con sus propios controles. Más formas de mirar y comparar.",
-  "gallery_note": "Las capturas muestran la app para iPhone con contenido creado por el desarrollador. La apariencia en Android y algunos límites de formato son distintos.",
+  "gallery_note": "La vista de comparación usa retratos de demostración generados con IA. Las dos ventanas de video tienen controles independientes.",
   "facts_label": "VIDEOLOAD DE UN VISTAZO",
   "facts_title": "Herramientas de video simples y prácticas.",
   "facts": [
@@ -59,7 +59,7 @@
     ],
     [
       "Privacidad",
-      "Sin cuenta de la app ni SDK de publicidad. Los videos se reproducen y procesan en tu teléfono; no es necesario subir contenido al desarrollador."
+      "Sin cuenta de la app ni SDK de publicidad. El historial de navegación y los registros de actividad se quedan en tu dispositivo. No recopilamos estos registros ni los subimos a nuestros servidores."
     ],
     [
       "Plataformas",
@@ -114,7 +114,7 @@
   "faq": [
     [
       "¿Qué es VideoLoad?",
-      "VideoLoad es un navegador móvil centrado en descargar videos, mirar videos y recortar clips. Empieza gratis sin una cuenta de la app. Descarga solo material compatible que te pertenezca o que tengas permiso de guardar. La reproducción y el procesamiento ocurren en tu teléfono sin subir contenido al desarrollador. Pro desbloquea exportación de clips MP4/GIF compatibles y reproducción de dos videos con controles independientes."
+      "VideoLoad es un navegador móvil centrado en descargar videos, mirar videos y recortar clips. Empieza gratis sin una cuenta de la app. Descarga solo material compatible que te pertenezca o que tengas permiso de guardar. El historial de navegación y los registros de actividad se quedan en tu dispositivo. No recopilamos estos registros ni los subimos a nuestros servidores. Pro desbloquea exportación de clips MP4/GIF compatibles y reproducción de dos videos con controles independientes."
     ],
     [
       "¿VideoLoad es gratis? ¿Pro es una suscripción?",
@@ -125,8 +125,8 @@
       "Cuentan las tareas sin terminar, incluidas las pausadas y las fallidas. Las completadas o canceladas no cuentan. La cantidad de tareas no garantiza un número de conexiones simultáneas ni una velocidad de descarga."
     ],
     [
-      "¿VideoLoad muestra anuncios o sube mis videos?",
-      "VideoLoad no muestra anuncios en su propia interfaz ni requiere una cuenta de la app. El procesamiento de contenido y las marcas de clips permanecen en tu dispositivo; no es necesario subir contenido al desarrollador. La navegación y las descargas sí se conectan con los sitios y servidores de contenido que elijas. Esos sitios pueden mostrar anuncios y usar cookies."
+      "¿VideoLoad recopila mi historial de navegación o mis registros de actividad?",
+      "VideoLoad no muestra anuncios en su propia interfaz ni requiere una cuenta de la app. El historial de navegación y los registros de actividad se quedan en tu dispositivo. No recopilamos estos registros ni los subimos a nuestros servidores. La navegación y las descargas sí se conectan con los sitios y servidores de contenido que elijas. Esos sitios pueden mostrar anuncios y usar cookies."
     ],
     [
       "¿Puede descargar desde cualquier sitio web?",
@@ -159,7 +159,7 @@
   "language_label": "Idioma",
   "alt_player": "Reproductor VideoLoad en iPhone con dos clips marcados; iOS próximamente",
   "alt_library": "Biblioteca VideoLoad en iPhone con originales, momentos destacados y un GIF",
-  "alt_compare": "VideoLoad — Dos videos en una pantalla, cada uno con sus propios controles. Más formas de mirar y comparar.",
+  "alt_compare": "Vista doble de VideoLoad con dos retratos de demostración generados con IA y controles independientes",
   "machine_summary_label": "Resumen del producto en texto sin formato",
   "product_facts_label": "Datos del producto",
   "demo_link": "Abrir la página del material de demostración original",
@@ -200,6 +200,6 @@
     }
   ],
   "promo_title": "Mira VideoLoad en acción.",
-  "promo_note": "Narración y subtítulos en inglés. Descarga, mira y recorta videos; la edición gratis del sitio oficial también ofrece reproducción de dos videos.",
-  "promo_transcript_label": "Leer el guion en inglés"
+  "promo_note": "Descarga, mira y recorta videos; la edición gratis del sitio oficial también ofrece reproducción de dos videos.",
+  "promo_transcript_label": "Transcripción del video"
 }

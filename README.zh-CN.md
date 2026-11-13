@@ -6,7 +6,7 @@
 
 <p align="center"><strong>功能强大的手机视频下载浏览器</strong></p>
 <p align="center">下载视频 · 观看视频 · 视频截取</p>
-<p align="center">官网免费下载 · 无需登录 · 应用内无广告 · 视频无需上传给开发者 · 本机处理，保护隐私</p>
+<p align="center">官网免费下载 · 无需登录 · 应用内无广告 · 浏览历史保留本地 · 不收集操作记录</p>
 
 <p align="center">
   <a href="https://videoload.pdos.work/zh/">产品官网</a> ·
@@ -22,15 +22,15 @@
 
 [![VideoLoad 产品宣传片](assets/promo/videoload-overview-poster.jpg)](https://videoload.pdos.work/zh/#film)
 
-英文解说、英文字幕，集中展示下载视频、观看视频、视频截取、免登录与本机隐私处理，以及官网免费直装版双屏播放的乐趣。
+下载视频、观看视频、视频截取，无需登录；官网免费直装版还可体验双屏播放的乐趣。
 
-[▶ 观看产品宣传片](https://videoload.pdos.work/zh/#film) · [下载 MP4 视频](https://videoload.pdos.work/assets/promo/videoload-overview-en.mp4)
+[▶ 观看产品宣传片](https://videoload.pdos.work/zh/#film) · [下载 MP4 视频](https://videoload.pdos.work/assets/promo/videoload-overview-en.mp4?v=privacy-2)
 
 ## 手机视频下载浏览器：下载视频、观看视频、视频截取
 
 VideoLoad 是一款**功能强大的手机视频下载浏览器**，围绕**下载视频、观看视频、视频截取**三大用途设计。官网直装版免费，片段导出和双屏播放已解锁。无需登录，保存自己拥有或已获授权下载的受支持视频，在手机上直接观看，再将兼容来源的片段导出为 MP4 或 GIF。
 
-**视频在本机播放和处理，无需上传给开发者，保护隐私。** 浏览网页与下载仍会连接你选择的网站和媒体服务器，相关网站有自己的隐私政策。
+**浏览历史和操作记录保留在你的设备上。我们不会收集这些记录，也不会将它们上传到我们的服务器。** 浏览网页与下载仍会连接你选择的网站和媒体服务器，相关网站有自己的隐私政策。
 
 - **下载视频。** 通过内置浏览器保存受支持的授权视频，下载任务集中管理。
 - **观看视频。** 直接播放已下载的视频，调整倍速、标注片段、循环回看。
@@ -52,11 +52,11 @@ VideoLoad 是一款**功能强大的手机视频下载浏览器**，围绕**下�
   </tr>
   <tr>
     <td align="center"><img src="assets/screenshots/library.png" width="280" alt="视频库中的原创视频、精选片段和 GIF"></td>
-    <td align="center"><img src="assets/screenshots/compare.png" width="280" alt="双屏分别播放原创视频与精选片段，两窗独立控制"></td>
+    <td align="center"><img src="assets/screenshots/compare-portraits.png" width="280" alt="VideoLoad 双屏预览，两个 AI 生成的演示人像，各自独立控制"></td>
   </tr>
 </table>
 
-以上为即将上线的 iOS 应用真实截图，使用开发者自制的演示素材。Android 界面及部分格式限制有所不同；播放器中的几何动画是示例视频内容。
+播放器与视频库截图来自即将上线的 iPhone 应用。双屏预览使用 AI 生成的演示人像，两个视频窗口可独立控制。Android 界面及部分格式限制有所不同。
 
 ## 官方下载
 
@@ -84,7 +84,7 @@ VideoLoad 是一款**功能强大的手机视频下载浏览器**，围绕**下�
 
 ## 隐私与使用范围
 
-无需应用账号，视频处理和片段标注保留在本机，无需向开发者上传媒体。应用自身界面不投放广告；访问的网站可能展示广告或使用 Cookie，浏览和下载会向相关网站发送网络请求。
+无需应用账号。浏览历史和操作记录保留在你的设备上，我们不会收集这些记录，也不会将它们上传到我们的服务器。本地记录包括下载记录、播放进度和片段标注。应用自身界面不投放广告；访问的网站可能展示广告或使用 Cookie，浏览和下载会向相关网站发送网络请求。
 
 请仅保存自己拥有或已获授权下载的内容。不同网站与格式的兼容性有所差异，应用不会绕过 DRM、付费墙或访问限制。双屏为独立控制，不保证逐帧同步。iOS 的本地 HLS 离线包可在应用内播放，但不能导出为 MP4/GIF、分享文件或保存到系统相册。iOS 后台传输由系统调度，强制退出会停止下载。
 
