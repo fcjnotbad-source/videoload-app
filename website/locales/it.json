@@ -2,7 +2,7 @@
   "title": "VideoLoad — Browser mobile per scaricare video | Scarica, guarda e ritaglia",
   "description": "Un browser mobile per scaricare video. La versione gratuita del sito ufficiale offre download, riproduzione, esportazione dei segmenti e due video insieme. Senza account. La cronologia di navigazione e i registri delle attività restano sul tuo dispositivo. Non raccogliamo questi dati e non li carichiamo sui nostri server.",
   "faq_description": "Le risposte su VideoLoad, il browser mobile per scaricare video: funzioni gratuite, uso senza accesso, cronologia di navigazione e attività conservate localmente, download, riproduzione, ritaglio e doppia riproduzione con Pro.",
-  "download_description": "Scarica VideoLoad, il browser mobile per scaricare video. Inizia gratis senza un account dell’app: scarica e guarda video, con ritaglio e doppia riproduzione facoltativi tramite Pro. iPhone in arrivo.",
+  "download_description": "Scarica VideoLoad, il browser mobile per scaricare video. Inizia gratis senza un account dell’app: scarica e guarda video, con ritaglio e doppia riproduzione facoltativi tramite Pro. Disponibile per iPhone sull’App Store.",
   "nav": [
     "Funzioni",
     "Domande frequenti",
@@ -15,10 +15,10 @@
   "cta": "Scarica VideoLoad",
   "secondary": "Scopri l’app",
   "trust": "Download ufficiale gratuito · Senza account · Senza pubblicità nell’app · Cronologia locale · Nessuna raccolta delle attività",
-  "preview": "Vera anteprima iPhone · iOS in arrivo · contenuti demo originali",
+  "preview": "Vera anteprima iPhone · disponibile sull’App Store · contenuti demo originali",
   "caption": "Scegli i momenti. Conserva l’originale.",
   "caption_detail": "Segna più segmenti e rivedi solo ciò che conta.",
-  "platform": "Android disponibile tramite APK ufficiale · disponibilità su Google Play variabile · iPhone in arrivo",
+  "platform": "Android disponibile tramite APK ufficiale · disponibilità su Google Play variabile · iPhone disponibile sull’App Store",
   "section_label": "UN BROWSER. TRE USI ESSENZIALI.",
   "section_title": "Scarica. Guarda.<br>Ritaglia le clip che vuoi.",
   "features": [
@@ -63,7 +63,7 @@
     ],
     [
       "Piattaforme",
-      "Android 8.0 o successivo. Versione iPhone in arrivo."
+      "Android 8.0 o successivo. iPhone con iOS 17.0 o successivo."
     ],
     [
       "Community ufficiale",
@@ -90,9 +90,9 @@
     [
       "iPhone",
       "App Store",
-      "In arrivo · invio in corso",
-      "Non ancora disponibile",
-      null
+      "Inizia gratis · Pro facoltativo con acquisto unico",
+      "Scarica dall’App Store",
+      "https://apps.apple.com/us/app/videoload-no-ads/id6827054536"
     ]
   ],
   "download_help": "Differenze tra versioni e aiuto per l’installazione",
@@ -105,7 +105,7 @@
   "feedback_note": "I feedback su GitHub sono pubblici. Non inserire password, ricevute o contenuti privati.",
   "limits": "Scarica solo contenuti che possiedi o che puoi salvare. La compatibilità varia; nessun aggiramento di DRM, barriere a pagamento o controlli di accesso. I siti possono mostrare la propria pubblicità. La doppia riproduzione non è sincronizzata al fotogramma. Su iOS, i pacchetti HLS offline si riproducono nell’app ma non si esportano; la chiusura forzata interrompe i trasferimenti.",
   "footer": "VideoLoad · Browser mobile per scaricare video",
-  "updated": "Informazioni sul prodotto aggiornate il 13 novembre 2026.",
+  "updated": "Informazioni sul prodotto aggiornate il 16 novembre 2026.",
   "privacy": "Privacy",
   "downloads": "Download",
   "home": "Home",
@@ -142,7 +142,7 @@
     ],
     [
       "Posso già installare VideoLoad su iPhone?",
-      "La versione iPhone è in arrivo e l’invio all’App Store è in corso. Qui non è ancora presente un link pubblico per scaricarla dall’App Store. Dopo la pubblicazione verrà aggiunto un link ufficiale verificato."
+      "Sì. VideoLoad No Ads è disponibile sull’App Store per iPhone e richiede iOS 17.0 o successivo. Usa il link ufficiale dell’App Store nella pagina dei download. Puoi iniziare gratis; Pro è un acquisto in-app unico e facoltativo, non un abbonamento."
     ],
     [
       "Un acquisto Pro sblocca Android e iPhone?",
@@ -157,7 +157,7 @@
   "navigation_label": "Navigazione principale",
   "footer_navigation": "Navigazione nel piè di pagina",
   "language_label": "Lingua",
-  "alt_player": "Lettore VideoLoad su iPhone con due segmenti segnati; iOS in arrivo",
+  "alt_player": "Lettore VideoLoad su iPhone con due segmenti segnati",
   "alt_library": "Libreria VideoLoad su iPhone con originali, momenti salienti e una GIF",
   "alt_compare": "Anteprima doppia di VideoLoad con due ritratti dimostrativi generati con l’IA e controlli indipendenti",
   "machine_summary_label": "Riepilogo del prodotto in testo semplice",
@@ -180,9 +180,9 @@
       ]
     },
     {
-      "title": "Presto su iPhone",
+      "title": "Installare su iPhone",
       "paragraphs": [
-        "L’invio all’App Store è in corso. Dopo la pubblicazione verrà aggiunto qui un link App Store verificato. Questa pagina non distribuisce file di installazione iOS."
+        "VideoLoad No Ads è disponibile sull’App Store e richiede iOS 17.0 o successivo. Usa il link ufficiale dell’App Store sopra per installare l’app direttamente dallo store. Puoi iniziare gratis, con Pro facoltativo tramite acquisto in-app unico. Qui non vengono distribuiti file di installazione iOS separati."
       ]
     },
     {

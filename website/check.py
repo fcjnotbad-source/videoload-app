@@ -5,7 +5,7 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 import xml.etree.ElementTree as ET
 
-from content import APK, BASE, CONTACT_EMAIL, COPY, GOOGLE_SITE_VERIFICATION, LOCALES, REPO
+from content import APK, APPSTORE, BASE, CONTACT_EMAIL, COPY, GOOGLE_SITE_VERIFICATION, LOCALES, REPO
 from promo import METADATA, VIDEO_ID, media_url
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -98,7 +98,10 @@ def check():
             app = next(item for item in graph if item['@type'] == 'SoftwareApplication')
             assert app['downloadUrl'] == APK, path
             assert 'offers' not in app and 'aggregateRating' not in app and 'review' not in app
-            assert 'coming soon' in app['operatingSystem'] and 'apps.apple.com' not in html
+            assert app['operatingSystem'] == 'Android 8.0+; iOS 17.0+', path
+            assert APPSTORE in app['sameAs'], path
+            if page in ('', 'download/'):
+                assert any(tag == 'a' and attr.get('href') == APPSTORE for tag, attr in doc.tags), path
             film_objects = [item for item in graph if item['@type'] == 'VideoObject']
             if page == '' and METADATA.is_file():
                 metadata = json.loads(METADATA.read_text())
@@ -142,7 +145,8 @@ def check():
     robots = (OUT / 'robots.txt').read_text()
     assert 'Allow: /' in robots and 'Disallow: /' not in robots and BASE + '/sitemap.xml' in robots
     facts = json.loads((OUT / 'product.json').read_text())
-    assert facts['platforms']['ios']['appStoreURL'] is None
+    assert facts['platforms']['ios']['appStoreURL'] == APPSTORE
+    assert facts['platforms']['ios']['minimumOS'] == '17.0'
     assert facts['officialWebsite'] == BASE + '/'
     assert set(facts['positioning']) == {c['lang'] for c in COPY.values()}
     assert facts['community'] == REPO

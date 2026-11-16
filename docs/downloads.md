@@ -13,7 +13,7 @@ Android 8.0 or later is required. Only use official downloads. For APK installat
 
 ### iPhone
 
-**Coming soon.** App Store submission is in progress. The verified App Store link will be added to this repository after release. No iOS installer is distributed here.
+[Download VideoLoad No Ads on the App Store](https://apps.apple.com/us/app/videoload-no-ads/id6827054536). Requires iOS 17.0 or later. Free to start, with an optional one-time Pro purchase. Install the iPhone app through the App Store.
 
 ### Purchases and restoration
 
@@ -30,7 +30,7 @@ Store editions are free to start with an optional one-time Pro purchase. The sto
 
 ### iPhone
 
-**即将上线。** 正在提交 App Store，正式上架后将在本仓库补充核验过的链接。这里不分发 iOS 安装包。
+[前往 App Store 下载 VideoLoad No Ads](https://apps.apple.com/us/app/videoload-no-ads/id6827054536)。需要 iOS 17.0 或更高版本，免费开始使用，可选 Pro 买断内购。iPhone 应用通过 App Store 安装。
 
 ### 购买与恢复
 

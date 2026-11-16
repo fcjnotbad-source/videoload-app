@@ -4,7 +4,7 @@ from pathlib import Path
 import shutil
 from xml.sax.saxutils import escape
 
-from content import APK, BASE, CONTACT_EMAIL, COPY, FEEDBACK, PLAY, REPO, UPDATED
+from content import APK, APPSTORE, BASE, CONTACT_EMAIL, COPY, FEEDBACK, PLAY, REPO, UPDATED
 from render import downloads, faq, home, page_html
 from promo import media_url
 
@@ -52,7 +52,7 @@ def build():
         'localizedFacts': {c['lang']: dict(c['facts']) for c in COPY.values()},
         'platforms': {
             'android': {'minimumOS': '8.0', 'googlePlay': PLAY, 'availability': 'Google Play availability depends on review, rollout and region', 'directEdition': {'downloadPage': APK, 'note': 'Separate Chinese-branded edition with its own updates and currently unlocked features'}},
-            'ios': {'availability': 'Coming soon; App Store submission in progress', 'appStoreURL': None},
+            'ios': {'availability': 'Available on the App Store', 'appStoreURL': APPSTORE, 'minimumOS': '17.0'},
         },
         'officialWebsiteEdition': {'downloadPage': APK, 'price': 'Free', 'unlockedFeatures': ['Compatible MP4/GIF clip export', 'Local video import', 'Independently controlled dual-video playback'], 'note': 'The official website direct edition has these features unlocked for free; store editions may differ'},
         'storeEdition': {'free': ['Browser', 'Up to two unfinished download tasks, including paused and failed tasks', 'Video playback', 'Clip marking and looping'], 'pro': {'purchaseType': 'One-time in-app purchase; no subscription', 'price': 'See the localized store price', 'features': ['Remove unfinished-task limit', 'Local video import', 'Independent two-video comparison', 'Compatible MP4/GIF clip export'], 'crossPlatformPurchase': False}},
@@ -73,8 +73,8 @@ Product information updated {UPDATED}.
 - [Film transcript]({BASE}{media_url('transcript.en.txt')}): The complete English narration in plain text.
 - [English product overview]({BASE}/): Features, free and Pro tiers, privacy and platform status.
 - [中文产品介绍]({BASE}/zh/): 功能、免费与 Pro、隐私与平台状态。
-- [Downloads]({BASE}/download/): Official Android entries, edition differences and iPhone status.
-- [下载说明]({BASE}/zh/download/): 官方 Android 入口、版本区别与 iPhone 状态。
+- [Downloads]({BASE}/download/): Official Google Play, App Store and APK entries, with edition differences.
+- [下载说明]({BASE}/zh/download/): 官方 Google Play、App Store、APK 入口与版本区别。
 - [FAQ]({BASE}/faq/): Supported sources, export limits, purchases and privacy.
 - [常见问题]({BASE}/zh/faq/): 来源兼容、导出限制、购买与隐私。
 - [Product facts JSON]({BASE}/product.json): Structured facts maintained with the visible pages.
@@ -88,7 +88,8 @@ Email: {CONTACT_EMAIL}
 Browsing history and app activity records, including download records, playback progress and clip marks, are stored on your device. We do not collect or upload these records to our servers, and the app includes no analytics SDK. Browsing and downloads still contact the websites and media hosts you choose. Developer download, support and update pages can receive normal web requests and record standard page/download statistics. System backup or device transfer may copy local app data to your own account or device.
 
 ## Availability and boundaries
-Android: official APK available; Google Play availability depends on rollout and region. iPhone: coming soon; no public App Store link yet.
+Android: official APK available; Google Play availability depends on rollout and region. iPhone: available on the App Store, requires iOS 17.0 or later.
+- [VideoLoad No Ads on the App Store]({APPSTORE})
 Store editions are free to start; optional Pro is a one-time purchase, not a subscription. Prices vary by store. Purchases do not transfer between platforms.
 Save only content you own or are authorized to download. No DRM, paywall or access-control bypass. Compatibility varies. Websites may show ads. Dual playback is independently controlled, not frame-synchronized.
 On iOS, HLS offline packages play in-app but do not export, and force-quitting stops downloads. Compatible iOS GIF exports are limited to 30 seconds of selected content.

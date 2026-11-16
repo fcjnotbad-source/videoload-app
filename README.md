@@ -11,6 +11,7 @@
 <p align="center">
   <a href="https://videoload.pdos.work/">Official website</a> ·
   <a href="https://play.google.com/store/apps/details?id=com.fcj.videoload">Google Play</a> ·
+  <a href="https://apps.apple.com/us/app/videoload-no-ads/id6827054536">App Store</a> ·
   <a href="docs/downloads.md">All downloads</a> ·
   <a href="https://github.com/fcjnotbad-source/videoload-app/issues/new/choose">Feedback</a> ·
   <a href="README.zh-CN.md">简体中文</a>
@@ -56,7 +57,7 @@ VideoLoad is a **mobile video download browser** built around three core uses: *
   </tr>
 </table>
 
-The player and library screenshots show the iPhone app, which is coming soon. The comparison preview uses AI-generated demo portraits with independently controlled video panes. Android appearance and some format limits differ.
+The player and library screenshots show the iPhone app, now available on the App Store. The comparison preview uses AI-generated demo portraits with independently controlled video panes. Android appearance and some format limits differ.
 
 ## Get VideoLoad
 
@@ -64,7 +65,7 @@ The player and library screenshots show the iPhone app, which is coming soon. Th
 | --- | --- | --- |
 | Android · Google Play | [Open Google Play](https://play.google.com/store/apps/details?id=com.fcj.videoload) | Availability depends on store rollout and region. |
 | Android · direct edition | [Official APK download page](https://vdb.aivest.art/apps/jiange-kuaixia) | Separate Chinese-branded edition with its own updates and feature rules. |
-| iPhone · App Store | Coming soon | App Store submission is in progress. The official link will be added here after release. |
+| iPhone · App Store | [Download on the App Store](https://apps.apple.com/us/app/videoload-no-ads/id6827054536) | Available now · iOS 17.0+ · Free to start, optional one-time Pro purchase. |
 
 [Download help and edition differences →](docs/downloads.md)
 

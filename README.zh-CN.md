@@ -11,6 +11,7 @@
 <p align="center">
   <a href="https://videoload.pdos.work/zh/">产品官网</a> ·
   <a href="https://play.google.com/store/apps/details?id=com.fcj.videoload">Google Play</a> ·
+  <a href="https://apps.apple.com/us/app/videoload-no-ads/id6827054536">App Store</a> ·
   <a href="docs/downloads.md#简体中文">下载入口</a> ·
   <a href="https://github.com/fcjnotbad-source/videoload-app/issues/new/choose">反馈建议</a> ·
   <a href="README.md">English</a>
@@ -56,7 +57,7 @@ VideoLoad 是一款**功能强大的手机视频下载浏览器**，围绕**下�
   </tr>
 </table>
 
-播放器与视频库截图来自即将上线的 iPhone 应用。双屏预览使用 AI 生成的演示人像，两个视频窗口可独立控制。Android 界面及部分格式限制有所不同。
+播放器与视频库截图来自已在 App Store 上线的 iPhone 应用。双屏预览使用 AI 生成的演示人像，两个视频窗口可独立控制。Android 界面及部分格式限制有所不同。
 
 ## 官方下载
 
@@ -64,7 +65,7 @@ VideoLoad 是一款**功能强大的手机视频下载浏览器**，围绕**下�
 | --- | --- | --- |
 | Android · Google Play | [前往 Google Play](https://play.google.com/store/apps/details?id=com.fcj.videoload) | 是否可安装以所在地区和商店发布状态为准。 |
 | Android · 官网直装版 | [官方下载页](https://vdb.aivest.art/apps/jiange-kuaixia) | 独立中文品牌版本，更新渠道与功能规则不同。 |
-| iPhone · App Store | 即将上线 | 正在提交 App Store，上架后补充官方链接。 |
+| iPhone · App Store | [前往 App Store 下载](https://apps.apple.com/us/app/videoload-no-ads/id6827054536) | 现已上线 · 需要 iOS 17.0+ · 免费开始，可选 Pro 买断内购。 |
 
 [查看安装说明与版本区别 →](docs/downloads.md#简体中文)
 

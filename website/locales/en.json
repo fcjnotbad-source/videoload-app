@@ -2,7 +2,7 @@
   "title": "VideoLoad — Mobile Video Download Browser | Download, Watch & Trim",
   "description": "A mobile video download browser. The official website edition is free, with video downloads, playback, clip export and dual playback unlocked. No app login. Browsing history and activity records stay on your device. We do not collect or upload these records to our servers.",
   "faq_description": "Answers about VideoLoad, the mobile video download browser: free features, no-login use, local browsing history and activity records, video downloads, playback, Pro trimming and dual playback.",
-  "download_description": "Get VideoLoad, a mobile video download browser. Start free without an app account; download and watch videos, with optional Pro trimming and dual playback. iPhone coming soon.",
+  "download_description": "Get VideoLoad, a mobile video download browser. Start free without an app account; download and watch videos, with optional Pro trimming and dual playback. Available for iPhone on the App Store.",
   "nav": [
     "Features",
     "FAQ",
@@ -15,10 +15,10 @@
   "cta": "Get VideoLoad",
   "secondary": "Explore the app",
   "trust": "Free official download · No app login · No in-app ads · History stays local · No activity collection",
-  "preview": "Real iPhone preview · iOS coming soon · original demo media",
+  "preview": "Real iPhone preview · Available on the App Store · original demo media",
   "caption": "Pick the moments. Keep the original.",
   "caption_detail": "Mark more than one clip and replay just what matters.",
-  "platform": "Android available via official APK · Google Play rollout varies · iPhone coming soon",
+  "platform": "Android available via official APK · Google Play rollout varies · iPhone available on the App Store",
   "section_label": "ONE BROWSER. THREE CORE USES.",
   "section_title": "Download. Watch.<br>Trim the clips you want.",
   "features": [
@@ -63,7 +63,7 @@
     ],
     [
       "Platforms",
-      "Android 8.0+. iPhone version coming soon."
+      "Android 8.0+. iPhone requires iOS 17.0 or later."
     ],
     [
       "Official community",
@@ -90,9 +90,9 @@
     [
       "iPhone",
       "App Store",
-      "Coming soon · submission in progress",
-      "Not yet available",
-      null
+      "Free to start · optional one-time Pro",
+      "Download on the App Store",
+      "https://apps.apple.com/us/app/videoload-no-ads/id6827054536"
     ]
   ],
   "download_help": "Edition differences & installation help",
@@ -105,7 +105,7 @@
   "feedback_note": "GitHub feedback is public. Keep passwords, receipts and private media out of reports.",
   "limits": "Download only content you own or may save. Compatibility varies; no DRM, paywall or access-control bypass. Websites may display their own ads. Dual playback is not frame-synchronized. On iOS, HLS offline packages play in-app but do not export; force-quitting stops transfers.",
   "footer": "VideoLoad · Mobile video download browser",
-  "updated": "Product information updated November 13, 2026.",
+  "updated": "Product information updated November 16, 2026.",
   "privacy": "Privacy",
   "downloads": "Downloads",
   "home": "Home",
@@ -142,7 +142,7 @@
     ],
     [
       "Can I install VideoLoad on iPhone now?",
-      "The iPhone version is coming soon, with App Store submission in progress. There is no public App Store download link here yet. A verified official link will be added after release."
+      "Yes. Download VideoLoad No Ads from the official App Store link on this page. It requires iOS 17.0 or later. The app is free to start, with an optional one-time Pro purchase. Availability depends on your App Store region."
     ],
     [
       "Can one Pro purchase unlock Android and iPhone?",
@@ -157,7 +157,7 @@
   "navigation_label": "Main navigation",
   "footer_navigation": "Footer navigation",
   "language_label": "Language",
-  "alt_player": "VideoLoad iPhone player showing two marked clips; iOS coming soon",
+  "alt_player": "VideoLoad iPhone player showing two marked clips",
   "alt_library": "VideoLoad iPhone video library with originals, highlights and a GIF",
   "alt_compare": "VideoLoad dual-video preview with two AI-generated demo portraits and independent controls",
   "machine_summary_label": "Plain-text product summary",
@@ -180,9 +180,9 @@
       ]
     },
     {
-      "title": "iPhone is coming soon",
+      "title": "Install on iPhone",
       "paragraphs": [
-        "App Store submission is in progress. This page will add a verified App Store link after release. No iOS installation file is distributed here."
+        "VideoLoad No Ads is available on the App Store. It requires iOS 17.0 or later. Download is free, with an optional one-time Pro purchase. Availability depends on your App Store region. Use the official store link; no iOS installation file is distributed here."
       ]
     },
     {

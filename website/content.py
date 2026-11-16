@@ -6,13 +6,14 @@ BASE = 'https://videoload.pdos.work'
 REPO = 'https://github.com/fcjnotbad-source/videoload-app'
 PLAY = 'https://play.google.com/store/apps/details?id=com.fcj.videoload'
 APK = 'https://vdb.aivest.art/apps/jiange-kuaixia'
+APPSTORE = 'https://apps.apple.com/us/app/videoload-no-ads/id6827054536'
 FEEDBACK = REPO + '/issues/new/choose'
 DEMO = 'https://fcjnotbad-source.github.io/videoload-review-media/ios/review.html'
 POLICY = 'https://fcjnotbad-source.github.io/videoload-review-media/'
 CONTACT_EMAIL = 'fcjnotbad@gmail.com'
 # Public ownership marker issued by Google Search Console. Keep after verification.
 GOOGLE_SITE_VERIFICATION = 'bBbw6_NzgbfCMp1c3LNfUA9YeiC2tqlXkMtVrKOCQ_Q'
-UPDATED = '2026-11-13'
+UPDATED = '2026-11-16'
 
 # The Android/iOS app settings both expose these fourteen languages.
 # Keep the existing /zh/ URL; use Google's supported generic 'es' hreflang

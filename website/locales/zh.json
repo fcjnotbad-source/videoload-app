@@ -2,7 +2,7 @@
   "title": "VideoLoad 手机视频下载浏览器 — 下载视频、观看视频、视频截取",
   "description": "VideoLoad 手机视频下载浏览器：官网直装版免费下载、观看、截取视频，双屏播放已解锁。无需登录，无广告；浏览历史和操作记录保留在你的设备上。我们不会收集这些记录，也不会将它们上传到我们的服务器。",
   "faq_description": "了解 VideoLoad 手机视频下载浏览器的免费功能、免登录使用、浏览历史与操作记录的本地隐私保护、视频下载与观看、Pro 视频截取和双屏播放。",
-  "download_description": "下载 VideoLoad 手机视频下载浏览器：免费开始，无需登录，下载和观看视频，可选 Pro 解锁视频截取与双屏播放。浏览历史和操作记录保留在你的设备上。我们不会收集这些记录，也不会将它们上传到我们的服务器。iPhone 即将上线。",
+  "download_description": "下载 VideoLoad 手机视频下载浏览器：免费开始，无需登录，下载和观看视频，可选 Pro 解锁视频截取与双屏播放。浏览历史和操作记录保留在你的设备上。我们不会收集这些记录，也不会将它们上传到我们的服务器。iPhone 版已在 App Store 上线。",
   "nav": [
     "产品功能",
     "常见问题",
@@ -15,10 +15,10 @@
   "cta": "下载 VideoLoad",
   "secondary": "看看实际功能",
   "trust": "官网免费下载 · 无需登录 · 应用内无广告 · 历史保留本地 · 不收集操作记录",
-  "preview": "真实 iPhone 界面 · iOS 即将上线 · 原创演示素材",
+  "preview": "真实 iPhone 界面 · 已在 App Store 上线 · 原创演示素材",
   "caption": "留下重点，保留原片。",
   "caption_detail": "标记多个片段，回看时直接看想看的部分。",
-  "platform": "Android 可通过官网 APK 安装 · Google Play 依地区与发布状态开放 · iPhone 即将上线",
+  "platform": "Android 可通过官网 APK 安装 · Google Play 依地区与发布状态开放 · iPhone 可从 App Store 下载",
   "section_label": "一个浏览器，三个核心用途",
   "section_title": "下载视频，观看视频，<br>截取需要的片段。",
   "features": [
@@ -63,7 +63,7 @@
     ],
     [
       "支持平台",
-      "Android 8.0 及以上；iPhone 版即将上线。"
+      "Android 8.0 及以上；iPhone 需要 iOS 17.0 或更高版本。"
     ],
     [
       "官方社区",
@@ -90,9 +90,9 @@
     [
       "iPhone",
       "App Store",
-      "即将上线 · 正在提交 App Store",
-      "暂未开放下载",
-      null
+      "免费开始 · 可选一次性 Pro 内购",
+      "从 App Store 下载",
+      "https://apps.apple.com/us/app/videoload-no-ads/id6827054536"
     ]
   ],
   "download_help": "查看版本区别与安装说明",
@@ -105,7 +105,7 @@
   "feedback_note": "GitHub 反馈公开可见，请勿提交密码、收据或私人视频。",
   "limits": "请仅下载自己拥有或已获授权保存的内容。网站与格式兼容性有所差异，不绕过 DRM、付费墙或访问限制。第三方网页可能有广告。双屏不保证逐帧同步。iOS 的 HLS 离线包仅支持应用内播放，不支持导出；强制退出会停止传输。",
   "footer": "VideoLoad · 手机视频下载浏览器",
-  "updated": "产品资料更新于 2026 年 11 月 13 日。",
+  "updated": "产品资料更新于 2026 年 11 月 16 日。",
   "privacy": "隐私政策",
   "downloads": "下载应用",
   "home": "首页",
@@ -142,7 +142,7 @@
     ],
     [
       "现在能在 iPhone 上安装吗？",
-      "iPhone 版即将上线，目前正在提交 App Store。本站暂未提供公开 App Store 下载链接，上架后补充核验过的官方入口。"
+      "可以。请通过本页官方 App Store 链接下载 VideoLoad No Ads，需要 iOS 17.0 或更高版本。应用可免费开始使用，Pro 为可选的一次性内购。能否下载以你所在的 App Store 地区为准。"
     ],
     [
       "一次购买可以跨 Android 和 iPhone 吗？",
@@ -157,7 +157,7 @@
   "navigation_label": "主导航",
   "footer_navigation": "页脚导航",
   "language_label": "语言",
-  "alt_player": "VideoLoad iPhone 播放器与两段标注，iOS 即将上线",
+  "alt_player": "VideoLoad iPhone 播放器与两段标注",
   "alt_library": "VideoLoad iPhone 视频库中的原视频、精选片段与 GIF",
   "alt_compare": "VideoLoad 双屏预览，两个 AI 生成的演示人像，各自独立控制",
   "machine_summary_label": "纯文本产品摘要",
@@ -180,9 +180,9 @@
       ]
     },
     {
-      "title": "iPhone 即将上线",
+      "title": "在 iPhone 上安装",
       "paragraphs": [
-        "目前正在提交 App Store，正式上架后将在本页补充核验过的官方入口。本站不分发 iOS 安装文件。"
+        "VideoLoad No Ads 已在 App Store 上线。需要 iOS 17.0 或更高版本，可免费下载，Pro 为可选的一次性内购。能否下载以你所在的 App Store 地区为准。请使用官方商店链接，本站不分发 iOS 安装文件。"
       ]
     },
     {

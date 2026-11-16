@@ -59,7 +59,7 @@ The promotional copy describes the free official website edition, where clip exp
 - `build.py` writes the crawl files and machine-readable product facts from shared content.
 - Assets come from the reviewed product images in the repository's `assets/` directory.
 
-All visible text, structured data, `product.json`, `llms.txt` and `llms-full.txt` must stay consistent. Update `UPDATED` when product facts change. After a verified iOS release, add the real App Store URL everywhere and update the coming-soon copy. Do not infer an app listing URL from an in-app purchase ID.
+All visible text, structured data, `product.json`, `llms.txt` and `llms-full.txt` must stay consistent. Update `UPDATED` when product facts change. The verified iPhone listing is [VideoLoad No Ads on the App Store](https://apps.apple.com/us/app/videoload-no-ads/id6827054536), requiring iOS 17.0+. Keep its link and availability consistent across all locale store rows, product facts and repository download pages. Do not infer an app listing URL from an in-app purchase ID.
 
 The site serves substantive HTML without JavaScript, uses page-specific canonicals, reciprocal language links, a sitemap, open crawler rules and structured app/FAQ data. These make content accessible to crawlers; they do not guarantee search ranking, AI indexing, rich results or citations. `llms.txt` is an additional plain-text entry, not a universal indexing standard.
 

@@ -2,7 +2,7 @@
   "title": "VideoLoad — 모바일 동영상 다운로드 브라우저 | 다운로드·시청·클립 자르기",
   "description": "모바일 동영상 다운로드 브라우저. 무료 공식 웹사이트 버전에서 다운로드, 감상, 구간 내보내기와 두 동영상 재생을 이용하세요. 앱 로그인은 필요 없습니다. 방문 기록과 활동 기록은 기기에 저장됩니다. 이 기록을 수집하거나 저희 서버에 업로드하지 않습니다.",
   "faq_description": "모바일 동영상 다운로드 브라우저 VideoLoad의 무료 기능, 로그인 없는 사용, 방문 기록과 활동 기록의 기기 내 저장, 동영상 다운로드와 시청, Pro 클립 자르기 및 듀얼 재생을 알아보세요.",
-  "download_description": "모바일 동영상 다운로드 브라우저 VideoLoad를 받으세요. 앱 계정 없이 무료로 시작해 동영상을 다운로드하고 시청할 수 있습니다. 선택형 Pro로 클립 자르기와 듀얼 재생도 이용하세요. iPhone 버전 출시 예정.",
+  "download_description": "모바일 동영상 다운로드 브라우저 VideoLoad를 받으세요. 앱 계정 없이 무료로 시작해 동영상을 다운로드하고 시청할 수 있습니다. 선택형 Pro로 클립 자르기와 듀얼 재생도 이용하세요. iPhone 버전은 App Store에서 이용할 수 있습니다.",
   "nav": [
     "기능",
     "자주 묻는 질문",
@@ -15,10 +15,10 @@
   "cta": "VideoLoad 다운로드",
   "secondary": "앱 기능 살펴보기",
   "trust": "공식 무료 다운로드 · 앱 로그인 불필요 · 앱 내 광고 없음 · 방문 기록은 기기에 · 활동 기록 수집 없음",
-  "preview": "실제 iPhone 화면 · iOS 버전 출시 예정 · 직접 제작한 데모 영상",
+  "preview": "실제 iPhone 화면 · App Store에서 이용 가능 · 직접 제작한 데모 영상",
   "caption": "원하는 구간을 골라도 원본은 그대로.",
   "caption_detail": "여러 구간을 표시하고 필요한 장면만 다시 볼 수 있습니다.",
-  "platform": "Android 공식 APK 제공 · Google Play 제공 여부는 지역 및 출시 상태에 따라 다름 · iPhone 버전 출시 예정",
+  "platform": "Android 공식 APK 제공 · Google Play 제공 여부는 지역 및 출시 상태에 따라 다름 · iPhone 버전은 App Store에서 이용 가능",
   "section_label": "하나의 브라우저, 세 가지 핵심 기능.",
   "section_title": "다운로드하고, 시청하고,<br>원하는 클립을 자르세요.",
   "features": [
@@ -63,7 +63,7 @@
     ],
     [
       "지원 플랫폼",
-      "Android 8.0 이상. iPhone 버전은 출시 예정입니다."
+      "Android 8.0 이상. iPhone은 iOS 17.0 이상이 필요합니다."
     ],
     [
       "공식 커뮤니티",
@@ -90,9 +90,9 @@
     [
       "iPhone",
       "App Store",
-      "출시 예정 · App Store 제출 진행 중",
-      "아직 이용할 수 없음",
-      null
+      "무료로 시작 · 선택형 일회성 Pro 구매",
+      "App Store에서 다운로드",
+      "https://apps.apple.com/us/app/videoload-no-ads/id6827054536"
     ]
   ],
   "download_help": "버전 차이와 설치 도움말",
@@ -105,7 +105,7 @@
   "feedback_note": "GitHub에 보낸 의견은 공개됩니다. 비밀번호, 영수증이나 개인 영상은 포함하지 마세요.",
   "limits": "본인이 소유하거나 저장 권한이 있는 콘텐츠만 다운로드하세요. 호환성은 사이트와 형식에 따라 다르며 DRM, 유료 접근 제한이나 접근 제어를 우회하지 않습니다. 방문한 웹사이트에는 자체 광고가 있을 수 있습니다. 듀얼 재생은 프레임 단위 동기화를 보장하지 않습니다. iOS의 HLS 오프라인 패키지는 앱 안에서만 재생되며 내보낼 수 없습니다. 앱을 강제 종료하면 전송이 중지됩니다.",
   "footer": "VideoLoad · 모바일 동영상 다운로드 브라우저",
-  "updated": "제품 정보 업데이트: 2026년 11월 13일.",
+  "updated": "제품 정보 업데이트: 2026년 11월 16일.",
   "privacy": "개인정보 처리방침",
   "downloads": "다운로드",
   "home": "홈",
@@ -142,7 +142,7 @@
     ],
     [
       "지금 iPhone에 VideoLoad를 설치할 수 있나요?",
-      "iPhone 버전은 출시 예정이며 App Store 제출을 진행하고 있습니다. 아직 공개된 App Store 다운로드 링크는 제공하지 않습니다. 출시 후 확인된 공식 링크를 추가할 예정입니다."
+      "네. 이 페이지의 공식 App Store 링크에서 VideoLoad No Ads를 다운로드할 수 있습니다. iOS 17.0 이상이 필요합니다. 앱은 무료로 시작할 수 있으며 Pro는 선택형 일회성 앱 내 구매입니다. 이용 가능 여부는 App Store 지역에 따라 다릅니다."
     ],
     [
       "Pro를 한 번 구매하면 Android와 iPhone 모두에서 사용할 수 있나요?",
@@ -157,7 +157,7 @@
   "navigation_label": "주 메뉴",
   "footer_navigation": "하단 메뉴",
   "language_label": "언어",
-  "alt_player": "두 표시 구간이 있는 VideoLoad iPhone 플레이어. iOS 버전 출시 예정",
+  "alt_player": "두 표시 구간이 있는 VideoLoad iPhone 플레이어",
   "alt_library": "원본, 하이라이트와 GIF가 있는 VideoLoad iPhone 동영상 보관함",
   "alt_compare": "AI로 생성한 두 데모 인물 사진과 독립 제어 기능을 보여 주는 VideoLoad 두 동영상 미리보기",
   "machine_summary_label": "일반 텍스트 제품 요약",
@@ -180,9 +180,9 @@
       ]
     },
     {
-      "title": "iPhone 버전 출시 예정",
+      "title": "iPhone에 설치하기",
       "paragraphs": [
-        "App Store 제출을 진행하고 있습니다. 출시 후 이 페이지에 확인된 공식 App Store 링크를 추가할 예정입니다. 여기에서는 iOS 설치 파일을 배포하지 않습니다."
+        "VideoLoad No Ads를 App Store에서 이용할 수 있습니다. iOS 17.0 이상이 필요합니다. 무료로 다운로드할 수 있으며 Pro는 선택형 일회성 앱 내 구매입니다. 이용 가능 여부는 App Store 지역에 따라 다릅니다. 공식 스토어 링크를 이용하세요. 여기에서는 iOS 설치 파일을 배포하지 않습니다."
       ]
     },
     {

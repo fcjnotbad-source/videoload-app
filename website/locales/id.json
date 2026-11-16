@@ -2,7 +2,7 @@
   "title": "VideoLoad — Browser Pengunduh Video untuk Ponsel | Unduh, Tonton & Potong",
   "description": "Browser pengunduh video di ponsel. Versi situs resmi gratis dengan unduhan, pemutaran, ekspor klip, dan pemutaran dua video. Tanpa akun. Riwayat penjelajahan dan catatan aktivitas tetap berada di perangkat Anda. Kami tidak mengumpulkan atau mengunggah catatan ini ke server kami.",
   "faq_description": "Jawaban tentang VideoLoad, browser pengunduh video untuk ponsel: fitur gratis, penggunaan tanpa login, riwayat penjelajahan dan aktivitas yang disimpan lokal, unduhan, pemutaran, pemotongan klip dan pemutaran dua video dengan Pro.",
-  "download_description": "Dapatkan VideoLoad, browser pengunduh video untuk ponsel. Mulai gratis tanpa akun aplikasi; unduh dan tonton video, dengan Pro opsional untuk memotong klip dan memutar dua video. iPhone segera hadir.",
+  "download_description": "Dapatkan VideoLoad, browser pengunduh video untuk ponsel. Mulai gratis tanpa akun aplikasi; unduh dan tonton video, dengan Pro opsional untuk memotong klip dan memutar dua video. Versi iPhone tersedia di App Store.",
   "nav": [
     "Fitur",
     "Tanya jawab",
@@ -15,10 +15,10 @@
   "cta": "Dapatkan VideoLoad",
   "secondary": "Jelajahi aplikasi",
   "trust": "Unduhan resmi gratis · Tanpa akun · Tanpa iklan aplikasi · Riwayat tetap lokal · Aktivitas tidak dikumpulkan",
-  "preview": "Tampilan iPhone asli · iOS segera hadir · media demo buatan sendiri",
+  "preview": "Tampilan iPhone asli · Tersedia di App Store · media demo buatan sendiri",
   "caption": "Pilih momennya. Pertahankan video aslinya.",
   "caption_detail": "Tandai beberapa klip dan putar ulang hanya bagian yang penting.",
-  "platform": "Android tersedia melalui APK resmi · Ketersediaan Google Play bervariasi · iPhone segera hadir",
+  "platform": "Android tersedia melalui APK resmi · Ketersediaan Google Play bervariasi · iPhone tersedia di App Store",
   "section_label": "SATU BROWSER. TIGA KEGUNAAN UTAMA.",
   "section_title": "Unduh. Tonton.<br>Potong klip yang Anda inginkan.",
   "features": [
@@ -63,7 +63,7 @@
     ],
     [
       "Platform",
-      "Android 8.0 ke atas. Versi iPhone segera hadir."
+      "Android 8.0 ke atas. iPhone memerlukan iOS 17.0 atau yang lebih baru."
     ],
     [
       "Komunitas resmi",
@@ -90,9 +90,9 @@
     [
       "iPhone",
       "App Store",
-      "Segera hadir · pengajuan sedang diproses",
-      "Belum tersedia",
-      null
+      "Mulai gratis · Pro opsional, cukup sekali beli",
+      "Unduh di App Store",
+      "https://apps.apple.com/us/app/videoload-no-ads/id6827054536"
     ]
   ],
   "download_help": "Perbedaan edisi & bantuan instalasi",
@@ -105,7 +105,7 @@
   "feedback_note": "Masukan di GitHub bersifat publik. Jangan sertakan kata sandi, bukti pembelian, atau media pribadi.",
   "limits": "Unduh hanya konten milik Anda atau yang boleh Anda simpan. Kompatibilitas bervariasi; aplikasi tidak melewati DRM, pembatasan berbayar, atau kontrol akses. Situs web dapat menampilkan iklannya sendiri. Pemutaran dua video tidak menjamin sinkronisasi per bingkai. Di iOS, paket HLS offline dapat diputar dalam aplikasi tetapi tidak dapat diekspor; menutup paksa aplikasi menghentikan transfer.",
   "footer": "VideoLoad · Browser pengunduh video untuk ponsel",
-  "updated": "Informasi produk diperbarui pada 13 November 2026.",
+  "updated": "Informasi produk diperbarui pada 16 November 2026.",
   "privacy": "Privasi",
   "downloads": "Unduhan",
   "home": "Beranda",
@@ -142,7 +142,7 @@
     ],
     [
       "Apakah VideoLoad sudah bisa dipasang di iPhone?",
-      "Versi iPhone segera hadir dan pengajuan ke App Store sedang berlangsung. Tautan unduhan publik App Store belum tersedia di sini. Tautan resmi yang sudah diverifikasi akan ditambahkan setelah rilis."
+      "Ya. Unduh VideoLoad No Ads melalui tautan resmi App Store di halaman ini. Diperlukan iOS 17.0 atau yang lebih baru. Aplikasi dapat mulai digunakan secara gratis, dengan Pro opsional yang dibeli sekali dalam aplikasi. Ketersediaan bergantung pada wilayah App Store Anda."
     ],
     [
       "Apakah satu pembelian Pro membuka fitur di Android dan iPhone?",
@@ -157,7 +157,7 @@
   "navigation_label": "Navigasi utama",
   "footer_navigation": "Navigasi bagian bawah",
   "language_label": "Bahasa",
-  "alt_player": "Pemutar VideoLoad di iPhone menampilkan dua klip yang ditandai; iOS segera hadir",
+  "alt_player": "Pemutar VideoLoad di iPhone menampilkan dua klip yang ditandai",
   "alt_library": "Koleksi video VideoLoad di iPhone dengan video asli, sorotan, dan GIF",
   "alt_compare": "Pratinjau dua video VideoLoad dengan dua potret demo buatan AI dan kontrol terpisah",
   "machine_summary_label": "Ringkasan produk dalam teks biasa",
@@ -180,9 +180,9 @@
       ]
     },
     {
-      "title": "iPhone segera hadir",
+      "title": "Memasang di iPhone",
       "paragraphs": [
-        "Pengajuan ke App Store sedang berlangsung. Tautan resmi App Store yang sudah diverifikasi akan ditambahkan ke halaman ini setelah rilis. Tidak ada file instalasi iOS yang dibagikan di sini."
+        "VideoLoad No Ads tersedia di App Store. Diperlukan iOS 17.0 atau yang lebih baru. Unduhan gratis, dengan Pro opsional yang dibeli sekali dalam aplikasi. Ketersediaan bergantung pada wilayah App Store Anda. Gunakan tautan toko resmi; tidak ada file instalasi iOS yang dibagikan di sini."
       ]
     },
     {

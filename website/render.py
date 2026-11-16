@@ -2,7 +2,7 @@
 import json
 from html import escape as e
 
-from content import APK, BASE, CONTACT_EMAIL, COPY, DEMO, FEEDBACK, GOOGLE_SITE_VERIFICATION, PLAY, POLICY, REPO, UPDATED
+from content import APK, APPSTORE, BASE, CONTACT_EMAIL, COPY, DEMO, FEEDBACK, GOOGLE_SITE_VERIFICATION, PLAY, POLICY, REPO, UPDATED
 from promo import VIDEO_ID, media_url, video_schema
 
 
@@ -20,7 +20,7 @@ def schemas(lang, page):
     url = BASE + c['prefix'] + page
     data = [
         {'@type': 'WebSite', '@id': BASE + '/#website', 'url': BASE + '/', 'name': 'VideoLoad', 'inLanguage': [locale['lang'] for locale in COPY.values()]},
-        {'@type': 'SoftwareApplication', '@id': BASE + '/#app', 'name': 'VideoLoad', 'url': BASE + '/', 'applicationCategory': 'MultimediaApplication', 'operatingSystem': 'Android 8.0+; iOS (coming soon)', 'description': c['description'], 'inLanguage': c['lang'], 'featureList': [feature[1] + ': ' + feature[2] for feature in c['features']], 'image': BASE + '/assets/app-icon.png', 'screenshot': BASE + '/assets/screenshots/player.png', 'sameAs': [REPO], 'downloadUrl': APK, 'softwareHelp': {'@type': 'WebPage', 'url': BASE + c['prefix'] + 'faq/'}},
+        {'@type': 'SoftwareApplication', '@id': BASE + '/#app', 'name': 'VideoLoad', 'url': BASE + '/', 'applicationCategory': 'MultimediaApplication', 'operatingSystem': 'Android 8.0+; iOS 17.0+', 'description': c['description'], 'inLanguage': c['lang'], 'featureList': [feature[1] + ': ' + feature[2] for feature in c['features']], 'image': BASE + '/assets/app-icon.png', 'screenshot': BASE + '/assets/screenshots/player.png', 'sameAs': [REPO, PLAY, APPSTORE], 'downloadUrl': APK, 'softwareHelp': {'@type': 'WebPage', 'url': BASE + c['prefix'] + 'faq/'}},
         {'@type': 'WebPage', '@id': url + '#webpage', 'url': url, 'name': c['title'] if not page else (c['faq_heading'] if page == 'faq/' else c['downloads']) + ' · VideoLoad', 'description': description(c,page), 'inLanguage': c['lang'], 'isPartOf': {'@id': BASE + '/#website'}, 'about': {'@id': BASE + '/#app'}, 'dateModified': UPDATED},
     ]
     if page == '':
