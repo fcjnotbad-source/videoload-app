@@ -201,5 +201,9 @@
   ],
   "promo_title": "See VideoLoad in action.",
   "promo_note": "Download, watch and trim videos. The free official website edition also unlocks two-video playback.",
-  "promo_transcript_label": "Video transcript"
+  "promo_transcript_label": "Video transcript",
+  "video_page_title": "VideoLoad in action — Download, watch and trim videos",
+  "video_page_description": "See VideoLoad download, play and trim videos, with dual playback in the free official website edition. Browsing history and activity records stay on your device; we do not collect or upload them to our servers.",
+  "video_transcript_title": "VideoLoad video transcript",
+  "video_watch_link": "Watch VideoLoad in action"
 }

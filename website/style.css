@@ -950,3 +950,25 @@ html[dir="rtl"] .language-menu > summary { letter-spacing:normal; }
   .film-player { border-radius:12px; }
   .film-links { margin-block-start:14px; gap:12px; }
 }
+
+/* Watching the film is the primary purpose of this page. */
+.watch-page { max-inline-size:1080px; padding-block:26px 64px; }
+.watch-heading { margin-block-end:20px; }
+.watch-heading h1 { font-size:clamp(26px,3vw,40px); margin:0 0 10px; letter-spacing:-.035em; }
+.watch-heading p { color:var(--muted); font-size:14px; line-height:1.65; margin:0; max-inline-size:76ch; }
+.watch-player { border-radius:16px; }
+.watch-player video { max-block-size:max(220px,calc(100svh - 280px)); object-fit:contain; }
+.watch-actions { display:flex; flex-wrap:wrap; align-items:center; gap:22px; padding-block:24px; }
+.watch-actions .text-link { font-size:13px; }
+.watch-transcript { border-top:1px solid var(--line); padding-block-start:30px; max-inline-size:76ch; }
+.watch-transcript h2 { font-size:24px; }
+.watch-transcript p { color:var(--muted); font-size:15px; line-height:1.8; }
+@media(max-width:720px) {
+  .watch-page { padding-block:20px 42px; }
+  .watch-heading { margin-block-end:16px; }
+  .watch-heading h1 { line-height:1.2; }
+  .watch-heading p { font-size:13px; }
+  .watch-player { border-radius:10px; }
+  .watch-actions { gap:18px; padding-block:20px; }
+  .watch-transcript { padding-block-start:22px; }
+}

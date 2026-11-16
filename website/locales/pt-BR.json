@@ -201,5 +201,9 @@
   ],
   "promo_title": "Veja o VideoLoad em ação.",
   "promo_note": "Baixe, assista e recorte vídeos; a versão grátis do site oficial também oferece reprodução de dois vídeos.",
-  "promo_transcript_label": "Transcrição do vídeo"
+  "promo_transcript_label": "Transcrição do vídeo",
+  "video_page_title": "VideoLoad em ação — Baixe, assista e recorte vídeos",
+  "video_page_description": "Conheça os downloads, a reprodução, o recorte e a reprodução de dois vídeos na versão grátis do site oficial do VideoLoad. O histórico de navegação e os registros de atividade ficam no seu dispositivo; não os coletamos nem os enviamos aos nossos servidores.",
+  "video_transcript_title": "Transcrição do vídeo do VideoLoad",
+  "video_watch_link": "Ver o VideoLoad em ação"
 }

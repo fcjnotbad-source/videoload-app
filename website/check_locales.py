@@ -28,7 +28,7 @@ def check_locales():
         for heading in ('headline', 'section_title', 'download_title'):
             assert re.findall(r'<[^>]+>', locale[heading]) == re.findall(r'<[^>]+>', source[heading]), (key,heading)
         if key != 'en':
-            for field in ('title', 'description', 'faq_description', 'download_description', 'intro', 'faq_intro'):
+            for field in ('title', 'description', 'faq_description', 'download_description', 'intro', 'faq_intro', 'video_page_title', 'video_page_description', 'video_transcript_title', 'video_watch_link'):
                 assert raw[field] != source[field], (key, field, 'English fallback')
             assert all(a != source['faq'][i][1] for i, (_, a) in enumerate(raw['faq'])), key
             assert all(text != source['download_sections'][i]['paragraphs'][j] for i, section in enumerate(raw['download_sections']) for j, text in enumerate(section['paragraphs'])), key

@@ -8,12 +8,19 @@ from urllib.parse import quote
 from content import BASE
 
 METADATA = Path(__file__).resolve().parent.parent / 'assets/promo/metadata.json'
-VIDEO_ID = BASE + '/#film-video'
 REVISION = json.loads(METADATA.read_text(encoding='utf-8')).get('revision', '1') if METADATA.is_file() else '1'
 
 
 def media_url(filename):
     return '/assets/promo/' + filename + '?v=' + quote(str(REVISION), safe='')
+
+
+def watch_url(copy):
+    return BASE + copy['prefix'] + 'video/'
+
+
+def video_id(copy):
+    return watch_url(copy) + '#video'
 
 
 def video_schema(copy):
@@ -33,9 +40,12 @@ def video_schema(copy):
         raise ValueError('The published film has English narration and captions')
     return {
         '@type': 'VideoObject',
-        '@id': VIDEO_ID,
-        'name': copy['promo_title'],
-        'description': copy['promo_note'],
+        '@id': video_id(copy),
+        'name': copy['video_page_title'],
+        'description': copy['video_page_description'],
+        'url': watch_url(copy),
+        'mainEntityOfPage': {'@id': watch_url(copy) + '#webpage'},
+        'transcript': (METADATA.parent / 'transcript.en.txt').read_text(encoding='utf-8').strip(),
         'contentUrl': BASE + media_url('videoload-overview-en.mp4'),
         'thumbnailUrl': BASE + '/assets/promo/videoload-overview-poster.jpg',
         'uploadDate': metadata['uploadDate'],

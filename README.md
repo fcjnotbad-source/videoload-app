@@ -21,11 +21,11 @@ The [official website](https://videoload.pdos.work/) supports all 14 app languag
 
 ## Watch the product film
 
-[![VideoLoad product film](assets/promo/videoload-overview-poster.jpg)](https://videoload.pdos.work/#film)
+[![VideoLoad product film](assets/promo/videoload-overview-poster.jpg)](https://videoload.pdos.work/video/)
 
 Download, watch and trim videos, with clip export and dual playback unlocked in the free official website edition.
 
-[▶ Watch the product film](https://videoload.pdos.work/#film) · [Download the MP4](https://videoload.pdos.work/assets/promo/videoload-overview-en.mp4?v=privacy-2)
+[▶ Watch the product film](https://videoload.pdos.work/video/) · [Download the MP4](https://videoload.pdos.work/assets/promo/videoload-overview-en.mp4?v=privacy-2)
 
 ## Download videos. Watch videos. Trim clips.
 

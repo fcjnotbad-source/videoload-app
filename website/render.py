@@ -3,7 +3,7 @@ import json
 from html import escape as e
 
 from content import APK, APPSTORE, BASE, CONTACT_EMAIL, COPY, DEMO, FEEDBACK, GOOGLE_SITE_VERIFICATION, PLAY, POLICY, REPO, UPDATED
-from promo import VIDEO_ID, media_url, video_schema
+from promo import media_url, video_schema
 
 
 def button(label, url, secondary=False, small=False):
@@ -12,7 +12,7 @@ def button(label, url, secondary=False, small=False):
 
 
 def description(c, page):
-    return c.get({'faq/': 'faq_description', 'download/': 'download_description'}.get(page, 'description'))
+    return c.get({'faq/': 'faq_description', 'download/': 'download_description', 'video/': 'video_page_description'}.get(page, 'description'))
 
 
 def schemas(lang, page):
@@ -21,17 +21,19 @@ def schemas(lang, page):
     data = [
         {'@type': 'WebSite', '@id': BASE + '/#website', 'url': BASE + '/', 'name': 'VideoLoad', 'inLanguage': [locale['lang'] for locale in COPY.values()]},
         {'@type': 'SoftwareApplication', '@id': BASE + '/#app', 'name': 'VideoLoad', 'url': BASE + '/', 'applicationCategory': 'MultimediaApplication', 'operatingSystem': 'Android 8.0+; iOS 17.0+', 'description': c['description'], 'inLanguage': c['lang'], 'featureList': [feature[1] + ': ' + feature[2] for feature in c['features']], 'image': BASE + '/assets/app-icon.png', 'screenshot': BASE + '/assets/screenshots/player.png', 'sameAs': [REPO, PLAY, APPSTORE], 'downloadUrl': APK, 'softwareHelp': {'@type': 'WebPage', 'url': BASE + c['prefix'] + 'faq/'}},
-        {'@type': 'WebPage', '@id': url + '#webpage', 'url': url, 'name': c['title'] if not page else (c['faq_heading'] if page == 'faq/' else c['downloads']) + ' · VideoLoad', 'description': description(c,page), 'inLanguage': c['lang'], 'isPartOf': {'@id': BASE + '/#website'}, 'about': {'@id': BASE + '/#app'}, 'dateModified': UPDATED},
+        {'@type': 'WebPage', '@id': url + '#webpage', 'url': url, 'name': c['title'] if not page else (c['faq_heading'] if page == 'faq/' else c['video_page_title'] if page == 'video/' else c['downloads']) + ' · VideoLoad', 'description': description(c,page), 'inLanguage': c['lang'], 'isPartOf': {'@id': BASE + '/#website'}, 'about': {'@id': BASE + '/#app'}, 'dateModified': UPDATED},
     ]
-    if page == '':
+    if page in ('', 'video/'):
         video = video_schema(c)
         if video:
             data.append(video)
-            data[2]['video'] = {'@id': VIDEO_ID}
+            data[2]['video'] = {'@id': video['@id']}
+            if page == 'video/':
+                data[2]['mainEntity'] = {'@id': video['@id']}
     if page == 'faq/':
         data.append({'@type': 'FAQPage', '@id': url + '#faq', 'inLanguage': c['lang'], 'mainEntity': [{'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in c['faq']]})
     if page:
-        data.append({'@type': 'BreadcrumbList', 'itemListElement': [{'@type': 'ListItem', 'position': 1, 'name': c['home'], 'item': BASE + c['prefix']}, {'@type': 'ListItem', 'position': 2, 'name': c['nav'][1] if page == 'faq/' else c['downloads'], 'item': url}]})
+        data.append({'@type': 'BreadcrumbList', 'itemListElement': [{'@type': 'ListItem', 'position': 1, 'name': c['home'], 'item': BASE + c['prefix']}, {'@type': 'ListItem', 'position': 2, 'name': c['nav'][1] if page == 'faq/' else c['video_page_title'] if page == 'video/' else c['downloads'], 'item': url}]})
     return json.dumps({'@context': 'https://schema.org', '@graph': data}, ensure_ascii=False).replace('<', '\\u003c')
 
 
@@ -53,12 +55,14 @@ def header(c, page):
 
 def footer(c):
     ios_policy = 'privacy-zh.html' if c['locale_key'] in {'zh', 'zh-Hant'} else 'privacy.html'
-    return f'''<footer class="site-footer"><div class="wrap"><div class="footer-top"><div class="footer-brand">{c['footer']}</div><nav class="footer-links" aria-label="{e(c['footer_navigation'])}"><a href="{c['prefix']}download/">{c['downloads']}</a><a href="{c['prefix']}faq/">{c['nav'][1]}</a><a href="{REPO}">GitHub ↗</a><a href="mailto:{CONTACT_EMAIL}" dir="ltr">{CONTACT_EMAIL}</a><a href="{POLICY}privacy.html">Android {c['privacy']}</a><a href="{POLICY}ios/{ios_policy}">iOS {c['privacy']}</a></nav></div><p class="fineprint">{c['limits']}</p><p class="updated">{c['updated']} © 2026 VideoLoad.</p></div></footer>'''
+    return f'''<footer class="site-footer"><div class="wrap"><div class="footer-top"><div class="footer-brand">{c['footer']}</div><nav class="footer-links" aria-label="{e(c['footer_navigation'])}"><a href="{c['prefix']}download/">{c['downloads']}</a><a href="{c['prefix']}faq/">{c['nav'][1]}</a><a href="{c['prefix']}video/">{e(c['video_watch_link'])}</a><a href="{REPO}">GitHub ↗</a><a href="mailto:{CONTACT_EMAIL}" dir="ltr">{CONTACT_EMAIL}</a><a href="{POLICY}privacy.html">Android {c['privacy']}</a><a href="{POLICY}ios/{ios_policy}">iOS {c['privacy']}</a></nav></div><p class="fineprint">{c['limits']}</p><p class="updated">{c['updated']} © 2026 VideoLoad.</p></div></footer>'''
 
 
 def page_html(lang, page, body, title=None, noindex=False):
     c = COPY[lang]
     canonical = BASE + c['prefix'] + page
+    social_image = BASE + ('/assets/promo/videoload-overview-poster.jpg' if page == 'video/' else '/assets/screenshots/player.png')
+    social_alt = c['video_page_title'] if page == 'video/' else c['alt_player']
     title = title or c['title']
     desc = description(c,page)
     robots = 'noindex, follow' if noindex else 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'
@@ -68,7 +72,7 @@ def page_html(lang, page, body, title=None, noindex=False):
 <html lang="{c['lang']}" dir="{c['direction']}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="google-site-verification" content="{e(GOOGLE_SITE_VERIFICATION)}">
 <title>{e(title)}</title><meta name="description" content="{e(desc)}"><meta name="robots" content="{robots}">
 <link rel="canonical" href="{canonical}">{alternates}
-<meta property="og:type" content="website"><meta property="og:site_name" content="VideoLoad"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{canonical}"><meta property="og:image" content="{BASE}/assets/screenshots/player.png"><meta property="og:image:alt" content="{e(c['alt_player'])}"><meta property="og:locale" content="{c['og_locale']}"><meta name="twitter:card" content="summary_large_image">
+<meta property="og:type" content="website"><meta property="og:site_name" content="VideoLoad"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{canonical}"><meta property="og:image" content="{social_image}"><meta property="og:image:alt" content="{e(social_alt)}"><meta property="og:locale" content="{c['og_locale']}"><meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#faf9f6"><link rel="icon" href="/assets/app-icon.png" type="image/png"><link rel="stylesheet" href="/style.css"><link rel="alternate" type="text/plain" title="{e(c['machine_summary_label'])}" href="/llms.txt"><link rel="alternate" type="application/json" title="{e(c['product_facts_label'])}" href="/product.json">
 <script type="application/ld+json">{schemas(lang, page)}</script></head><body>{header(c,page)}<main id="main">{body}</main>{footer(c)}</body></html>'''
 
@@ -92,7 +96,7 @@ def download_section(c, help_link=True):
 
 
 def promo_section(c):
-    return f'''<section class="film-section" id="film" aria-labelledby="film-title"><header class="film-heading"><div><div class="eyebrow">VIDEOLOAD / FILM</div><h2 id="film-title">{e(c['promo_title'])}</h2></div><p id="film-note">{e(c['promo_note'])}</p></header><div class="film-player"><video width="1920" height="1080" controls playsinline preload="metadata" poster="/assets/promo/videoload-overview-poster.jpg" aria-labelledby="film-title" aria-describedby="film-note" lang="en"><source src="{e(media_url('videoload-overview-en.mp4'))}" type="video/mp4"><track kind="captions" srclang="en" label="English" src="{e(media_url('videoload-overview-en.vtt'))}"><p><a href="{e(media_url('videoload-overview-en.mp4'))}">{e(c['promo_title'])} · MP4</a></p></video></div><div class="film-links"><a class="text-link" href="{e(media_url('transcript.en.txt'))}">{e(c['promo_transcript_label'])} ↗</a><a class="text-link film-download" href="{e(media_url('videoload-overview-en.mp4'))}" download>MP4 ↓</a></div></section>'''
+    return f'''<section class="film-section" id="film" aria-labelledby="film-title"><header class="film-heading"><div><div class="eyebrow">VIDEOLOAD / FILM</div><h2 id="film-title">{e(c['promo_title'])}</h2></div><p id="film-note">{e(c['promo_note'])}</p></header><div class="film-player"><video width="1920" height="1080" controls playsinline preload="metadata" poster="/assets/promo/videoload-overview-poster.jpg" aria-labelledby="film-title" aria-describedby="film-note" lang="en"><source src="{e(media_url('videoload-overview-en.mp4'))}" type="video/mp4"><track kind="captions" srclang="en" label="English" src="{e(media_url('videoload-overview-en.vtt'))}"><p><a href="{e(media_url('videoload-overview-en.mp4'))}">{e(c['promo_title'])} · MP4</a></p></video></div><div class="film-links"><a class="text-link" href="{c['prefix']}video/">{e(c['video_watch_link'])} ↗</a><a class="text-link" href="{e(media_url('transcript.en.txt'))}">{e(c['promo_transcript_label'])} ↗</a><a class="text-link film-download" href="{e(media_url('videoload-overview-en.mp4'))}" download>MP4 ↓</a></div></section>'''
 
 
 def home(lang):

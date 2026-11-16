@@ -1,6 +1,6 @@
 # VideoLoad product film
 
-[Watch on the official website](https://videoload.pdos.work/#film) · [Download MP4](../assets/promo/videoload-overview-en.mp4) · [English transcript](../assets/promo/transcript.en.txt) · [English captions](../assets/promo/videoload-overview-en.vtt)
+[Watch on the official website](https://videoload.pdos.work/video/) · [Download MP4](../assets/promo/videoload-overview-en.mp4) · [English transcript](../assets/promo/transcript.en.txt) · [English captions](../assets/promo/videoload-overview-en.vtt)
 
 The 54-second film explains the mobile video download browser through downloading, watching, trimming, free everyday use, no app login or in-app ads, locally stored browsing/activity records without collection or uploads to our servers, and independently controlled dual playback. It promotes the free official website edition. Store editions can have different feature access.
 

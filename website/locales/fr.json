@@ -201,5 +201,9 @@
   ],
   "promo_title": "Découvrez VideoLoad en action.",
   "promo_note": "Téléchargez, regardez et découpez des vidéos ; la version gratuite du site officiel offre aussi la double lecture.",
-  "promo_transcript_label": "Transcription de la vidéo"
+  "promo_transcript_label": "Transcription de la vidéo",
+  "video_page_title": "VideoLoad en action — Télécharger, regarder et découper",
+  "video_page_description": "Découvrez le téléchargement, la lecture, le découpage et la double lecture dans la version gratuite du site officiel de VideoLoad. L’historique de navigation et les journaux d’activité restent sur votre appareil ; nous ne les collectons pas et ne les envoyons pas sur nos serveurs.",
+  "video_transcript_title": "Transcription de la vidéo VideoLoad",
+  "video_watch_link": "Voir VideoLoad en action"
 }

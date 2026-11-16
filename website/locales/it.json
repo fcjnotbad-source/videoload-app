@@ -201,5 +201,9 @@
   ],
   "promo_title": "Guarda VideoLoad in azione.",
   "promo_note": "Scarica, guarda e ritaglia video; la versione gratuita del sito ufficiale offre anche la doppia riproduzione.",
-  "promo_transcript_label": "Trascrizione del video"
+  "promo_transcript_label": "Trascrizione del video",
+  "video_page_title": "VideoLoad in azione — Scarica, guarda e ritaglia video",
+  "video_page_description": "Scopri download, riproduzione, ritaglio e due video insieme nella versione gratuita del sito ufficiale di VideoLoad. La cronologia di navigazione e i registri delle attività restano sul tuo dispositivo; non li raccogliamo né li carichiamo sui nostri server.",
+  "video_transcript_title": "Trascrizione del video di VideoLoad",
+  "video_watch_link": "Guarda VideoLoad in azione"
 }

@@ -6,7 +6,7 @@ from urllib.parse import unquote, urlsplit
 import xml.etree.ElementTree as ET
 
 from content import APK, APPSTORE, BASE, CONTACT_EMAIL, COPY, GOOGLE_SITE_VERIFICATION, LOCALES, REPO
-from promo import METADATA, VIDEO_ID, media_url
+from promo import METADATA, media_url, video_id, watch_url
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / 'dist'
@@ -49,7 +49,7 @@ def check():
     titles = set()
     descriptions = set()
     for lang, copy in COPY.items():
-        for page in ('', 'faq/', 'download/'):
+        for page in ('', 'faq/', 'download/', 'video/'):
             path = copy['prefix'] + page
             html = resolve(path).read_text(encoding='utf-8')
             doc = Document(html)
@@ -76,7 +76,7 @@ def check():
             assert all(not attr.get('src') and attr.get('type') == 'application/ld+json' for tag, attr in doc.tags if tag == 'script'), path
             assert all('alt' in attr and 'width' in attr and 'height' in attr for tag, attr in doc.tags if tag == 'img'), path
             assert len(doc.schemas) == 1, path
-            if page == '':
+            if page in ('', 'video/'):
                 videos = [attr for tag, attr in doc.tags if tag == 'video']
                 assert len(videos) == 1, path
                 video = videos[0]
@@ -87,8 +87,12 @@ def check():
                 assert resolve(video['poster']).is_file(), path
                 assert any(tag == 'source' and attr.get('src') == media_url('videoload-overview-en.mp4') and attr.get('type') == 'video/mp4' for tag, attr in doc.tags), path
                 assert any(tag == 'track' and attr.get('kind') == 'captions' and attr.get('srclang') == 'en' and attr.get('src') == media_url('videoload-overview-en.vtt') for tag, attr in doc.tags), path
-                assert any(tag == 'section' and attr.get('id') == 'film' for tag, attr in doc.tags), path
-                assert any(tag == 'img' and attr.get('src') == '/assets/screenshots/compare-portraits.png' for tag, attr in doc.tags), path
+                if page == '':
+                    assert any(tag == 'section' and attr.get('id') == 'film' for tag, attr in doc.tags), path
+                    assert any(tag == 'img' and attr.get('src') == '/assets/screenshots/compare-portraits.png' for tag, attr in doc.tags), path
+                else:
+                    assert doc.tags.index(next(item for item in doc.tags if item[0] == 'video')) < doc.tags.index(next(item for item in doc.tags if item[0] == 'h2')), path
+                    assert any(tag == 'meta' and attr.get('property') == 'og:image' and attr.get('content') == BASE + '/assets/promo/videoload-overview-poster.jpg' for tag, attr in doc.tags), path
             graph = doc.schemas[0]['@graph']
             description = next(attr['content'] for tag, attr in doc.tags if tag == 'meta' and attr.get('name') == 'description')
             assert description not in descriptions, path
@@ -103,17 +107,22 @@ def check():
             if page in ('', 'download/'):
                 assert any(tag == 'a' and attr.get('href') == APPSTORE for tag, attr in doc.tags), path
             film_objects = [item for item in graph if item['@type'] == 'VideoObject']
-            if page == '' and METADATA.is_file():
+            if page in ('', 'video/') and METADATA.is_file():
                 metadata = json.loads(METADATA.read_text())
                 assert len(film_objects) == 1, path
                 film = film_objects[0]
-                assert film['@id'] == VIDEO_ID and web['video'] == {'@id': VIDEO_ID}, path
-                assert film['name'] == copy['promo_title'] and film['description'] == copy['promo_note'], path
+                assert film['@id'] == video_id(copy) and web['video'] == {'@id': video_id(copy)}, path
+                assert film['name'] == copy['video_page_title'] and film['description'] == copy['video_page_description'], path
                 assert film['duration'] == f'PT{float(metadata["durationSeconds"]):g}S', path
                 assert film['uploadDate'] == metadata['uploadDate'], path
                 assert film['contentUrl'] == BASE + media_url('videoload-overview-en.mp4'), path
                 assert film['thumbnailUrl'] == BASE + '/assets/promo/videoload-overview-poster.jpg', path
                 assert film['inLanguage'] == 'en' and film['caption']['inLanguage'] == 'en', path
+                assert film['url'] == watch_url(copy) and film['mainEntityOfPage'] == {'@id': watch_url(copy) + '#webpage'}, path
+                if page == 'video/':
+                    assert web['mainEntity'] == {'@id': film['@id']}, path
+                    for paragraph in film['transcript'].split('\n\n'):
+                        assert paragraph in ' '.join(doc.text), path
             elif page != '':
                 assert not film_objects and 'video' not in web, path
             if page == 'faq/':
@@ -143,10 +152,29 @@ def check():
     locs = {node.text for node in sitemap.findall('.//{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
     assert locs == {BASE + route for route in documents}
     robots = (OUT / 'robots.txt').read_text()
-    assert 'Allow: /' in robots and 'Disallow: /' not in robots and BASE + '/sitemap.xml' in robots
+    assert 'Allow: /' in robots and 'Disallow: /' not in robots and BASE + '/sitemap.xml' in robots and BASE + '/video-sitemap.xml' in robots
     facts = json.loads((OUT / 'product.json').read_text())
     assert facts['platforms']['ios']['appStoreURL'] == APPSTORE
     assert facts['platforms']['ios']['minimumOS'] == '17.0'
+    video_map = ET.parse(OUT / 'video-sitemap.xml')
+    ns = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9', 'v': 'http://www.google.com/schemas/sitemap-video/1.1'}
+    entries = video_map.findall('s:url', ns)
+    expected_watch = {watch_url(c): c for c in COPY.values()}
+    assert len(entries) == len(COPY)
+    assert {entry.findtext('s:loc', namespaces=ns) for entry in entries} == set(expected_watch)
+    metadata = json.loads(METADATA.read_text())
+    for entry in entries:
+        c = expected_watch[entry.findtext('s:loc', namespaces=ns)]
+        assert entry.findtext('v:video/v:content_loc', namespaces=ns) == BASE + media_url('videoload-overview-en.mp4')
+        assert entry.findtext('v:video/v:thumbnail_loc', namespaces=ns) == BASE + '/assets/promo/videoload-overview-poster.jpg'
+        assert entry.findtext('v:video/v:title', namespaces=ns) == c['video_page_title']
+        assert 0 < len(c['video_page_title']) <= 100
+        assert 0 < len(c['video_page_description']) <= 2048
+        assert entry.findtext('v:video/v:description', namespaces=ns) == c['video_page_description']
+        assert float(entry.findtext('v:video/v:duration', namespaces=ns)) == metadata['durationSeconds']
+        assert entry.findtext('v:video/v:publication_date', namespaces=ns) == metadata['uploadDate']
+    assert facts['promotionalVideo']['watchPage'] == BASE + '/video/'
+    assert set(facts['promotionalVideo']['localizedWatchPages'].values()) == set(expected_watch)
     assert facts['officialWebsite'] == BASE + '/'
     assert set(facts['positioning']) == {c['lang'] for c in COPY.values()}
     assert facts['community'] == REPO

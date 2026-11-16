@@ -201,5 +201,9 @@
   ],
   "promo_title": "영상으로 만나는 VideoLoad.",
   "promo_note": "동영상을 다운로드하고 감상하며 원하는 구간을 잘라 보세요. 무료 공식 웹사이트 버전에서는 두 동영상 재생도 즐길 수 있습니다.",
-  "promo_transcript_label": "동영상 대본"
+  "promo_transcript_label": "동영상 대본",
+  "video_page_title": "VideoLoad 기능 소개 — 다운로드, 감상, 구간 자르기",
+  "video_page_description": "무료 공식 웹사이트 버전에서 VideoLoad의 동영상 다운로드, 재생, 구간 자르기와 두 동영상 재생을 만나보세요. 방문 기록과 활동 기록은 기기에 보관하며, 수집하거나 저희 서버에 업로드하지 않습니다.",
+  "video_transcript_title": "VideoLoad 동영상 대본",
+  "video_watch_link": "VideoLoad 기능 소개 영상 보기"
 }

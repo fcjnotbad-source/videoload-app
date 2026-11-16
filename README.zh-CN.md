@@ -21,11 +21,11 @@
 
 ## 观看产品宣传片
 
-[![VideoLoad 产品宣传片](assets/promo/videoload-overview-poster.jpg)](https://videoload.pdos.work/zh/#film)
+[![VideoLoad 产品宣传片](assets/promo/videoload-overview-poster.jpg)](https://videoload.pdos.work/zh/video/)
 
 下载视频、观看视频、视频截取，无需登录；官网免费直装版还可体验双屏播放的乐趣。
 
-[▶ 观看产品宣传片](https://videoload.pdos.work/zh/#film) · [下载 MP4 视频](https://videoload.pdos.work/assets/promo/videoload-overview-en.mp4?v=privacy-2)
+[▶ 观看产品宣传片](https://videoload.pdos.work/zh/video/) · [下载 MP4 视频](https://videoload.pdos.work/assets/promo/videoload-overview-en.mp4?v=privacy-2)
 
 ## 手机视频下载浏览器：下载视频、观看视频、视频截取
 

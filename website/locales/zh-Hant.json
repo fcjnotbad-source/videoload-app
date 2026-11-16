@@ -201,5 +201,9 @@
   ],
   "promo_title": "看看 VideoLoad 能做什麼。",
   "promo_note": "下載、觀看、擷取影片，官網免費直接安裝版還可體驗雙畫面播放。",
-  "promo_transcript_label": "影片文字稿"
+  "promo_transcript_label": "影片文字稿",
+  "video_page_title": "VideoLoad 功能示範：下載、觀看、擷取與雙畫面播放",
+  "video_page_description": "示範 VideoLoad 的影片下載、播放、擷取與雙畫面功能，官網直接安裝版免費。瀏覽歷史和操作紀錄保留在本機，我們不收集這些紀錄，也不將它們上傳到我們的伺服器。",
+  "video_transcript_title": "VideoLoad 影片文字稿",
+  "video_watch_link": "觀看 VideoLoad 功能示範"
 }

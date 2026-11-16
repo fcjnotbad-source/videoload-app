@@ -7,6 +7,8 @@ from xml.sax.saxutils import escape
 from content import APK, APPSTORE, BASE, CONTACT_EMAIL, COPY, FEEDBACK, PLAY, REPO, UPDATED
 from render import downloads, faq, home, page_html
 from promo import media_url
+from watch import watch
+from video_sitemap import build_video_sitemap
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / 'dist'
@@ -21,7 +23,7 @@ def write(path, text):
 def build():
     OUT.mkdir(exist_ok=True)
     # This directory is exclusively generated; never point it at source or runtime data.
-    for name in [c['prefix'].strip('/') for c in COPY.values() if c['prefix'] != '/'] + ['faq', 'download', 'assets']:
+    for name in [c['prefix'].strip('/') for c in COPY.values() if c['prefix'] != '/'] + ['faq', 'download', 'video', 'assets']:
         target = OUT / name
         if target.exists():
             shutil.rmtree(target)
@@ -33,17 +35,18 @@ def build():
     write('_routes.json', json.dumps({'version': 1, 'include': ['/*'], 'exclude': ['/.well-known/acme-challenge/*']}) + '\n')
     pages = []
     for lang, c in COPY.items():
-        for route, render in [('', home), ('faq/', faq), ('download/', downloads)]:
+        for route, render in [('', home), ('faq/', faq), ('download/', downloads), ('video/', watch)]:
             path = c['prefix'].lstrip('/') + route
             write(path + 'index.html', render(lang))
             pages.append((c['prefix'] + route, route))
     write('404.html', page_html('en', '', '<div class="wrap not-found"><div class="eyebrow">404 / VIDEOLOAD</div><h1>Let’s get you back.</h1><p>This page could not be found.</p><a class="button" href="/">Go to VideoLoad →</a></div>', 'Page not found · VideoLoad', noindex=True))
-    write('robots.txt', f'User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n')
+    write('robots.txt', f'User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\nSitemap: {BASE}/video-sitemap.xml\n')
     xml = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
     for path, route in pages:
         xml.append(f'<url><loc>{escape(BASE+path)}</loc><lastmod>{UPDATED}</lastmod>' + ''.join(f'<xhtml:link rel="alternate" hreflang="{c["hreflang"]}" href="{BASE}{c["prefix"]}{route}"/>' for c in COPY.values()) + f'<xhtml:link rel="alternate" hreflang="x-default" href="{BASE}/{route}"/></url>')
     xml.append('</urlset>')
     write('sitemap.xml', '\n'.join(xml))
+    write('video-sitemap.xml', build_video_sitemap())
     facts = {
         'name': 'VideoLoad', 'officialWebsite': BASE + '/', 'updated': UPDATED,
         'description': {c['lang']: c['description'] for c in COPY.values()},
@@ -59,7 +62,7 @@ def build():
         'privacy': {'appAccountRequired': False, 'inAppAdvertising': False, 'analyticsSDK': False, 'browsingHistory': 'Stored on your device; not collected by the developer', 'activityRecords': 'Stored locally, including download records, playback progress and clip marks', 'developerHistoryUpload': False, 'developerActivityUpload': False, 'websiteRequests': 'Browsing and downloads contact the chosen websites and media hosts; their privacy policies apply. Developer download, support and update pages may record standard page visits and download counts. System backup or device transfer may copy local app data to your own account or device.'},
         'limitations': [COPY['en']['limits'], 'iOS GIF selections total at most 30 seconds', 'The Google Play edition does not support YouTube downloads'],
         'community': REPO, 'feedback': FEEDBACK, 'contactEmail': CONTACT_EMAIL,
-        'promotionalVideo': {'contentUrl': BASE + media_url('videoload-overview-en.mp4'), 'thumbnailUrl': BASE + '/assets/promo/videoload-overview-poster.jpg', 'transcriptUrl': BASE + media_url('transcript.en.txt'), 'inLanguage': 'en', 'captionLanguage': 'en'},
+        'promotionalVideo': {'watchPage': BASE + '/video/', 'localizedWatchPages': {c['lang']: BASE + c['prefix'] + 'video/' for c in COPY.values()}, 'contentUrl': BASE + media_url('videoload-overview-en.mp4'), 'thumbnailUrl': BASE + '/assets/promo/videoload-overview-poster.jpg', 'transcriptUrl': BASE + media_url('transcript.en.txt'), 'inLanguage': 'en', 'captionLanguage': 'en'},
     }
     write('product.json', json.dumps(facts, ensure_ascii=False, indent=2) + '\n')
     summary = f'''# VideoLoad
@@ -69,7 +72,7 @@ def build():
 Product information updated {UPDATED}.
 
 ## Official pages
-- [Product film]({BASE}/#film): English narration and subtitles, with download, playback, clipping and dual-video features.
+- [Product film]({BASE}/video/): English narration and subtitles, with download, playback, clipping and dual-video features.
 - [Film transcript]({BASE}{media_url('transcript.en.txt')}): The complete English narration in plain text.
 - [English product overview]({BASE}/): Features, free and Pro tiers, privacy and platform status.
 - [中文产品介绍]({BASE}/zh/): 功能、免费与 Pro、隐私与平台状态。
@@ -95,6 +98,7 @@ Save only content you own or are authorized to download. No DRM, paywall or acce
 On iOS, HLS offline packages play in-app but do not export, and force-quitting stops downloads. Compatible iOS GIF exports are limited to 30 seconds of selected content.
 '''
     summary += '\n## All website languages\n' + '\n'.join(f'- [{c["native_name"]}]({BASE}{c["prefix"]}): [{c["nav"][1]}]({BASE}{c["prefix"]}faq/) · [{c["downloads"]}]({BASE}{c["prefix"]}download/)' for c in COPY.values()) + '\n'
+    summary += '\n## Product film watch pages\n' + '\n'.join(f'- [{c["native_name"]}]({BASE}{c["prefix"]}video/)' for c in COPY.values()) + '\n'
     write('llms.txt', summary)
     full = [summary]
     for lang, c in COPY.items():

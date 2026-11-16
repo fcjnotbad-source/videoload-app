@@ -201,5 +201,9 @@
   ],
   "promo_title": "Mira VideoLoad en acción.",
   "promo_note": "Descarga, mira y recorta videos; la edición gratis del sitio oficial también ofrece reproducción de dos videos.",
-  "promo_transcript_label": "Transcripción del video"
+  "promo_transcript_label": "Transcripción del video",
+  "video_page_title": "VideoLoad en acción — Descarga, mira y recorta videos",
+  "video_page_description": "Conoce las descargas, la reproducción, el recorte y la vista de dos videos en la edición gratis del sitio oficial de VideoLoad. El historial de navegación y los registros de actividad se guardan en tu dispositivo; no los recopilamos ni los subimos a nuestros servidores.",
+  "video_transcript_title": "Transcripción del video de VideoLoad",
+  "video_watch_link": "Ver VideoLoad en acción"
 }

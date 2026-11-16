@@ -18,7 +18,7 @@ Generated `dist/` and Python caches are ignored. To preview, run `python3 -m htt
 
 ## Languages
 
-English remains the default at `/`; the existing Simplified Chinese URL `/zh/` is preserved. Every language has a home, `/faq/` and `/download/` page, totaling 42 indexable pages. The native language picker preserves the current page and works without JavaScript. Arabic and Hebrew use semantic RTL direction and adapted spacing.
+English remains the default at `/`; the existing Simplified Chinese URL `/zh/` is preserved. Every language has a home, `/faq/`, `/download/` and dedicated `/video/` watch page, totaling 56 indexable pages. The native language picker preserves the current page and works without JavaScript. Arabic and Hebrew use semantic RTL direction and adapted spacing.
 
 | Language | Path |
 | --- | --- |
@@ -90,3 +90,9 @@ If certificate issuance reports a CAA error, review existing CAA restrictions be
 ## Canonical domain migration
 
 The canonical host is `videoload.pdos.work`. Keep the old `app.pdos.work` Pages association and DNS record so existing links can permanently redirect. `redirect_worker.js` redirects the two legacy public hosts (`app.pdos.work` and the production `videoload-app.pages.dev` host) to the canonical host, preserving path and query string. It forwards all other requests to Pages static assets; preview deployment hosts keep working. ACME validation paths are excluded from Worker routing to preserve certificate renewal. HTML content remains static and needs no browser JavaScript.
+
+## Video discovery
+
+`/video/` and its thirteen translations are dedicated watch pages, with the native player as the first main content, followed by the actual English transcript. Each watch page has a self-canonical, reciprocal language links, a VideoObject as its main entity, and the film poster as its social preview. The homepage links to the watch page while keeping its embedded product film. `video-sitemap.xml` lists only the fourteen watch URLs, using the real media URL, thumbnail, duration and upload date. Both sitemaps appear in robots.txt.
+
+Submit the video sitemap in Google Search Console and request indexing of the watch pages. Google must index the watch page first; video eligibility and indexing remain Google’s decision. The supplementary homepage video can continue to report that it is not on a watch page.

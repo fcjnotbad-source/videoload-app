@@ -201,5 +201,9 @@
   ],
   "promo_title": "VideoLoad in Aktion erleben.",
   "promo_note": "Videos herunterladen, ansehen und zuschneiden; die kostenlose Website-Version bietet auch zwei Videos auf einem Bildschirm.",
-  "promo_transcript_label": "Videotranskript"
+  "promo_transcript_label": "Videotranskript",
+  "video_page_title": "VideoLoad in Aktion — Videos laden, ansehen und zuschneiden",
+  "video_page_description": "Sieh VideoLoad beim Herunterladen, Abspielen und Zuschneiden von Videos sowie bei der Zwei-Video-Wiedergabe in der kostenlosen Website-Version. Browserverlauf und Aktivitätsprotokolle bleiben auf deinem Gerät; wir erfassen sie nicht und laden sie nicht auf unsere Server hoch.",
+  "video_transcript_title": "Transkript zum VideoLoad-Video",
+  "video_watch_link": "VideoLoad in Aktion ansehen"
 }

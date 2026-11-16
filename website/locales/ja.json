@@ -201,5 +201,9 @@
   ],
   "promo_title": "VideoLoad の使い方を動画で。",
   "promo_note": "動画のダウンロード、視聴、切り抜きを紹介。無料の公式サイト版で2画面再生も楽しめます。",
-  "promo_transcript_label": "動画の文字起こし"
+  "promo_transcript_label": "動画の文字起こし",
+  "video_page_title": "VideoLoad の機能紹介 — 動画の保存・視聴・切り抜き",
+  "video_page_description": "無料の公式サイト版で、VideoLoad の動画ダウンロード、再生、切り抜き、2画面再生を紹介。閲覧履歴と操作記録は端末内に保存され、私たちが収集したり、私たちのサーバーにアップロードしたりすることはありません。",
+  "video_transcript_title": "VideoLoad 動画の文字起こし",
+  "video_watch_link": "VideoLoad の紹介動画を見る"
 }

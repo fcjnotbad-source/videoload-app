@@ -201,5 +201,9 @@
   ],
   "promo_title": "看看 VideoLoad 能做什么。",
   "promo_note": "下载、观看、截取视频，官网免费直装版还可体验双屏播放。",
-  "promo_transcript_label": "视频文字稿"
+  "promo_transcript_label": "视频文字稿",
+  "video_page_title": "VideoLoad 功能演示：下载、观看、截取与双屏播放",
+  "video_page_description": "演示 VideoLoad 的视频下载、播放、截取与双屏功能，官网直装版免费。浏览历史和操作记录保留在本机，我们不收集这些记录，也不将它们上传到我们的服务器。",
+  "video_transcript_title": "VideoLoad 视频文字稿",
+  "video_watch_link": "观看 VideoLoad 功能演示"
 }
