@@ -59,6 +59,7 @@ def check():
             assert f'<meta name="google-site-verification" content="{GOOGLE_SITE_VERIFICATION}">' in html.split('</head>', 1)[0], path
             assert sum(tag == 'h1' for tag, _ in doc.tags) == 1, path
             assert any(tag == 'main' for tag, _ in doc.tags), path
+            assert any(tag == 'link' and attr.get('rel') == 'stylesheet' and attr.get('href', '').startswith('/style.css?v=') for tag, attr in doc.tags), path
             assert any(tag == 'html' and attr.get('lang') == copy['lang'] for tag, attr in doc.tags), path
             canonicals = [attr['href'] for tag, attr in doc.tags if tag == 'link' and attr.get('rel') == 'canonical']
             assert canonicals == [BASE + path], (path, canonicals)

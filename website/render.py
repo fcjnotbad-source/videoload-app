@@ -1,9 +1,13 @@
 """Semantic, script-independent page rendering."""
 import json
 from html import escape as e
+from hashlib import sha256
+from pathlib import Path
 
 from content import APK, APPSTORE, BASE, CONTACT_EMAIL, COPY, DEMO, FEEDBACK, GOOGLE_SITE_VERIFICATION, PLAY, POLICY, REPO, UPDATED
 from promo import media_url, video_schema
+
+STYLE_VERSION = sha256(Path(__file__).with_name('style.css').read_bytes()).hexdigest()[:12]
 
 
 def button(label, url, secondary=False, small=False):
@@ -73,7 +77,7 @@ def page_html(lang, page, body, title=None, noindex=False):
 <title>{e(title)}</title><meta name="description" content="{e(desc)}"><meta name="robots" content="{robots}">
 <link rel="canonical" href="{canonical}">{alternates}
 <meta property="og:type" content="website"><meta property="og:site_name" content="VideoLoad"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{canonical}"><meta property="og:image" content="{social_image}"><meta property="og:image:alt" content="{e(social_alt)}"><meta property="og:locale" content="{c['og_locale']}"><meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#faf9f6"><link rel="icon" href="/assets/app-icon.png" type="image/png"><link rel="stylesheet" href="/style.css"><link rel="alternate" type="text/plain" title="{e(c['machine_summary_label'])}" href="/llms.txt"><link rel="alternate" type="application/json" title="{e(c['product_facts_label'])}" href="/product.json">
+<meta name="theme-color" content="#faf9f6"><link rel="icon" href="/assets/app-icon.png" type="image/png"><link rel="stylesheet" href="/style.css?v={STYLE_VERSION}"><link rel="alternate" type="text/plain" title="{e(c['machine_summary_label'])}" href="/llms.txt"><link rel="alternate" type="application/json" title="{e(c['product_facts_label'])}" href="/product.json">
 <script type="application/ld+json">{schemas(lang, page)}</script></head><body>{header(c,page)}<main id="main">{body}</main>{footer(c)}</body></html>'''
 
 
