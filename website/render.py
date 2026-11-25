@@ -57,9 +57,19 @@ def header(c, page):
 </div></header>'''
 
 
+def email_link(c, compact=False):
+    label = e(c['email_contact'])
+    email = e(CONTACT_EMAIL)
+    classes = 'email-link' + (' email-link--compact' if compact else '')
+    icon = '<span class="email-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg></span>'
+    address = f'<bdi class="email-address" dir="ltr">{email}</bdi>'
+    text = address if compact else f'<span class="email-details"><span class="email-label">{label}</span>{address}</span>'
+    return f'<a class="{classes}" href="mailto:{email}" aria-label="{label}: {email}">{icon}{text}</a>'
+
+
 def footer(c):
     ios_policy = 'privacy-zh.html' if c['locale_key'] in {'zh', 'zh-Hant'} else 'privacy.html'
-    return f'''<footer class="site-footer"><div class="wrap"><div class="footer-top"><div class="footer-brand">{c['footer']}</div><nav class="footer-links" aria-label="{e(c['footer_navigation'])}"><a href="{c['prefix']}download/">{c['downloads']}</a><a href="{c['prefix']}faq/">{c['nav'][1]}</a><a href="{c['prefix']}video/">{e(c['video_watch_link'])}</a><a href="{REPO}">GitHub ↗</a><a href="mailto:{CONTACT_EMAIL}" dir="ltr">{CONTACT_EMAIL}</a><a href="{POLICY}privacy.html">Android {c['privacy']}</a><a href="{POLICY}ios/{ios_policy}">iOS {c['privacy']}</a></nav></div><p class="developer-credit" id="developer">{e(c['developer_credit_prefix'])}<bdi lang="zh-Hans">{e(DEVELOPER['name'])}</bdi></p><p class="fineprint">{c['limits']}</p><p class="updated">{c['updated']} © 2026 VideoLoad.</p></div></footer>'''
+    return f'''<footer class="site-footer"><div class="wrap"><div class="footer-top"><div class="footer-brand">{c['footer']}</div><nav class="footer-links" aria-label="{e(c['footer_navigation'])}"><a href="{c['prefix']}download/">{c['downloads']}</a><a href="{c['prefix']}faq/">{c['nav'][1]}</a><a href="{c['prefix']}video/">{e(c['video_watch_link'])}</a><a href="{REPO}">GitHub ↗</a>{email_link(c, compact=True)}<a href="{POLICY}privacy.html">Android {c['privacy']}</a><a href="{POLICY}ios/{ios_policy}">iOS {c['privacy']}</a></nav></div><p class="developer-credit" id="developer">{e(c['developer_credit_prefix'])}<bdi lang="zh-Hans">{e(DEVELOPER['name'])}</bdi></p><p class="fineprint">{c['limits']}</p><p class="updated">{c['updated']} © 2026 VideoLoad.</p></div></footer>'''
 
 
 def page_html(lang, page, body, title=None, noindex=False):
@@ -114,7 +124,7 @@ def home(lang):
 <section class="section facts"><div><div class="eyebrow">{c['facts_label']}</div><h2>{c['facts_title']}</h2></div><dl class="fact-table">{facts}</dl></section></div>
 {download_section(c)}
 <div class="wrap"><section class="section"><div class="section-head"><h2>{c['faq_title']}</h2></div>{faq_list(c,indices=[3,4,6])}<p class="faq-more"><a class="text-link" href="{c['prefix']}faq/">{c['faq_more']} →</a></p></section>
-<section class="feedback"><div><h2>{c['feedback_title']}</h2><p>{c['feedback_text']}</p></div><div><div class="actions">{button(c['feedback_cta'],FEEDBACK)}{button(c['github_cta'],REPO,secondary=True)}</div><p class="note">{c['feedback_note']}</p><p class="contact-email"><a href="mailto:{CONTACT_EMAIL}" dir="ltr">{CONTACT_EMAIL}</a></p></div></section></div>'''
+<section class="feedback"><div><h2>{c['feedback_title']}</h2><p>{c['feedback_text']}</p></div><div><div class="actions">{button(c['feedback_cta'],FEEDBACK)}{button(c['github_cta'],REPO,secondary=True)}</div><p class="note">{c['feedback_note']}</p><p class="contact-email">{email_link(c)}</p></div></section></div>'''
     return page_html(lang,'',body)
 
 

@@ -103,6 +103,7 @@
   "feedback_cta": "Send feedback",
   "github_cta": "Explore on GitHub",
   "feedback_note": "GitHub feedback is public. Keep passwords, receipts and private media out of reports.",
+  "email_contact": "Email me",
   "limits": "Download only content you own or may save. Compatibility varies; no DRM, paywall or access-control bypass. Websites may display their own ads. Dual playback is not frame-synchronized. On iOS, HLS offline packages play in-app but do not export; force-quitting stops transfers.",
   "footer": "VideoLoad · Mobile video download browser",
   "developer_credit_prefix": "Developed by independent AI systems developer ",
