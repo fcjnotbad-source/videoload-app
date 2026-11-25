@@ -481,6 +481,11 @@ p {
   gap:21px;
   font-size:12px;
 }
+.developer-credit {
+  font-size:14px;
+  line-height:1.7;
+  margin:0 0 12px;
+}
 .fineprint {
   font-size:11px;
   color:var(--muted);

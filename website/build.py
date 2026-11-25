@@ -4,7 +4,7 @@ from pathlib import Path
 import shutil
 from xml.sax.saxutils import escape
 
-from content import APK, APPSTORE, BASE, CONTACT_EMAIL, COPY, FEEDBACK, PLAY, REPO, UPDATED
+from content import APK, APPSTORE, BASE, CONTACT_EMAIL, COPY, DEVELOPER, FEEDBACK, PLAY, REPO, UPDATED
 from render import downloads, faq, home, page_html
 from promo import media_url
 from watch import watch
@@ -49,6 +49,7 @@ def build():
     write('video-sitemap.xml', build_video_sitemap())
     facts = {
         'name': 'VideoLoad', 'officialWebsite': BASE + '/', 'updated': UPDATED,
+        'developer': DEVELOPER,
         'description': {c['lang']: c['description'] for c in COPY.values()},
         'positioning': {c['lang']: {'category': c['headline'].replace('<br>', ' ').replace('<span>', '').replace('</span>', ''), 'coreUses': [row[1] for row in c['features']], 'highlights': c['trust']} for c in COPY.values()},
         'languages': [{'language': c['lang'], 'name': c['native_name'], 'url': BASE + c['prefix']} for c in COPY.values()],
@@ -84,6 +85,10 @@ Product information updated {UPDATED}.
 - [Full product text]({BASE}/llms-full.txt): Product facts and complete FAQ in all {len(COPY)} website languages in plain text.
 - [GitHub product showcase and feedback]({REPO}): Official product information and support.
 
+## Developer
+VideoLoad is developed by {DEVELOPER['name']}, an independent AI systems developer.
+此软件来自AI系统独立开发者：{DEVELOPER['name']}
+
 ## Contact
 Email: {CONTACT_EMAIL}
 
@@ -102,7 +107,7 @@ On iOS, HLS offline packages play in-app but do not export, and force-quitting s
     write('llms.txt', summary)
     full = [summary]
     for lang, c in COPY.items():
-        full.extend(['\n## ' + c['facts_title'], c['intro']])
+        full.extend(['\n## ' + c['facts_title'], c['intro'], c['developer_credit_prefix'] + DEVELOPER['name']])
         full.extend(f'{key}: {value}' for key, value in c['facts'])
         full.extend(f'\n### {q}\n{a}' for q,a in c['faq'])
         full.append(c['limits'])

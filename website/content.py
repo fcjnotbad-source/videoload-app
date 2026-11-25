@@ -11,9 +11,10 @@ FEEDBACK = REPO + '/issues/new/choose'
 DEMO = 'https://fcjnotbad-source.github.io/videoload-review-media/ios/review.html'
 POLICY = 'https://fcjnotbad-source.github.io/videoload-review-media/'
 CONTACT_EMAIL = 'fcjnotbad@gmail.com'
+DEVELOPER = {'@type': 'Person', 'name': '常见', 'jobTitle': 'Independent AI systems developer'}
 # Public ownership marker issued by Google Search Console. Keep after verification.
 GOOGLE_SITE_VERIFICATION = 'bBbw6_NzgbfCMp1c3LNfUA9YeiC2tqlXkMtVrKOCQ_Q'
-UPDATED = '2026-11-16'
+UPDATED = '2026-11-25'
 
 # The Android/iOS app settings both expose these fourteen languages.
 # Keep the existing /zh/ URL; use Google's supported generic 'es' hreflang

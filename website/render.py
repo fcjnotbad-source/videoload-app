@@ -4,7 +4,7 @@ from html import escape as e
 from hashlib import sha256
 from pathlib import Path
 
-from content import APK, APPSTORE, BASE, CONTACT_EMAIL, COPY, DEMO, FEEDBACK, GOOGLE_SITE_VERIFICATION, PLAY, POLICY, REPO, UPDATED
+from content import APK, APPSTORE, BASE, CONTACT_EMAIL, COPY, DEMO, DEVELOPER, FEEDBACK, GOOGLE_SITE_VERIFICATION, PLAY, POLICY, REPO, UPDATED
 from promo import media_url, video_schema
 
 STYLE_VERSION = sha256(Path(__file__).with_name('style.css').read_bytes()).hexdigest()[:12]
@@ -24,7 +24,7 @@ def schemas(lang, page):
     url = BASE + c['prefix'] + page
     data = [
         {'@type': 'WebSite', '@id': BASE + '/#website', 'url': BASE + '/', 'name': 'VideoLoad', 'inLanguage': [locale['lang'] for locale in COPY.values()]},
-        {'@type': 'SoftwareApplication', '@id': BASE + '/#app', 'name': 'VideoLoad', 'url': BASE + '/', 'applicationCategory': 'MultimediaApplication', 'operatingSystem': 'Android 8.0+; iOS 17.0+', 'description': c['description'], 'inLanguage': c['lang'], 'featureList': [feature[1] + ': ' + feature[2] for feature in c['features']], 'image': BASE + '/assets/app-icon.png', 'screenshot': BASE + '/assets/screenshots/player.png', 'sameAs': [REPO, PLAY, APPSTORE], 'downloadUrl': APK, 'softwareHelp': {'@type': 'WebPage', 'url': BASE + c['prefix'] + 'faq/'}},
+        {'@type': 'SoftwareApplication', '@id': BASE + '/#app', 'name': 'VideoLoad', 'url': BASE + '/', 'author': DEVELOPER, 'applicationCategory': 'MultimediaApplication', 'operatingSystem': 'Android 8.0+; iOS 17.0+', 'description': c['description'], 'inLanguage': c['lang'], 'featureList': [feature[1] + ': ' + feature[2] for feature in c['features']], 'image': BASE + '/assets/app-icon.png', 'screenshot': BASE + '/assets/screenshots/player.png', 'sameAs': [REPO, PLAY, APPSTORE], 'downloadUrl': APK, 'softwareHelp': {'@type': 'WebPage', 'url': BASE + c['prefix'] + 'faq/'}},
         {'@type': 'WebPage', '@id': url + '#webpage', 'url': url, 'name': c['title'] if not page else (c['faq_heading'] if page == 'faq/' else c['video_page_title'] if page == 'video/' else c['downloads']) + ' · VideoLoad', 'description': description(c,page), 'inLanguage': c['lang'], 'isPartOf': {'@id': BASE + '/#website'}, 'about': {'@id': BASE + '/#app'}, 'dateModified': UPDATED},
     ]
     if page in ('', 'video/'):
@@ -59,7 +59,7 @@ def header(c, page):
 
 def footer(c):
     ios_policy = 'privacy-zh.html' if c['locale_key'] in {'zh', 'zh-Hant'} else 'privacy.html'
-    return f'''<footer class="site-footer"><div class="wrap"><div class="footer-top"><div class="footer-brand">{c['footer']}</div><nav class="footer-links" aria-label="{e(c['footer_navigation'])}"><a href="{c['prefix']}download/">{c['downloads']}</a><a href="{c['prefix']}faq/">{c['nav'][1]}</a><a href="{c['prefix']}video/">{e(c['video_watch_link'])}</a><a href="{REPO}">GitHub ↗</a><a href="mailto:{CONTACT_EMAIL}" dir="ltr">{CONTACT_EMAIL}</a><a href="{POLICY}privacy.html">Android {c['privacy']}</a><a href="{POLICY}ios/{ios_policy}">iOS {c['privacy']}</a></nav></div><p class="fineprint">{c['limits']}</p><p class="updated">{c['updated']} © 2026 VideoLoad.</p></div></footer>'''
+    return f'''<footer class="site-footer"><div class="wrap"><div class="footer-top"><div class="footer-brand">{c['footer']}</div><nav class="footer-links" aria-label="{e(c['footer_navigation'])}"><a href="{c['prefix']}download/">{c['downloads']}</a><a href="{c['prefix']}faq/">{c['nav'][1]}</a><a href="{c['prefix']}video/">{e(c['video_watch_link'])}</a><a href="{REPO}">GitHub ↗</a><a href="mailto:{CONTACT_EMAIL}" dir="ltr">{CONTACT_EMAIL}</a><a href="{POLICY}privacy.html">Android {c['privacy']}</a><a href="{POLICY}ios/{ios_policy}">iOS {c['privacy']}</a></nav></div><p class="developer-credit" id="developer">{e(c['developer_credit_prefix'])}<bdi lang="zh-Hans">{e(DEVELOPER['name'])}</bdi></p><p class="fineprint">{c['limits']}</p><p class="updated">{c['updated']} © 2026 VideoLoad.</p></div></footer>'''
 
 
 def page_html(lang, page, body, title=None, noindex=False):
